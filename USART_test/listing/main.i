@@ -8429,28 +8429,11 @@ int print_stack)
 
 
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#line 166 "main.c"
-
-
-
 char _nc_code_buffer[]=
 {
-"XXXXXXXXXXXXXXXXXXX;(this program mills );n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
+"(this program mills );"
+"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
+"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
 "n0030 g0 x0 y0 z2;"
 "n0040 g1 z-0.5 (start H);"
 "n0050 y10;"
@@ -8471,81 +8454,40 @@ int print_stack)
 {
     char line[256];
     int status;
-	u16 i=0;
-	char Buffer[256];
+	char temp;
 	u16 count=0;
 
     for(; ;)
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
-		
-
 		while(1)
 		{	
-			
-			{	      
-				
-				i =  _nc_code_buffer[gNowChar];
-
-				gNowChar = gNowChar + 1;
-
-				
-				if(i=='%')
+			temp =  _nc_code_buffer[gNowChar];
+			gNowChar = gNowChar + 1;
+			if(gNowChar<strlen(_nc_code_buffer))
+			{
+				if(temp=='%')
 				{
 					
 					break;
 				}
 				else
 				{
-					if(i==';')
+					if(temp==';')
 					{
-						strcpy(line,Buffer);
-						for(count=0;count<256;count++)			
+						for(;count<256;count++)			
 						{
-							Buffer[count]='\0';
+							line[count]='\0';
 						}
 						count=0;
 						break;
 					}
 					else
 					{
-						Buffer[count++]=i;
+						line[count++]=temp;
 					}
 				}
 			}
 		}
-
-
-
         if (strcmp (line, "quit") == 0)
             return 0;
         status = rs274ngc_read(line);
@@ -8707,6 +8649,7 @@ char * file_name)
 {
 
 
+		int slot;
 
 
 
@@ -8758,6 +8701,12 @@ char * file_name)
 
 
 
+	    for (slot = 0; slot <= _tool_max; slot++) 
+	    {
+	        _tools[slot].id = -1;
+	        _tools[slot].length = 0;
+	        _tools[slot].diameter = 0;
+	    }
 
         _tools[5].id = 5;
         _tools[5].length = 1.5;
@@ -8995,14 +8944,14 @@ int main(int argc, char ** argv)
 	int choice;
 	int do_next;                                   
 	int block_delete;
-	char buffer[80];
 	int tool_flag;
+	char buffer[80];
 	int gees[12];
 	int ems[7];
 	double sets[3];
 	char default_name[] = "rs274ngc.var";
 	int print_stack;
-	u16 i;
+	u16 i=0;
  	
 	
 	
@@ -9146,7 +9095,7 @@ int main(int argc, char ** argv)
  
 }
 
-#line 891 "main.c"
+#line 829 "main.c"
 
 
 

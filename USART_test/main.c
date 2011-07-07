@@ -136,39 +136,11 @@ the line, an error message is printed on the monitor (stderr).
 To exit, the user must enter "quit" (followed by a carriage return).
 
 */
-
-
-
-//char _nc_code_buffer[]=
-//{"XXXXXXXXXXXXXXXXXXX;\\
-//(this program mills );\\
-//(this program mills );\\
-//(this program mills );\\
-//%"};
-
-
-
-//char _nc_code_buffer[]=
-//{
-//"XXXXXXXXXXXXXXXXXXX;\\
-//(this program mills );\\
-//n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);\\
-//n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);\\
-//n0030 g0 x0 y0 z2;\\
-//n0040 g1 z-0.5 (start H);\\
-//n0050 y10;\\
-//n0060 g0 z2;\\
-//n0070 y5;\\
-//n0080 g1 z-0.5;\\
-//n0090 x 7;\\
-//n0620 m2;\\
-//%"};
-
-
-
 char _nc_code_buffer[]=
 {
-"XXXXXXXXXXXXXXXXXXX;(this program mills );n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
+"(this program mills );"
+"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
+"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
 "n0030 g0 x0 y0 z2;"
 "n0040 g1 z-0.5 (start H);"
 "n0050 y10;"
@@ -189,81 +161,40 @@ int print_stack)                                  /* option which is ON or OFF *
 {
     char line[RS274NGC_TEXT_SIZE];
     int status;
-	u16 i=0;
-	char Buffer[Line_Length];
+	char temp;
 	u16 count=0;
 
     for(; ;)
     {
-//        printf("READ => ");
-//		//这部分处理串口数据据的接收,以%号做为接收数据终止字符
-//		while(1)
-//		{	
-//			if(USART_GetFlagStatus(USART1,USART_IT_RXNE)==SET)
-//			{	      
-//				i = USART_ReceiveData(USART1);
-//				if(count<Line_Length)
-//				{
-//					if(i=='%')
-//					{
-//						printf("%s\r\n",Buffer);	
-//						strcpy(line,Buffer);
-//						for(count=0;count<Line_Length;count++)			
-//						{
-//							Buffer[count]='\0';
-//						}
-//						count=0;
-//						break;
-//					}
-//					else
-//					{
-//						Buffer[count++]=i;
-//					}
-//				}
-//			}
-//		}
-
-
-		//
-		//
-//        printf("READ => ");
 		while(1)
 		{	
-			//if(USART_GetFlagStatus(USART1,USART_IT_RXNE)==SET)
-			{	      
-				//i = USART_ReceiveData(USART1);
-				i =  _nc_code_buffer[gNowChar];
-
-				gNowChar = gNowChar + 1;
-
-				//if(count<Line_Length)
-				if(i=='%')
+			temp =  _nc_code_buffer[gNowChar];
+			gNowChar = gNowChar + 1;
+			if(gNowChar<strlen(_nc_code_buffer))
+			{
+				if(temp=='%')
 				{
 					//整段结束
 					break;
 				}
 				else
 				{
-					if(i==';')
+					if(temp==';')
 					{
-						strcpy(line,Buffer);
-						for(count=0;count<Line_Length;count++)			
+						for(;count<RS274NGC_TEXT_SIZE;count++)			
 						{
-							Buffer[count]='\0';
+							line[count]='\0';
 						}
 						count=0;
 						break;
 					}
 					else
 					{
-						Buffer[count++]=i;
+						line[count++]=temp;
 					}
 				}
 			}
 		}
-
-
-
         if (strcmp (line, "quit") IS 0)
             return 0;
         status SET_TO rs274ngc_read(line);
@@ -425,7 +356,7 @@ char * file_name)                                 /* name of tool file */
 {
 //    FILE * tool_file_port;
 //    char buffer[1000];
-//    int slot;
+		int slot;
 //    int tool_id;
 //    double offset;
 //    double diameter;
@@ -477,6 +408,13 @@ char * file_name)                                 /* name of tool file */
 //        _tools[slot].id SET_TO tool_id;
 //        _tools[slot].length SET_TO offset;
 //        _tools[slot].diameter SET_TO diameter;
+	    for (slot SET_TO 0; slot <= _tool_max; slot++)/* initialize */
+	    {
+	        _tools[slot].id SET_TO -1;
+	        _tools[slot].length SET_TO 0;
+	        _tools[slot].diameter SET_TO 0;
+	    }
+
         _tools[5].id SET_TO 5;
         _tools[5].length SET_TO 1.5;
         _tools[5].diameter SET_TO 0.25;
@@ -713,14 +651,14 @@ int main(int argc, char ** argv)
 	int choice;
 	int do_next;                                  /* 0=continue, 1=mdi, 2=stop */
 	int block_delete;
-	char buffer[80];
 	int tool_flag;
+	char buffer[80];
 	int gees[RS274NGC_ACTIVE_G_CODES];
 	int ems[RS274NGC_ACTIVE_M_CODES];
 	double sets[RS274NGC_ACTIVE_SETTINGS];
 	char default_name[] SET_TO "rs274ngc.var";
 	int print_stack;
-	u16 i;
+	u16 i=0;
 /******************************RS274NGC之变量声明部分结束******************************/	
 	
 	

@@ -96,7 +96,7 @@ Section Cross References
     main.o(i.interpret_from_file) refers to gets.o(i.gets) for gets
     main.o(i.interpret_from_file) refers to rs274ngc_pre.o(i.rs274ngc_execute) for rs274ngc_execute
     main.o(i.interpret_from_file) refers to stderr.o(.data) for __stderr
-    main.o(i.interpret_from_keyboard) refers to strcpy.o(.text) for strcpy
+    main.o(i.interpret_from_keyboard) refers to strlen.o(.text) for strlen
     main.o(i.interpret_from_keyboard) refers to strcmp.o(.text) for strcmp
     main.o(i.interpret_from_keyboard) refers to rs274ngc_pre.o(i.rs274ngc_read) for rs274ngc_read
     main.o(i.interpret_from_keyboard) refers to main.o(i.report_error) for report_error
@@ -125,6 +125,7 @@ Section Cross References
     main.o(i.main) refers to main.o(.data) for _outfile
     main.o(i.main) refers to stderr.o(.data) for __stderr
     main.o(i.read_tool_file) refers to canon_pre.o(.bss) for _tools
+    main.o(i.read_tool_file) refers to canon_pre.o(.data) for _tool_max
     main.o(i.report_error) refers to rs274ngc_pre.o(i.rs274ngc_error_text) for rs274ngc_error_text
     main.o(i.report_error) refers to printfa.o(i.__0fprintf) for __2fprintf
     main.o(i.report_error) refers to rs274ngc_pre.o(i.rs274ngc_line_text) for rs274ngc_line_text
@@ -2504,309 +2505,309 @@ Image Symbol Table
     i.init_block                             0x08010674   Section        0  rs274ngc_pre.o(i.init_block)
     init_block                               0x08010675   Thumb Code   182  rs274ngc_pre.o(i.init_block)
     i.interpret_from_keyboard                0x08010730   Section        0  main.o(i.interpret_from_keyboard)
-    i.inverse_time_rate_arc                  0x0801080c   Section        0  rs274ngc_pre.o(i.inverse_time_rate_arc)
-    inverse_time_rate_arc                    0x0801080d   Thumb Code   170  rs274ngc_pre.o(i.inverse_time_rate_arc)
-    i.inverse_time_rate_arc2                 0x080108c0   Section        0  rs274ngc_pre.o(i.inverse_time_rate_arc2)
-    inverse_time_rate_arc2                   0x080108c1   Thumb Code   256  rs274ngc_pre.o(i.inverse_time_rate_arc2)
-    i.inverse_time_rate_as                   0x080109c8   Section        0  rs274ngc_pre.o(i.inverse_time_rate_as)
-    inverse_time_rate_as                     0x080109c9   Thumb Code   224  rs274ngc_pre.o(i.inverse_time_rate_as)
-    i.inverse_time_rate_straight             0x08010ab0   Section        0  rs274ngc_pre.o(i.inverse_time_rate_straight)
-    inverse_time_rate_straight               0x08010ab1   Thumb Code   154  rs274ngc_pre.o(i.inverse_time_rate_straight)
-    i.log                                    0x08010b54   Section        0  log.o(i.log)
-    i.main                                   0x08010ec0   Section        0  main.o(i.main)
-    i.parse_line                             0x0801116c   Section        0  rs274ngc_pre.o(i.parse_line)
-    parse_line                               0x0801116d   Thumb Code   372  rs274ngc_pre.o(i.parse_line)
-    i.pow                                    0x080112ec   Section        0  pow.o(i.pow)
-    i.precedence                             0x08011ce4   Section        0  rs274ngc_pre.o(i.precedence)
-    precedence                               0x08011ce5   Thumb Code    30  rs274ngc_pre.o(i.precedence)
-    i.print_nc_line_number                   0x08011d04   Section        0  canon_pre.o(i.print_nc_line_number)
-    i.read_a                                 0x08011dcc   Section        0  rs274ngc_pre.o(i.read_a)
-    read_a                                   0x08011dcd   Thumb Code   204  rs274ngc_pre.o(i.read_a)
-    i.read_atan                              0x08011ea4   Section        0  rs274ngc_pre.o(i.read_atan)
-    read_atan                                0x08011ea5   Thumb Code   352  rs274ngc_pre.o(i.read_atan)
-    i.read_b                                 0x0801201c   Section        0  rs274ngc_pre.o(i.read_b)
-    read_b                                   0x0801201d   Thumb Code   204  rs274ngc_pre.o(i.read_b)
-    i.read_c                                 0x080120f4   Section        0  rs274ngc_pre.o(i.read_c)
-    read_c                                   0x080120f5   Thumb Code   204  rs274ngc_pre.o(i.read_c)
-    i.read_comment                           0x080121cc   Section        0  rs274ngc_pre.o(i.read_comment)
-    read_comment                             0x080121cd   Thumb Code   162  rs274ngc_pre.o(i.read_comment)
-    i.read_d                                 0x0801227c   Section        0  rs274ngc_pre.o(i.read_d)
-    read_d                                   0x0801227d   Thumb Code   466  rs274ngc_pre.o(i.read_d)
-    i.read_f                                 0x0801245c   Section        0  rs274ngc_pre.o(i.read_f)
-    read_f                                   0x0801245d   Thumb Code   412  rs274ngc_pre.o(i.read_f)
-    i.read_g                                 0x08012608   Section        0  rs274ngc_pre.o(i.read_g)
-    read_g                                   0x08012609   Thumb Code   742  rs274ngc_pre.o(i.read_g)
-    i.read_h                                 0x08012914   Section        0  rs274ngc_pre.o(i.read_h)
-    read_h                                   0x08012915   Thumb Code   466  rs274ngc_pre.o(i.read_h)
-    i.read_i                                 0x08012af4   Section        0  rs274ngc_pre.o(i.read_i)
-    read_i                                   0x08012af5   Thumb Code   308  rs274ngc_pre.o(i.read_i)
-    i.read_integer_unsigned                  0x08012c34   Section        0  rs274ngc_pre.o(i.read_integer_unsigned)
-    read_integer_unsigned                    0x08012c35   Thumb Code   222  rs274ngc_pre.o(i.read_integer_unsigned)
-    i.read_integer_value                     0x08012d24   Section        0  rs274ngc_pre.o(i.read_integer_value)
-    read_integer_value                       0x08012d25   Thumb Code   284  rs274ngc_pre.o(i.read_integer_value)
-    i.read_items                             0x08012e5c   Section        0  rs274ngc_pre.o(i.read_items)
-    read_items                               0x08012e5d   Thumb Code   250  rs274ngc_pre.o(i.read_items)
-    i.read_j                                 0x08012f64   Section        0  rs274ngc_pre.o(i.read_j)
-    read_j                                   0x08012f65   Thumb Code   308  rs274ngc_pre.o(i.read_j)
-    i.read_k                                 0x080130a4   Section        0  rs274ngc_pre.o(i.read_k)
-    read_k                                   0x080130a5   Thumb Code   308  rs274ngc_pre.o(i.read_k)
-    i.read_l                                 0x080131e4   Section        0  rs274ngc_pre.o(i.read_l)
-    read_l                                   0x080131e5   Thumb Code   378  rs274ngc_pre.o(i.read_l)
-    i.read_line_number                       0x0801336c   Section        0  rs274ngc_pre.o(i.read_line_number)
-    read_line_number                         0x0801336d   Thumb Code   286  rs274ngc_pre.o(i.read_line_number)
-    i.read_m                                 0x0801349c   Section        0  rs274ngc_pre.o(i.read_m)
-    read_m                                   0x0801349d   Thumb Code   568  rs274ngc_pre.o(i.read_m)
-    i.read_one_item                          0x080136e4   Section        0  rs274ngc_pre.o(i.read_one_item)
-    read_one_item                            0x080136e5   Thumb Code   286  rs274ngc_pre.o(i.read_one_item)
-    i.read_operation                         0x08013814   Section        0  rs274ngc_pre.o(i.read_operation)
-    read_operation                           0x08013815   Thumb Code   744  rs274ngc_pre.o(i.read_operation)
-    i.read_operation_unary                   0x08013b08   Section        0  rs274ngc_pre.o(i.read_operation_unary)
-    read_operation_unary                     0x08013b09   Thumb Code  1246  rs274ngc_pre.o(i.read_operation_unary)
-    i.read_p                                 0x08013ff4   Section        0  rs274ngc_pre.o(i.read_p)
-    read_p                                   0x08013ff5   Thumb Code   412  rs274ngc_pre.o(i.read_p)
-    i.read_parameter                         0x080141a0   Section        0  rs274ngc_pre.o(i.read_parameter)
-    read_parameter                           0x080141a1   Thumb Code   312  rs274ngc_pre.o(i.read_parameter)
-    i.read_parameter_setting                 0x080142e4   Section        0  rs274ngc_pre.o(i.read_parameter_setting)
-    read_parameter_setting                   0x080142e5   Thumb Code   532  rs274ngc_pre.o(i.read_parameter_setting)
-    i.read_q                                 0x0801450c   Section        0  rs274ngc_pre.o(i.read_q)
-    read_q                                   0x0801450d   Thumb Code   412  rs274ngc_pre.o(i.read_q)
-    i.read_r                                 0x080146b8   Section        0  rs274ngc_pre.o(i.read_r)
-    read_r                                   0x080146b9   Thumb Code   308  rs274ngc_pre.o(i.read_r)
-    i.read_real_expression                   0x080147f8   Section        0  rs274ngc_pre.o(i.read_real_expression)
-    read_real_expression                     0x080147f9   Thumb Code   776  rs274ngc_pre.o(i.read_real_expression)
-    i.read_real_number                       0x08014b0c   Section        0  rs274ngc_pre.o(i.read_real_number)
-    read_real_number                         0x08014b0d   Thumb Code   394  rs274ngc_pre.o(i.read_real_number)
-    i.read_real_value                        0x08014ca8   Section        0  rs274ngc_pre.o(i.read_real_value)
-    read_real_value                          0x08014ca9   Thumb Code   498  rs274ngc_pre.o(i.read_real_value)
-    i.read_s                                 0x08014ea8   Section        0  rs274ngc_pre.o(i.read_s)
-    read_s                                   0x08014ea9   Thumb Code   412  rs274ngc_pre.o(i.read_s)
-    i.read_t                                 0x08015054   Section        0  rs274ngc_pre.o(i.read_t)
-    read_t                                   0x08015055   Thumb Code   378  rs274ngc_pre.o(i.read_t)
-    i.read_text                              0x080151dc   Section        0  rs274ngc_pre.o(i.read_text)
-    read_text                                0x080151dd   Thumb Code   730  rs274ngc_pre.o(i.read_text)
-    i.read_tool_file                         0x080154cc   Section        0  main.o(i.read_tool_file)
-    i.read_unary                             0x08015500   Section        0  rs274ngc_pre.o(i.read_unary)
-    read_unary                               0x08015501   Thumb Code   480  rs274ngc_pre.o(i.read_unary)
-    i.read_x                                 0x080156ec   Section        0  rs274ngc_pre.o(i.read_x)
-    read_x                                   0x080156ed   Thumb Code   308  rs274ngc_pre.o(i.read_x)
-    i.read_y                                 0x0801582c   Section        0  rs274ngc_pre.o(i.read_y)
-    read_y                                   0x0801582d   Thumb Code   308  rs274ngc_pre.o(i.read_y)
-    i.read_z                                 0x0801596c   Section        0  rs274ngc_pre.o(i.read_z)
-    read_z                                   0x0801596d   Thumb Code   308  rs274ngc_pre.o(i.read_z)
-    i.report_error                           0x08015aac   Section        0  main.o(i.report_error)
-    i.rs274ngc_active_g_codes                0x08015b5c   Section        0  rs274ngc_pre.o(i.rs274ngc_active_g_codes)
-    i.rs274ngc_active_m_codes                0x08015b80   Section        0  rs274ngc_pre.o(i.rs274ngc_active_m_codes)
-    i.rs274ngc_active_settings               0x08015ba4   Section        0  rs274ngc_pre.o(i.rs274ngc_active_settings)
-    i.rs274ngc_error_text                    0x08015bd0   Section        0  rs274ngc_pre.o(i.rs274ngc_error_text)
-    i.rs274ngc_execute                       0x08015c0c   Section        0  rs274ngc_pre.o(i.rs274ngc_execute)
-    i.rs274ngc_exit                          0x08015cec   Section        0  rs274ngc_pre.o(i.rs274ngc_exit)
-    i.rs274ngc_init                          0x08015d2c   Section        0  rs274ngc_pre.o(i.rs274ngc_init)
-    i.rs274ngc_line_length                   0x08016038   Section        0  rs274ngc_pre.o(i.rs274ngc_line_length)
-    i.rs274ngc_line_text                     0x08016044   Section        0  rs274ngc_pre.o(i.rs274ngc_line_text)
-    i.rs274ngc_read                          0x0801607c   Section        0  rs274ngc_pre.o(i.rs274ngc_read)
-    i.rs274ngc_reset                         0x0801623c   Section        0  rs274ngc_pre.o(i.rs274ngc_reset)
-    i.rs274ngc_restore_parameters            0x08016254   Section        0  rs274ngc_pre.o(i.rs274ngc_restore_parameters)
-    i.rs274ngc_save_parameters               0x08016298   Section        0  rs274ngc_pre.o(i.rs274ngc_save_parameters)
-    i.rs274ngc_sequence_number               0x080165b4   Section        0  rs274ngc_pre.o(i.rs274ngc_sequence_number)
-    i.rs274ngc_stack_name                    0x080165c0   Section        0  rs274ngc_pre.o(i.rs274ngc_stack_name)
-    i.rs274ngc_synch                         0x0801660c   Section        0  rs274ngc_pre.o(i.rs274ngc_synch)
-    i.set_probe_data                         0x080166d8   Section        0  rs274ngc_pre.o(i.set_probe_data)
-    set_probe_data                           0x080166d9   Thumb Code   114  rs274ngc_pre.o(i.set_probe_data)
-    i.sin                                    0x0801674c   Section        0  sin.o(i.sin)
-    i.sqrt                                   0x080167fc   Section        0  sqrt.o(i.sqrt)
-    i.tan                                    0x08016848   Section        0  tan.o(i.tan)
-    i.write_g_codes                          0x080168b4   Section        0  rs274ngc_pre.o(i.write_g_codes)
-    write_g_codes                            0x080168b5   Thumb Code   304  rs274ngc_pre.o(i.write_g_codes)
-    i.write_m_codes                          0x080169e4   Section        0  rs274ngc_pre.o(i.write_m_codes)
-    write_m_codes                            0x080169e5   Thumb Code   164  rs274ngc_pre.o(i.write_m_codes)
-    i.write_settings                         0x08016a88   Section        0  rs274ngc_pre.o(i.write_settings)
-    write_settings                           0x08016a89   Thumb Code    56  rs274ngc_pre.o(i.write_settings)
-    .constdata                               0x08016ac0   Section     5044  rs274ngc_pre.o(.constdata)
-    _gees                                    0x08016ac0   Data        4000  rs274ngc_pre.o(.constdata)
-    _ems                                     0x08017a60   Data         400  rs274ngc_pre.o(.constdata)
-    _required_parameters                     0x08017bf0   Data         152  rs274ngc_pre.o(.constdata)
-    _readers                                 0x08017c88   Data         492  rs274ngc_pre.o(.constdata)
-    .constdata                               0x08017e74   Section       20  stm32f10x_rcc.o(.constdata)
-    ADCPrescTable                            0x08017e74   Data           4  stm32f10x_rcc.o(.constdata)
-    APBAHBPrescTable                         0x08017e78   Data          16  stm32f10x_rcc.o(.constdata)
-    .constdata                               0x08017e88   Section       80  acos.o(.constdata)
-    pS                                       0x08017e88   Data          48  acos.o(.constdata)
-    qS                                       0x08017eb8   Data          32  acos.o(.constdata)
-    .constdata                               0x08017ed8   Section       80  asin.o(.constdata)
-    pS                                       0x08017ed8   Data          48  asin.o(.constdata)
-    qS                                       0x08017f08   Data          32  asin.o(.constdata)
-    .constdata                               0x08017f28   Section       88  exp.o(.constdata)
-    halF                                     0x08017f28   Data          16  exp.o(.constdata)
-    ln2HI                                    0x08017f38   Data          16  exp.o(.constdata)
-    ln2LO                                    0x08017f48   Data          16  exp.o(.constdata)
-    P                                        0x08017f58   Data          40  exp.o(.constdata)
-    .constdata                               0x08017f80   Section       56  log.o(.constdata)
-    Lg2                                      0x08017f80   Data          24  log.o(.constdata)
-    Lg                                       0x08017f98   Data          32  log.o(.constdata)
-    .constdata                               0x08017fb8   Section      136  pow.o(.constdata)
-    bp                                       0x08017fb8   Data          16  pow.o(.constdata)
-    dp_h                                     0x08017fc8   Data          16  pow.o(.constdata)
-    dp_l                                     0x08017fd8   Data          16  pow.o(.constdata)
-    L                                        0x08017fe8   Data          48  pow.o(.constdata)
-    P                                        0x08018018   Data          40  pow.o(.constdata)
-    .constdata                               0x08018040   Section      129  ctype_o.o(.constdata)
-    .constdata                               0x080180c4   Section        4  ctype_o.o(.constdata)
-    table                                    0x080180c4   Data           4  ctype_o.o(.constdata)
-    .constdata                               0x080180c8   Section      152  atan.o(.constdata)
-    atanhi                                   0x080180c8   Data          32  atan.o(.constdata)
-    atanlo                                   0x080180e8   Data          32  atan.o(.constdata)
-    aTodd                                    0x08018108   Data          40  atan.o(.constdata)
-    aTeven                                   0x08018130   Data          48  atan.o(.constdata)
-    .constdata                               0x08018160   Section       48  cos_i.o(.constdata)
-    C                                        0x08018160   Data          48  cos_i.o(.constdata)
-    .constdata                               0x08018190   Section        8  qnan.o(.constdata)
-    .constdata                               0x08018198   Section      200  rred.o(.constdata)
-    pio2s                                    0x08018198   Data          48  rred.o(.constdata)
-    twooverpi                                0x080181c8   Data         152  rred.o(.constdata)
-    .constdata                               0x08018260   Section       40  sin_i.o(.constdata)
-    S                                        0x08018260   Data          40  sin_i.o(.constdata)
-    .constdata                               0x08018288   Section       96  tan_i.o(.constdata)
-    Todd                                     0x08018288   Data          48  tan_i.o(.constdata)
-    Teven                                    0x080182b8   Data          48  tan_i.o(.constdata)
-    .conststring                             0x080182e8   Section     6134  rs274ngc_pre.o(.conststring)
-    .data                                    0x20000000   Section      293  main.o(.data)
-    .data                                    0x20000128   Section      152  canon_pre.o(.data)
-    _active_plane                            0x20000128   Data           4  canon_pre.o(.data)
-    _active_slot                             0x2000012c   Data           4  canon_pre.o(.data)
-    _feed_rate                               0x20000130   Data           8  canon_pre.o(.data)
-    _flood                                   0x20000138   Data           4  canon_pre.o(.data)
-    _length_unit_factor                      0x20000140   Data           8  canon_pre.o(.data)
-    _length_unit_type                        0x20000148   Data           4  canon_pre.o(.data)
-    _line_number                             0x2000014c   Data           4  canon_pre.o(.data)
-    _mist                                    0x20000150   Data           4  canon_pre.o(.data)
-    _motion_mode                             0x20000154   Data           4  canon_pre.o(.data)
-    _probe_position_x                        0x20000158   Data           8  canon_pre.o(.data)
-    _probe_position_y                        0x20000160   Data           8  canon_pre.o(.data)
-    _probe_position_z                        0x20000168   Data           8  canon_pre.o(.data)
-    _program_origin_x                        0x20000170   Data           8  canon_pre.o(.data)
-    _program_origin_y                        0x20000178   Data           8  canon_pre.o(.data)
-    _program_origin_z                        0x20000180   Data           8  canon_pre.o(.data)
-    _program_position_x                      0x20000188   Data           8  canon_pre.o(.data)
-    _program_position_y                      0x20000190   Data           8  canon_pre.o(.data)
-    _program_position_z                      0x20000198   Data           8  canon_pre.o(.data)
-    _spindle_speed                           0x200001a8   Data           8  canon_pre.o(.data)
-    _spindle_turning                         0x200001b0   Data           4  canon_pre.o(.data)
-    _traverse_rate                           0x200001b8   Data           8  canon_pre.o(.data)
-    .data                                    0x200001c0   Section     2328  rs274ngc_pre.o(.data)
-    name                                     0x200004dc   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200004ee   Data          16  rs274ngc_pre.o(.data)
-    name                                     0x200004fe   Data          13  rs274ngc_pre.o(.data)
-    name                                     0x2000050b   Data          11  rs274ngc_pre.o(.data)
-    name                                     0x20000516   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x20000524   Data          12  rs274ngc_pre.o(.data)
-    name                                     0x20000530   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x2000053e   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000550   Data          19  rs274ngc_pre.o(.data)
-    name                                     0x20000563   Data          12  rs274ngc_pre.o(.data)
-    name                                     0x2000056f   Data          13  rs274ngc_pre.o(.data)
-    name                                     0x2000057c   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x2000058e   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200005a0   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x200005b5   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x200005ca   Data          26  rs274ngc_pre.o(.data)
-    name                                     0x200005e4   Data          28  rs274ngc_pre.o(.data)
-    name                                     0x20000600   Data          31  rs274ngc_pre.o(.data)
-    name                                     0x2000061f   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x2000062d   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x2000063f   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000651   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000663   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000675   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000687   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x20000699   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200006ab   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200006bd   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200006cf   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x200006e0   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x200006f1   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x20000702   Data          22  rs274ngc_pre.o(.data)
-    name                                     0x20000718   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x2000072a   Data          10  rs274ngc_pre.o(.data)
-    name                                     0x20000734   Data          13  rs274ngc_pre.o(.data)
-    name                                     0x20000741   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x20000756   Data          10  rs274ngc_pre.o(.data)
-    name                                     0x20000760   Data          16  rs274ngc_pre.o(.data)
-    name                                     0x20000770   Data          15  rs274ngc_pre.o(.data)
-    name                                     0x2000077f   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x2000078d   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x200007a2   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x200007b0   Data          18  rs274ngc_pre.o(.data)
-    name                                     0x200007c2   Data          13  rs274ngc_pre.o(.data)
-    name                                     0x200007cf   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x200007e0   Data          23  rs274ngc_pre.o(.data)
-    name                                     0x200007f7   Data          23  rs274ngc_pre.o(.data)
-    name                                     0x2000080e   Data          20  rs274ngc_pre.o(.data)
-    name                                     0x20000822   Data          27  rs274ngc_pre.o(.data)
-    name                                     0x2000083d   Data          20  rs274ngc_pre.o(.data)
-    name                                     0x20000851   Data          11  rs274ngc_pre.o(.data)
-    name                                     0x2000085c   Data          15  rs274ngc_pre.o(.data)
-    name                                     0x2000086b   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x20000879   Data          15  rs274ngc_pre.o(.data)
+    i.inverse_time_rate_arc                  0x08010804   Section        0  rs274ngc_pre.o(i.inverse_time_rate_arc)
+    inverse_time_rate_arc                    0x08010805   Thumb Code   170  rs274ngc_pre.o(i.inverse_time_rate_arc)
+    i.inverse_time_rate_arc2                 0x080108b8   Section        0  rs274ngc_pre.o(i.inverse_time_rate_arc2)
+    inverse_time_rate_arc2                   0x080108b9   Thumb Code   256  rs274ngc_pre.o(i.inverse_time_rate_arc2)
+    i.inverse_time_rate_as                   0x080109c0   Section        0  rs274ngc_pre.o(i.inverse_time_rate_as)
+    inverse_time_rate_as                     0x080109c1   Thumb Code   224  rs274ngc_pre.o(i.inverse_time_rate_as)
+    i.inverse_time_rate_straight             0x08010aa8   Section        0  rs274ngc_pre.o(i.inverse_time_rate_straight)
+    inverse_time_rate_straight               0x08010aa9   Thumb Code   154  rs274ngc_pre.o(i.inverse_time_rate_straight)
+    i.log                                    0x08010b4c   Section        0  log.o(i.log)
+    i.main                                   0x08010eb8   Section        0  main.o(i.main)
+    i.parse_line                             0x08011168   Section        0  rs274ngc_pre.o(i.parse_line)
+    parse_line                               0x08011169   Thumb Code   372  rs274ngc_pre.o(i.parse_line)
+    i.pow                                    0x080112e8   Section        0  pow.o(i.pow)
+    i.precedence                             0x08011ce0   Section        0  rs274ngc_pre.o(i.precedence)
+    precedence                               0x08011ce1   Thumb Code    30  rs274ngc_pre.o(i.precedence)
+    i.print_nc_line_number                   0x08011d00   Section        0  canon_pre.o(i.print_nc_line_number)
+    i.read_a                                 0x08011dc8   Section        0  rs274ngc_pre.o(i.read_a)
+    read_a                                   0x08011dc9   Thumb Code   204  rs274ngc_pre.o(i.read_a)
+    i.read_atan                              0x08011ea0   Section        0  rs274ngc_pre.o(i.read_atan)
+    read_atan                                0x08011ea1   Thumb Code   352  rs274ngc_pre.o(i.read_atan)
+    i.read_b                                 0x08012018   Section        0  rs274ngc_pre.o(i.read_b)
+    read_b                                   0x08012019   Thumb Code   204  rs274ngc_pre.o(i.read_b)
+    i.read_c                                 0x080120f0   Section        0  rs274ngc_pre.o(i.read_c)
+    read_c                                   0x080120f1   Thumb Code   204  rs274ngc_pre.o(i.read_c)
+    i.read_comment                           0x080121c8   Section        0  rs274ngc_pre.o(i.read_comment)
+    read_comment                             0x080121c9   Thumb Code   162  rs274ngc_pre.o(i.read_comment)
+    i.read_d                                 0x08012278   Section        0  rs274ngc_pre.o(i.read_d)
+    read_d                                   0x08012279   Thumb Code   466  rs274ngc_pre.o(i.read_d)
+    i.read_f                                 0x08012458   Section        0  rs274ngc_pre.o(i.read_f)
+    read_f                                   0x08012459   Thumb Code   412  rs274ngc_pre.o(i.read_f)
+    i.read_g                                 0x08012604   Section        0  rs274ngc_pre.o(i.read_g)
+    read_g                                   0x08012605   Thumb Code   742  rs274ngc_pre.o(i.read_g)
+    i.read_h                                 0x08012910   Section        0  rs274ngc_pre.o(i.read_h)
+    read_h                                   0x08012911   Thumb Code   466  rs274ngc_pre.o(i.read_h)
+    i.read_i                                 0x08012af0   Section        0  rs274ngc_pre.o(i.read_i)
+    read_i                                   0x08012af1   Thumb Code   308  rs274ngc_pre.o(i.read_i)
+    i.read_integer_unsigned                  0x08012c30   Section        0  rs274ngc_pre.o(i.read_integer_unsigned)
+    read_integer_unsigned                    0x08012c31   Thumb Code   222  rs274ngc_pre.o(i.read_integer_unsigned)
+    i.read_integer_value                     0x08012d20   Section        0  rs274ngc_pre.o(i.read_integer_value)
+    read_integer_value                       0x08012d21   Thumb Code   284  rs274ngc_pre.o(i.read_integer_value)
+    i.read_items                             0x08012e58   Section        0  rs274ngc_pre.o(i.read_items)
+    read_items                               0x08012e59   Thumb Code   250  rs274ngc_pre.o(i.read_items)
+    i.read_j                                 0x08012f60   Section        0  rs274ngc_pre.o(i.read_j)
+    read_j                                   0x08012f61   Thumb Code   308  rs274ngc_pre.o(i.read_j)
+    i.read_k                                 0x080130a0   Section        0  rs274ngc_pre.o(i.read_k)
+    read_k                                   0x080130a1   Thumb Code   308  rs274ngc_pre.o(i.read_k)
+    i.read_l                                 0x080131e0   Section        0  rs274ngc_pre.o(i.read_l)
+    read_l                                   0x080131e1   Thumb Code   378  rs274ngc_pre.o(i.read_l)
+    i.read_line_number                       0x08013368   Section        0  rs274ngc_pre.o(i.read_line_number)
+    read_line_number                         0x08013369   Thumb Code   286  rs274ngc_pre.o(i.read_line_number)
+    i.read_m                                 0x08013498   Section        0  rs274ngc_pre.o(i.read_m)
+    read_m                                   0x08013499   Thumb Code   568  rs274ngc_pre.o(i.read_m)
+    i.read_one_item                          0x080136e0   Section        0  rs274ngc_pre.o(i.read_one_item)
+    read_one_item                            0x080136e1   Thumb Code   286  rs274ngc_pre.o(i.read_one_item)
+    i.read_operation                         0x08013810   Section        0  rs274ngc_pre.o(i.read_operation)
+    read_operation                           0x08013811   Thumb Code   744  rs274ngc_pre.o(i.read_operation)
+    i.read_operation_unary                   0x08013b04   Section        0  rs274ngc_pre.o(i.read_operation_unary)
+    read_operation_unary                     0x08013b05   Thumb Code  1246  rs274ngc_pre.o(i.read_operation_unary)
+    i.read_p                                 0x08013ff0   Section        0  rs274ngc_pre.o(i.read_p)
+    read_p                                   0x08013ff1   Thumb Code   412  rs274ngc_pre.o(i.read_p)
+    i.read_parameter                         0x0801419c   Section        0  rs274ngc_pre.o(i.read_parameter)
+    read_parameter                           0x0801419d   Thumb Code   312  rs274ngc_pre.o(i.read_parameter)
+    i.read_parameter_setting                 0x080142e0   Section        0  rs274ngc_pre.o(i.read_parameter_setting)
+    read_parameter_setting                   0x080142e1   Thumb Code   532  rs274ngc_pre.o(i.read_parameter_setting)
+    i.read_q                                 0x08014508   Section        0  rs274ngc_pre.o(i.read_q)
+    read_q                                   0x08014509   Thumb Code   412  rs274ngc_pre.o(i.read_q)
+    i.read_r                                 0x080146b4   Section        0  rs274ngc_pre.o(i.read_r)
+    read_r                                   0x080146b5   Thumb Code   308  rs274ngc_pre.o(i.read_r)
+    i.read_real_expression                   0x080147f4   Section        0  rs274ngc_pre.o(i.read_real_expression)
+    read_real_expression                     0x080147f5   Thumb Code   776  rs274ngc_pre.o(i.read_real_expression)
+    i.read_real_number                       0x08014b08   Section        0  rs274ngc_pre.o(i.read_real_number)
+    read_real_number                         0x08014b09   Thumb Code   394  rs274ngc_pre.o(i.read_real_number)
+    i.read_real_value                        0x08014ca4   Section        0  rs274ngc_pre.o(i.read_real_value)
+    read_real_value                          0x08014ca5   Thumb Code   498  rs274ngc_pre.o(i.read_real_value)
+    i.read_s                                 0x08014ea4   Section        0  rs274ngc_pre.o(i.read_s)
+    read_s                                   0x08014ea5   Thumb Code   412  rs274ngc_pre.o(i.read_s)
+    i.read_t                                 0x08015050   Section        0  rs274ngc_pre.o(i.read_t)
+    read_t                                   0x08015051   Thumb Code   378  rs274ngc_pre.o(i.read_t)
+    i.read_text                              0x080151d8   Section        0  rs274ngc_pre.o(i.read_text)
+    read_text                                0x080151d9   Thumb Code   730  rs274ngc_pre.o(i.read_text)
+    i.read_tool_file                         0x080154c8   Section        0  main.o(i.read_tool_file)
+    i.read_unary                             0x08015544   Section        0  rs274ngc_pre.o(i.read_unary)
+    read_unary                               0x08015545   Thumb Code   480  rs274ngc_pre.o(i.read_unary)
+    i.read_x                                 0x08015730   Section        0  rs274ngc_pre.o(i.read_x)
+    read_x                                   0x08015731   Thumb Code   308  rs274ngc_pre.o(i.read_x)
+    i.read_y                                 0x08015870   Section        0  rs274ngc_pre.o(i.read_y)
+    read_y                                   0x08015871   Thumb Code   308  rs274ngc_pre.o(i.read_y)
+    i.read_z                                 0x080159b0   Section        0  rs274ngc_pre.o(i.read_z)
+    read_z                                   0x080159b1   Thumb Code   308  rs274ngc_pre.o(i.read_z)
+    i.report_error                           0x08015af0   Section        0  main.o(i.report_error)
+    i.rs274ngc_active_g_codes                0x08015ba0   Section        0  rs274ngc_pre.o(i.rs274ngc_active_g_codes)
+    i.rs274ngc_active_m_codes                0x08015bc4   Section        0  rs274ngc_pre.o(i.rs274ngc_active_m_codes)
+    i.rs274ngc_active_settings               0x08015be8   Section        0  rs274ngc_pre.o(i.rs274ngc_active_settings)
+    i.rs274ngc_error_text                    0x08015c14   Section        0  rs274ngc_pre.o(i.rs274ngc_error_text)
+    i.rs274ngc_execute                       0x08015c50   Section        0  rs274ngc_pre.o(i.rs274ngc_execute)
+    i.rs274ngc_exit                          0x08015d30   Section        0  rs274ngc_pre.o(i.rs274ngc_exit)
+    i.rs274ngc_init                          0x08015d70   Section        0  rs274ngc_pre.o(i.rs274ngc_init)
+    i.rs274ngc_line_length                   0x0801607c   Section        0  rs274ngc_pre.o(i.rs274ngc_line_length)
+    i.rs274ngc_line_text                     0x08016088   Section        0  rs274ngc_pre.o(i.rs274ngc_line_text)
+    i.rs274ngc_read                          0x080160c0   Section        0  rs274ngc_pre.o(i.rs274ngc_read)
+    i.rs274ngc_reset                         0x08016280   Section        0  rs274ngc_pre.o(i.rs274ngc_reset)
+    i.rs274ngc_restore_parameters            0x08016298   Section        0  rs274ngc_pre.o(i.rs274ngc_restore_parameters)
+    i.rs274ngc_save_parameters               0x080162dc   Section        0  rs274ngc_pre.o(i.rs274ngc_save_parameters)
+    i.rs274ngc_sequence_number               0x080165f8   Section        0  rs274ngc_pre.o(i.rs274ngc_sequence_number)
+    i.rs274ngc_stack_name                    0x08016604   Section        0  rs274ngc_pre.o(i.rs274ngc_stack_name)
+    i.rs274ngc_synch                         0x08016650   Section        0  rs274ngc_pre.o(i.rs274ngc_synch)
+    i.set_probe_data                         0x0801671c   Section        0  rs274ngc_pre.o(i.set_probe_data)
+    set_probe_data                           0x0801671d   Thumb Code   114  rs274ngc_pre.o(i.set_probe_data)
+    i.sin                                    0x08016790   Section        0  sin.o(i.sin)
+    i.sqrt                                   0x08016840   Section        0  sqrt.o(i.sqrt)
+    i.tan                                    0x0801688c   Section        0  tan.o(i.tan)
+    i.write_g_codes                          0x080168f8   Section        0  rs274ngc_pre.o(i.write_g_codes)
+    write_g_codes                            0x080168f9   Thumb Code   304  rs274ngc_pre.o(i.write_g_codes)
+    i.write_m_codes                          0x08016a28   Section        0  rs274ngc_pre.o(i.write_m_codes)
+    write_m_codes                            0x08016a29   Thumb Code   164  rs274ngc_pre.o(i.write_m_codes)
+    i.write_settings                         0x08016acc   Section        0  rs274ngc_pre.o(i.write_settings)
+    write_settings                           0x08016acd   Thumb Code    56  rs274ngc_pre.o(i.write_settings)
+    .constdata                               0x08016b04   Section     5044  rs274ngc_pre.o(.constdata)
+    _gees                                    0x08016b04   Data        4000  rs274ngc_pre.o(.constdata)
+    _ems                                     0x08017aa4   Data         400  rs274ngc_pre.o(.constdata)
+    _required_parameters                     0x08017c34   Data         152  rs274ngc_pre.o(.constdata)
+    _readers                                 0x08017ccc   Data         492  rs274ngc_pre.o(.constdata)
+    .constdata                               0x08017eb8   Section       20  stm32f10x_rcc.o(.constdata)
+    ADCPrescTable                            0x08017eb8   Data           4  stm32f10x_rcc.o(.constdata)
+    APBAHBPrescTable                         0x08017ebc   Data          16  stm32f10x_rcc.o(.constdata)
+    .constdata                               0x08017ed0   Section       80  acos.o(.constdata)
+    pS                                       0x08017ed0   Data          48  acos.o(.constdata)
+    qS                                       0x08017f00   Data          32  acos.o(.constdata)
+    .constdata                               0x08017f20   Section       80  asin.o(.constdata)
+    pS                                       0x08017f20   Data          48  asin.o(.constdata)
+    qS                                       0x08017f50   Data          32  asin.o(.constdata)
+    .constdata                               0x08017f70   Section       88  exp.o(.constdata)
+    halF                                     0x08017f70   Data          16  exp.o(.constdata)
+    ln2HI                                    0x08017f80   Data          16  exp.o(.constdata)
+    ln2LO                                    0x08017f90   Data          16  exp.o(.constdata)
+    P                                        0x08017fa0   Data          40  exp.o(.constdata)
+    .constdata                               0x08017fc8   Section       56  log.o(.constdata)
+    Lg2                                      0x08017fc8   Data          24  log.o(.constdata)
+    Lg                                       0x08017fe0   Data          32  log.o(.constdata)
+    .constdata                               0x08018000   Section      136  pow.o(.constdata)
+    bp                                       0x08018000   Data          16  pow.o(.constdata)
+    dp_h                                     0x08018010   Data          16  pow.o(.constdata)
+    dp_l                                     0x08018020   Data          16  pow.o(.constdata)
+    L                                        0x08018030   Data          48  pow.o(.constdata)
+    P                                        0x08018060   Data          40  pow.o(.constdata)
+    .constdata                               0x08018088   Section      129  ctype_o.o(.constdata)
+    .constdata                               0x0801810c   Section        4  ctype_o.o(.constdata)
+    table                                    0x0801810c   Data           4  ctype_o.o(.constdata)
+    .constdata                               0x08018110   Section      152  atan.o(.constdata)
+    atanhi                                   0x08018110   Data          32  atan.o(.constdata)
+    atanlo                                   0x08018130   Data          32  atan.o(.constdata)
+    aTodd                                    0x08018150   Data          40  atan.o(.constdata)
+    aTeven                                   0x08018178   Data          48  atan.o(.constdata)
+    .constdata                               0x080181a8   Section       48  cos_i.o(.constdata)
+    C                                        0x080181a8   Data          48  cos_i.o(.constdata)
+    .constdata                               0x080181d8   Section        8  qnan.o(.constdata)
+    .constdata                               0x080181e0   Section      200  rred.o(.constdata)
+    pio2s                                    0x080181e0   Data          48  rred.o(.constdata)
+    twooverpi                                0x08018210   Data         152  rred.o(.constdata)
+    .constdata                               0x080182a8   Section       40  sin_i.o(.constdata)
+    S                                        0x080182a8   Data          40  sin_i.o(.constdata)
+    .constdata                               0x080182d0   Section       96  tan_i.o(.constdata)
+    Todd                                     0x080182d0   Data          48  tan_i.o(.constdata)
+    Teven                                    0x08018300   Data          48  tan_i.o(.constdata)
+    .conststring                             0x08018330   Section     6134  rs274ngc_pre.o(.conststring)
+    .data                                    0x20000000   Section      273  main.o(.data)
+    .data                                    0x20000118   Section      152  canon_pre.o(.data)
+    _active_plane                            0x20000118   Data           4  canon_pre.o(.data)
+    _active_slot                             0x2000011c   Data           4  canon_pre.o(.data)
+    _feed_rate                               0x20000120   Data           8  canon_pre.o(.data)
+    _flood                                   0x20000128   Data           4  canon_pre.o(.data)
+    _length_unit_factor                      0x20000130   Data           8  canon_pre.o(.data)
+    _length_unit_type                        0x20000138   Data           4  canon_pre.o(.data)
+    _line_number                             0x2000013c   Data           4  canon_pre.o(.data)
+    _mist                                    0x20000140   Data           4  canon_pre.o(.data)
+    _motion_mode                             0x20000144   Data           4  canon_pre.o(.data)
+    _probe_position_x                        0x20000148   Data           8  canon_pre.o(.data)
+    _probe_position_y                        0x20000150   Data           8  canon_pre.o(.data)
+    _probe_position_z                        0x20000158   Data           8  canon_pre.o(.data)
+    _program_origin_x                        0x20000160   Data           8  canon_pre.o(.data)
+    _program_origin_y                        0x20000168   Data           8  canon_pre.o(.data)
+    _program_origin_z                        0x20000170   Data           8  canon_pre.o(.data)
+    _program_position_x                      0x20000178   Data           8  canon_pre.o(.data)
+    _program_position_y                      0x20000180   Data           8  canon_pre.o(.data)
+    _program_position_z                      0x20000188   Data           8  canon_pre.o(.data)
+    _spindle_speed                           0x20000198   Data           8  canon_pre.o(.data)
+    _spindle_turning                         0x200001a0   Data           4  canon_pre.o(.data)
+    _traverse_rate                           0x200001a8   Data           8  canon_pre.o(.data)
+    .data                                    0x200001b0   Section     2328  rs274ngc_pre.o(.data)
+    name                                     0x200004cc   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x200004de   Data          16  rs274ngc_pre.o(.data)
+    name                                     0x200004ee   Data          13  rs274ngc_pre.o(.data)
+    name                                     0x200004fb   Data          11  rs274ngc_pre.o(.data)
+    name                                     0x20000506   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000514   Data          12  rs274ngc_pre.o(.data)
+    name                                     0x20000520   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x2000052e   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000540   Data          19  rs274ngc_pre.o(.data)
+    name                                     0x20000553   Data          12  rs274ngc_pre.o(.data)
+    name                                     0x2000055f   Data          13  rs274ngc_pre.o(.data)
+    name                                     0x2000056c   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x2000057e   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000590   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x200005a5   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x200005ba   Data          26  rs274ngc_pre.o(.data)
+    name                                     0x200005d4   Data          28  rs274ngc_pre.o(.data)
+    name                                     0x200005f0   Data          31  rs274ngc_pre.o(.data)
+    name                                     0x2000060f   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x2000061d   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x2000062f   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000641   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000653   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000665   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000677   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x20000689   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x2000069b   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x200006ad   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x200006bf   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x200006d0   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x200006e1   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x200006f2   Data          22  rs274ngc_pre.o(.data)
+    name                                     0x20000708   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x2000071a   Data          10  rs274ngc_pre.o(.data)
+    name                                     0x20000724   Data          13  rs274ngc_pre.o(.data)
+    name                                     0x20000731   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x20000746   Data          10  rs274ngc_pre.o(.data)
+    name                                     0x20000750   Data          16  rs274ngc_pre.o(.data)
+    name                                     0x20000760   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x2000076f   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x2000077d   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x20000792   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x200007a0   Data          18  rs274ngc_pre.o(.data)
+    name                                     0x200007b2   Data          13  rs274ngc_pre.o(.data)
+    name                                     0x200007bf   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x200007d0   Data          23  rs274ngc_pre.o(.data)
+    name                                     0x200007e7   Data          23  rs274ngc_pre.o(.data)
+    name                                     0x200007fe   Data          20  rs274ngc_pre.o(.data)
+    name                                     0x20000812   Data          27  rs274ngc_pre.o(.data)
+    name                                     0x2000082d   Data          20  rs274ngc_pre.o(.data)
+    name                                     0x20000841   Data          11  rs274ngc_pre.o(.data)
+    name                                     0x2000084c   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x2000085b   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000869   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x20000878   Data          16  rs274ngc_pre.o(.data)
     name                                     0x20000888   Data          16  rs274ngc_pre.o(.data)
-    name                                     0x20000898   Data          16  rs274ngc_pre.o(.data)
-    name                                     0x200008a8   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x200008b6   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x200008c4   Data          27  rs274ngc_pre.o(.data)
-    name                                     0x200008df   Data          11  rs274ngc_pre.o(.data)
-    name                                     0x200008ea   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x200008f1   Data          10  rs274ngc_pre.o(.data)
-    name                                     0x200008fb   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000902   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000909   Data          13  rs274ngc_pre.o(.data)
-    name                                     0x20000916   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x2000091d   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000924   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x2000092b   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000932   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000939   Data          22  rs274ngc_pre.o(.data)
-    name                                     0x2000094f   Data          19  rs274ngc_pre.o(.data)
-    name                                     0x20000962   Data          11  rs274ngc_pre.o(.data)
-    name                                     0x2000096d   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000974   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x2000097b   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000982   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x20000993   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x2000099a   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x200009a8   Data          15  rs274ngc_pre.o(.data)
-    name                                     0x200009b7   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x200009cc   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x200009d3   Data          15  rs274ngc_pre.o(.data)
-    name                                     0x200009e2   Data          23  rs274ngc_pre.o(.data)
-    name                                     0x200009f9   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a00   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a07   Data          21  rs274ngc_pre.o(.data)
-    name                                     0x20000a1c   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x20000a2d   Data          16  rs274ngc_pre.o(.data)
-    name                                     0x20000a3d   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a44   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a4b   Data          10  rs274ngc_pre.o(.data)
-    name                                     0x20000a55   Data          11  rs274ngc_pre.o(.data)
-    name                                     0x20000a60   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a67   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a6e   Data           7  rs274ngc_pre.o(.data)
-    name                                     0x20000a75   Data          15  rs274ngc_pre.o(.data)
-    name                                     0x20000a84   Data          17  rs274ngc_pre.o(.data)
-    name                                     0x20000a95   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x20000aa3   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x20000ab1   Data          14  rs274ngc_pre.o(.data)
-    name                                     0x20000abf   Data          25  rs274ngc_pre.o(.data)
-    .data                                    0x20000ad8   Section        8  stm32f10x_rcc.o(.data)
-    HSEStatus                                0x20000ad8   Data           1  stm32f10x_rcc.o(.data)
-    StartUpCounter                           0x20000adc   Data           4  stm32f10x_rcc.o(.data)
-    .data                                    0x20000ae0   Section        4  stdout.o(.data)
-    .data                                    0x20000ae4   Section        4  stderr.o(.data)
-    .data                                    0x20000ae8   Section        4  stdin.o(.data)
-    .data                                    0x20000aec   Section        4  errno.o(.data)
-    _errno                                   0x20000aec   Data           4  errno.o(.data)
-    .bss                                     0x20000af0   Section     3176  canon_pre.o(.bss)
-    .bss                                     0x20001758   Section    52616  rs274ngc_pre.o(.bss)
-    _setup                                   0x20001758   Data       52616  rs274ngc_pre.o(.bss)
-    STACK                                    0x2000e4e0   Section      512  stm32f10x.o(STACK)
+    name                                     0x20000898   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x200008a6   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x200008b4   Data          27  rs274ngc_pre.o(.data)
+    name                                     0x200008cf   Data          11  rs274ngc_pre.o(.data)
+    name                                     0x200008da   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200008e1   Data          10  rs274ngc_pre.o(.data)
+    name                                     0x200008eb   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200008f2   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200008f9   Data          13  rs274ngc_pre.o(.data)
+    name                                     0x20000906   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x2000090d   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000914   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x2000091b   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000922   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000929   Data          22  rs274ngc_pre.o(.data)
+    name                                     0x2000093f   Data          19  rs274ngc_pre.o(.data)
+    name                                     0x20000952   Data          11  rs274ngc_pre.o(.data)
+    name                                     0x2000095d   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000964   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x2000096b   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000972   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x20000983   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x2000098a   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000998   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x200009a7   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x200009bc   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200009c3   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x200009d2   Data          23  rs274ngc_pre.o(.data)
+    name                                     0x200009e9   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200009f0   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x200009f7   Data          21  rs274ngc_pre.o(.data)
+    name                                     0x20000a0c   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x20000a1d   Data          16  rs274ngc_pre.o(.data)
+    name                                     0x20000a2d   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000a34   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000a3b   Data          10  rs274ngc_pre.o(.data)
+    name                                     0x20000a45   Data          11  rs274ngc_pre.o(.data)
+    name                                     0x20000a50   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000a57   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000a5e   Data           7  rs274ngc_pre.o(.data)
+    name                                     0x20000a65   Data          15  rs274ngc_pre.o(.data)
+    name                                     0x20000a74   Data          17  rs274ngc_pre.o(.data)
+    name                                     0x20000a85   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000a93   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000aa1   Data          14  rs274ngc_pre.o(.data)
+    name                                     0x20000aaf   Data          25  rs274ngc_pre.o(.data)
+    .data                                    0x20000ac8   Section        8  stm32f10x_rcc.o(.data)
+    HSEStatus                                0x20000ac8   Data           1  stm32f10x_rcc.o(.data)
+    StartUpCounter                           0x20000acc   Data           4  stm32f10x_rcc.o(.data)
+    .data                                    0x20000ad0   Section        4  stdout.o(.data)
+    .data                                    0x20000ad4   Section        4  stderr.o(.data)
+    .data                                    0x20000ad8   Section        4  stdin.o(.data)
+    .data                                    0x20000adc   Section        4  errno.o(.data)
+    _errno                                   0x20000adc   Data           4  errno.o(.data)
+    .bss                                     0x20000ae0   Section     3176  canon_pre.o(.bss)
+    .bss                                     0x20001748   Section    52616  rs274ngc_pre.o(.bss)
+    _setup                                   0x20001748   Data       52616  rs274ngc_pre.o(.bss)
+    STACK                                    0x2000e4d0   Section      512  stm32f10x.o(STACK)
 
     Global Symbols
 
@@ -3091,49 +3092,49 @@ Image Symbol Table
     fputs                                    0x0801038d   Thumb Code    24  fputs.o(i.fputs)
     gets                                     0x080103a5   Thumb Code    42  gets.o(i.gets)
     hypot                                    0x080103d5   Thumb Code   650  hypot.o(i.hypot)
-    interpret_from_keyboard                  0x08010731   Thumb Code   204  main.o(i.interpret_from_keyboard)
-    log                                      0x08010b55   Thumb Code   818  log.o(i.log)
-    main                                     0x08010ec1   Thumb Code   374  main.o(i.main)
-    pow                                      0x080112ed   Thumb Code  2534  pow.o(i.pow)
-    print_nc_line_number                     0x08011d05   Thumb Code   186  canon_pre.o(i.print_nc_line_number)
-    read_tool_file                           0x080154cd   Thumb Code    38  main.o(i.read_tool_file)
-    report_error                             0x08015aad   Thumb Code   130  main.o(i.report_error)
-    rs274ngc_active_g_codes                  0x08015b5d   Thumb Code    32  rs274ngc_pre.o(i.rs274ngc_active_g_codes)
-    rs274ngc_active_m_codes                  0x08015b81   Thumb Code    32  rs274ngc_pre.o(i.rs274ngc_active_m_codes)
-    rs274ngc_active_settings                 0x08015ba5   Thumb Code    38  rs274ngc_pre.o(i.rs274ngc_active_settings)
-    rs274ngc_error_text                      0x08015bd1   Thumb Code    56  rs274ngc_pre.o(i.rs274ngc_error_text)
-    rs274ngc_execute                         0x08015c0d   Thumb Code   196  rs274ngc_pre.o(i.rs274ngc_execute)
-    rs274ngc_exit                            0x08015ced   Thumb Code    42  rs274ngc_pre.o(i.rs274ngc_exit)
-    rs274ngc_init                            0x08015d2d   Thumb Code   724  rs274ngc_pre.o(i.rs274ngc_init)
-    rs274ngc_line_length                     0x08016039   Thumb Code     8  rs274ngc_pre.o(i.rs274ngc_line_length)
-    rs274ngc_line_text                       0x08016045   Thumb Code    50  rs274ngc_pre.o(i.rs274ngc_line_text)
-    rs274ngc_read                            0x0801607d   Thumb Code   420  rs274ngc_pre.o(i.rs274ngc_read)
-    rs274ngc_reset                           0x0801623d   Thumb Code    20  rs274ngc_pre.o(i.rs274ngc_reset)
-    rs274ngc_restore_parameters              0x08016255   Thumb Code    60  rs274ngc_pre.o(i.rs274ngc_restore_parameters)
-    rs274ngc_save_parameters                 0x08016299   Thumb Code   746  rs274ngc_pre.o(i.rs274ngc_save_parameters)
-    rs274ngc_sequence_number                 0x080165b5   Thumb Code     8  rs274ngc_pre.o(i.rs274ngc_sequence_number)
-    rs274ngc_stack_name                      0x080165c1   Thumb Code    72  rs274ngc_pre.o(i.rs274ngc_stack_name)
-    rs274ngc_synch                           0x0801660d   Thumb Code   192  rs274ngc_pre.o(i.rs274ngc_synch)
-    sin                                      0x0801674d   Thumb Code   166  sin.o(i.sin)
-    sqrt                                     0x080167fd   Thumb Code    76  sqrt.o(i.sqrt)
-    tan                                      0x08016849   Thumb Code   100  tan.o(i.tan)
-    __ctype_table                            0x08018040   Data         129  ctype_o.o(.constdata)
-    __mathlib_zero                           0x08018190   Data           8  qnan.o(.constdata)
-    Region$$Table$$Base                      0x08019ae0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08019b00   Number         0  anon$$obj.o(Region$$Table)
-    _nc_code_buffer                          0x20000000   Data         279  main.o(.data)
-    gNowChar                                 0x20000118   Data           4  main.o(.data)
-    _outfile                                 0x2000011c   Data           4  main.o(.data)
-    gAllChar                                 0x20000120   Data           4  main.o(.data)
-    HSEStartUpStatus                         0x20000124   Data           1  main.o(.data)
-    _tool_max                                0x200001a0   Data           4  canon_pre.o(.data)
-    _rs274ngc_errors                         0x200001c0   Data         796  rs274ngc_pre.o(.data)
-    __stdout                                 0x20000ae0   Data           4  stdout.o(.data)
-    __stderr                                 0x20000ae4   Data           4  stderr.o(.data)
-    __stdin                                  0x20000ae8   Data           4  stdin.o(.data)
-    _parameter_file_name                     0x20000af0   Data         100  canon_pre.o(.bss)
-    _tools                                   0x20000b58   Data        3072  canon_pre.o(.bss)
-    __initial_sp                             0x2000e6e0   Data           0  stm32f10x.o(STACK)
+    interpret_from_keyboard                  0x08010731   Thumb Code   194  main.o(i.interpret_from_keyboard)
+    log                                      0x08010b4d   Thumb Code   818  log.o(i.log)
+    main                                     0x08010eb9   Thumb Code   380  main.o(i.main)
+    pow                                      0x080112e9   Thumb Code  2534  pow.o(i.pow)
+    print_nc_line_number                     0x08011d01   Thumb Code   186  canon_pre.o(i.print_nc_line_number)
+    read_tool_file                           0x080154c9   Thumb Code   106  main.o(i.read_tool_file)
+    report_error                             0x08015af1   Thumb Code   130  main.o(i.report_error)
+    rs274ngc_active_g_codes                  0x08015ba1   Thumb Code    32  rs274ngc_pre.o(i.rs274ngc_active_g_codes)
+    rs274ngc_active_m_codes                  0x08015bc5   Thumb Code    32  rs274ngc_pre.o(i.rs274ngc_active_m_codes)
+    rs274ngc_active_settings                 0x08015be9   Thumb Code    38  rs274ngc_pre.o(i.rs274ngc_active_settings)
+    rs274ngc_error_text                      0x08015c15   Thumb Code    56  rs274ngc_pre.o(i.rs274ngc_error_text)
+    rs274ngc_execute                         0x08015c51   Thumb Code   196  rs274ngc_pre.o(i.rs274ngc_execute)
+    rs274ngc_exit                            0x08015d31   Thumb Code    42  rs274ngc_pre.o(i.rs274ngc_exit)
+    rs274ngc_init                            0x08015d71   Thumb Code   724  rs274ngc_pre.o(i.rs274ngc_init)
+    rs274ngc_line_length                     0x0801607d   Thumb Code     8  rs274ngc_pre.o(i.rs274ngc_line_length)
+    rs274ngc_line_text                       0x08016089   Thumb Code    50  rs274ngc_pre.o(i.rs274ngc_line_text)
+    rs274ngc_read                            0x080160c1   Thumb Code   420  rs274ngc_pre.o(i.rs274ngc_read)
+    rs274ngc_reset                           0x08016281   Thumb Code    20  rs274ngc_pre.o(i.rs274ngc_reset)
+    rs274ngc_restore_parameters              0x08016299   Thumb Code    60  rs274ngc_pre.o(i.rs274ngc_restore_parameters)
+    rs274ngc_save_parameters                 0x080162dd   Thumb Code   746  rs274ngc_pre.o(i.rs274ngc_save_parameters)
+    rs274ngc_sequence_number                 0x080165f9   Thumb Code     8  rs274ngc_pre.o(i.rs274ngc_sequence_number)
+    rs274ngc_stack_name                      0x08016605   Thumb Code    72  rs274ngc_pre.o(i.rs274ngc_stack_name)
+    rs274ngc_synch                           0x08016651   Thumb Code   192  rs274ngc_pre.o(i.rs274ngc_synch)
+    sin                                      0x08016791   Thumb Code   166  sin.o(i.sin)
+    sqrt                                     0x08016841   Thumb Code    76  sqrt.o(i.sqrt)
+    tan                                      0x0801688d   Thumb Code   100  tan.o(i.tan)
+    __ctype_table                            0x08018088   Data         129  ctype_o.o(.constdata)
+    __mathlib_zero                           0x080181d8   Data           8  qnan.o(.constdata)
+    Region$$Table$$Base                      0x08019b28   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08019b48   Number         0  anon$$obj.o(Region$$Table)
+    _nc_code_buffer                          0x20000000   Data         259  main.o(.data)
+    gNowChar                                 0x20000104   Data           4  main.o(.data)
+    _outfile                                 0x20000108   Data           4  main.o(.data)
+    gAllChar                                 0x2000010c   Data           4  main.o(.data)
+    HSEStartUpStatus                         0x20000110   Data           1  main.o(.data)
+    _tool_max                                0x20000190   Data           4  canon_pre.o(.data)
+    _rs274ngc_errors                         0x200001b0   Data         796  rs274ngc_pre.o(.data)
+    __stdout                                 0x20000ad0   Data           4  stdout.o(.data)
+    __stderr                                 0x20000ad4   Data           4  stderr.o(.data)
+    __stdin                                  0x20000ad8   Data           4  stdin.o(.data)
+    _parameter_file_name                     0x20000ae0   Data         100  canon_pre.o(.bss)
+    _tools                                   0x20000b48   Data        3072  canon_pre.o(.bss)
+    __initial_sp                             0x2000e6d0   Data           0  stm32f10x.o(STACK)
 
 
 
@@ -3143,9 +3144,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0001a5f0, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x0001a0f4])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0001a628, Max: 0x00080000, ABSOLUTE, COMPRESSED[0x0001a13c])
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00019b00, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00019b48, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -3455,117 +3456,118 @@ Memory Map of the image
     0x080103a4   0x00000030   Code   RO         2639    i.gets              mc_w.l(gets.o)
     0x080103d4   0x000002a0   Code   RO         2570    i.hypot             m_ws.l(hypot.o)
     0x08010674   0x000000bc   Code   RO         1023    i.init_block        rs274ngc_pre.o
-    0x08010730   0x000000dc   Code   RO           18    i.interpret_from_keyboard  main.o
-    0x0801080c   0x000000b4   Code   RO         1024    i.inverse_time_rate_arc  rs274ngc_pre.o
-    0x080108c0   0x00000108   Code   RO         1025    i.inverse_time_rate_arc2  rs274ngc_pre.o
-    0x080109c8   0x000000e8   Code   RO         1026    i.inverse_time_rate_as  rs274ngc_pre.o
-    0x08010ab0   0x000000a4   Code   RO         1027    i.inverse_time_rate_straight  rs274ngc_pre.o
-    0x08010b54   0x0000036c   Code   RO         2578    i.log               m_ws.l(log.o)
-    0x08010ec0   0x000002ac   Code   RO           19    i.main              main.o
-    0x0801116c   0x00000180   Code   RO         1028    i.parse_line        rs274ngc_pre.o
-    0x080112ec   0x000009f8   Code   RO         2588    i.pow               m_ws.l(pow.o)
-    0x08011ce4   0x0000001e   Code   RO         1029    i.precedence        rs274ngc_pre.o
-    0x08011d02   0x00000002   PAD
-    0x08011d04   0x000000c8   Code   RO          589    i.print_nc_line_number  canon_pre.o
-    0x08011dcc   0x000000d8   Code   RO         1030    i.read_a            rs274ngc_pre.o
-    0x08011ea4   0x00000178   Code   RO         1031    i.read_atan         rs274ngc_pre.o
-    0x0801201c   0x000000d8   Code   RO         1032    i.read_b            rs274ngc_pre.o
-    0x080120f4   0x000000d8   Code   RO         1033    i.read_c            rs274ngc_pre.o
-    0x080121cc   0x000000b0   Code   RO         1034    i.read_comment      rs274ngc_pre.o
-    0x0801227c   0x000001e0   Code   RO         1035    i.read_d            rs274ngc_pre.o
-    0x0801245c   0x000001ac   Code   RO         1036    i.read_f            rs274ngc_pre.o
-    0x08012608   0x0000030c   Code   RO         1037    i.read_g            rs274ngc_pre.o
-    0x08012914   0x000001e0   Code   RO         1038    i.read_h            rs274ngc_pre.o
-    0x08012af4   0x00000140   Code   RO         1039    i.read_i            rs274ngc_pre.o
-    0x08012c34   0x000000f0   Code   RO         1040    i.read_integer_unsigned  rs274ngc_pre.o
-    0x08012d24   0x00000138   Code   RO         1041    i.read_integer_value  rs274ngc_pre.o
-    0x08012e5c   0x00000108   Code   RO         1042    i.read_items        rs274ngc_pre.o
-    0x08012f64   0x00000140   Code   RO         1043    i.read_j            rs274ngc_pre.o
-    0x080130a4   0x00000140   Code   RO         1044    i.read_k            rs274ngc_pre.o
-    0x080131e4   0x00000188   Code   RO         1045    i.read_l            rs274ngc_pre.o
-    0x0801336c   0x00000130   Code   RO         1046    i.read_line_number  rs274ngc_pre.o
-    0x0801349c   0x00000248   Code   RO         1047    i.read_m            rs274ngc_pre.o
-    0x080136e4   0x00000130   Code   RO         1048    i.read_one_item     rs274ngc_pre.o
-    0x08013814   0x000002f4   Code   RO         1049    i.read_operation    rs274ngc_pre.o
-    0x08013b08   0x000004ec   Code   RO         1050    i.read_operation_unary  rs274ngc_pre.o
-    0x08013ff4   0x000001ac   Code   RO         1051    i.read_p            rs274ngc_pre.o
-    0x080141a0   0x00000144   Code   RO         1052    i.read_parameter    rs274ngc_pre.o
-    0x080142e4   0x00000228   Code   RO         1053    i.read_parameter_setting  rs274ngc_pre.o
-    0x0801450c   0x000001ac   Code   RO         1054    i.read_q            rs274ngc_pre.o
-    0x080146b8   0x00000140   Code   RO         1055    i.read_r            rs274ngc_pre.o
-    0x080147f8   0x00000314   Code   RO         1056    i.read_real_expression  rs274ngc_pre.o
-    0x08014b0c   0x0000019c   Code   RO         1057    i.read_real_number  rs274ngc_pre.o
-    0x08014ca8   0x00000200   Code   RO         1058    i.read_real_value   rs274ngc_pre.o
-    0x08014ea8   0x000001ac   Code   RO         1059    i.read_s            rs274ngc_pre.o
-    0x08015054   0x00000188   Code   RO         1060    i.read_t            rs274ngc_pre.o
-    0x080151dc   0x000002f0   Code   RO         1061    i.read_text         rs274ngc_pre.o
-    0x080154cc   0x00000034   Code   RO           20    i.read_tool_file    main.o
-    0x08015500   0x000001ec   Code   RO         1062    i.read_unary        rs274ngc_pre.o
-    0x080156ec   0x00000140   Code   RO         1063    i.read_x            rs274ngc_pre.o
-    0x0801582c   0x00000140   Code   RO         1064    i.read_y            rs274ngc_pre.o
-    0x0801596c   0x00000140   Code   RO         1065    i.read_z            rs274ngc_pre.o
-    0x08015aac   0x000000b0   Code   RO           21    i.report_error      main.o
-    0x08015b5c   0x00000024   Code   RO         1066    i.rs274ngc_active_g_codes  rs274ngc_pre.o
-    0x08015b80   0x00000024   Code   RO         1067    i.rs274ngc_active_m_codes  rs274ngc_pre.o
-    0x08015ba4   0x0000002c   Code   RO         1068    i.rs274ngc_active_settings  rs274ngc_pre.o
-    0x08015bd0   0x0000003c   Code   RO         1070    i.rs274ngc_error_text  rs274ngc_pre.o
-    0x08015c0c   0x000000e0   Code   RO         1071    i.rs274ngc_execute  rs274ngc_pre.o
-    0x08015cec   0x00000040   Code   RO         1072    i.rs274ngc_exit     rs274ngc_pre.o
-    0x08015d2c   0x0000030c   Code   RO         1074    i.rs274ngc_init     rs274ngc_pre.o
-    0x08016038   0x0000000c   Code   RO         1075    i.rs274ngc_line_length  rs274ngc_pre.o
-    0x08016044   0x00000038   Code   RO         1076    i.rs274ngc_line_text  rs274ngc_pre.o
-    0x0801607c   0x000001c0   Code   RO         1079    i.rs274ngc_read     rs274ngc_pre.o
-    0x0801623c   0x00000018   Code   RO         1080    i.rs274ngc_reset    rs274ngc_pre.o
-    0x08016254   0x00000044   Code   RO         1081    i.rs274ngc_restore_parameters  rs274ngc_pre.o
-    0x08016298   0x0000031c   Code   RO         1082    i.rs274ngc_save_parameters  rs274ngc_pre.o
-    0x080165b4   0x0000000c   Code   RO         1083    i.rs274ngc_sequence_number  rs274ngc_pre.o
-    0x080165c0   0x0000004c   Code   RO         1084    i.rs274ngc_stack_name  rs274ngc_pre.o
-    0x0801660c   0x000000cc   Code   RO         1085    i.rs274ngc_synch    rs274ngc_pre.o
-    0x080166d8   0x00000072   Code   RO         1086    i.set_probe_data    rs274ngc_pre.o
-    0x0801674a   0x00000002   PAD
-    0x0801674c   0x000000b0   Code   RO         2598    i.sin               m_ws.l(sin.o)
-    0x080167fc   0x0000004c   Code   RO         2606    i.sqrt              m_ws.l(sqrt.o)
-    0x08016848   0x0000006c   Code   RO         2614    i.tan               m_ws.l(tan.o)
-    0x080168b4   0x00000130   Code   RO         1087    i.write_g_codes     rs274ngc_pre.o
-    0x080169e4   0x000000a4   Code   RO         1088    i.write_m_codes     rs274ngc_pre.o
-    0x08016a88   0x00000038   Code   RO         1089    i.write_settings    rs274ngc_pre.o
-    0x08016ac0   0x000013b4   Data   RO         1091    .constdata          rs274ngc_pre.o
-    0x08017e74   0x00000014   Data   RO         2164    .constdata          STM32F10xR.LIB(stm32f10x_rcc.o)
-    0x08017e88   0x00000050   Data   RO         2509    .constdata          m_ws.l(acos.o)
-    0x08017ed8   0x00000050   Data   RO         2519    .constdata          m_ws.l(asin.o)
-    0x08017f28   0x00000058   Data   RO         2549    .constdata          m_ws.l(exp.o)
-    0x08017f80   0x00000038   Data   RO         2579    .constdata          m_ws.l(log.o)
-    0x08017fb8   0x00000088   Data   RO         2589    .constdata          m_ws.l(pow.o)
-    0x08018040   0x00000081   Data   RO         2682    .constdata          mc_w.l(ctype_o.o)
-    0x080180c1   0x00000003   PAD
-    0x080180c4   0x00000004   Data   RO         2683    .constdata          mc_w.l(ctype_o.o)
-    0x080180c8   0x00000098   Data   RO         3008    .constdata          m_ws.l(atan.o)
-    0x08018160   0x00000030   Data   RO         3017    .constdata          m_ws.l(cos_i.o)
-    0x08018190   0x00000008   Data   RO         3025    .constdata          m_ws.l(qnan.o)
-    0x08018198   0x000000c8   Data   RO         3028    .constdata          m_ws.l(rred.o)
-    0x08018260   0x00000028   Data   RO         3032    .constdata          m_ws.l(sin_i.o)
-    0x08018288   0x00000060   Data   RO         3038    .constdata          m_ws.l(tan_i.o)
-    0x080182e8   0x000017f6   Data   RO         1092    .conststring        rs274ngc_pre.o
-    0x08019ade   0x00000002   PAD
-    0x08019ae0   0x00000020   Data   RO         3101    Region$$Table       anon$$obj.o
+    0x08010730   0x000000d4   Code   RO           18    i.interpret_from_keyboard  main.o
+    0x08010804   0x000000b4   Code   RO         1024    i.inverse_time_rate_arc  rs274ngc_pre.o
+    0x080108b8   0x00000108   Code   RO         1025    i.inverse_time_rate_arc2  rs274ngc_pre.o
+    0x080109c0   0x000000e8   Code   RO         1026    i.inverse_time_rate_as  rs274ngc_pre.o
+    0x08010aa8   0x000000a4   Code   RO         1027    i.inverse_time_rate_straight  rs274ngc_pre.o
+    0x08010b4c   0x0000036c   Code   RO         2578    i.log               m_ws.l(log.o)
+    0x08010eb8   0x000002b0   Code   RO           19    i.main              main.o
+    0x08011168   0x00000180   Code   RO         1028    i.parse_line        rs274ngc_pre.o
+    0x080112e8   0x000009f8   Code   RO         2588    i.pow               m_ws.l(pow.o)
+    0x08011ce0   0x0000001e   Code   RO         1029    i.precedence        rs274ngc_pre.o
+    0x08011cfe   0x00000002   PAD
+    0x08011d00   0x000000c8   Code   RO          589    i.print_nc_line_number  canon_pre.o
+    0x08011dc8   0x000000d8   Code   RO         1030    i.read_a            rs274ngc_pre.o
+    0x08011ea0   0x00000178   Code   RO         1031    i.read_atan         rs274ngc_pre.o
+    0x08012018   0x000000d8   Code   RO         1032    i.read_b            rs274ngc_pre.o
+    0x080120f0   0x000000d8   Code   RO         1033    i.read_c            rs274ngc_pre.o
+    0x080121c8   0x000000b0   Code   RO         1034    i.read_comment      rs274ngc_pre.o
+    0x08012278   0x000001e0   Code   RO         1035    i.read_d            rs274ngc_pre.o
+    0x08012458   0x000001ac   Code   RO         1036    i.read_f            rs274ngc_pre.o
+    0x08012604   0x0000030c   Code   RO         1037    i.read_g            rs274ngc_pre.o
+    0x08012910   0x000001e0   Code   RO         1038    i.read_h            rs274ngc_pre.o
+    0x08012af0   0x00000140   Code   RO         1039    i.read_i            rs274ngc_pre.o
+    0x08012c30   0x000000f0   Code   RO         1040    i.read_integer_unsigned  rs274ngc_pre.o
+    0x08012d20   0x00000138   Code   RO         1041    i.read_integer_value  rs274ngc_pre.o
+    0x08012e58   0x00000108   Code   RO         1042    i.read_items        rs274ngc_pre.o
+    0x08012f60   0x00000140   Code   RO         1043    i.read_j            rs274ngc_pre.o
+    0x080130a0   0x00000140   Code   RO         1044    i.read_k            rs274ngc_pre.o
+    0x080131e0   0x00000188   Code   RO         1045    i.read_l            rs274ngc_pre.o
+    0x08013368   0x00000130   Code   RO         1046    i.read_line_number  rs274ngc_pre.o
+    0x08013498   0x00000248   Code   RO         1047    i.read_m            rs274ngc_pre.o
+    0x080136e0   0x00000130   Code   RO         1048    i.read_one_item     rs274ngc_pre.o
+    0x08013810   0x000002f4   Code   RO         1049    i.read_operation    rs274ngc_pre.o
+    0x08013b04   0x000004ec   Code   RO         1050    i.read_operation_unary  rs274ngc_pre.o
+    0x08013ff0   0x000001ac   Code   RO         1051    i.read_p            rs274ngc_pre.o
+    0x0801419c   0x00000144   Code   RO         1052    i.read_parameter    rs274ngc_pre.o
+    0x080142e0   0x00000228   Code   RO         1053    i.read_parameter_setting  rs274ngc_pre.o
+    0x08014508   0x000001ac   Code   RO         1054    i.read_q            rs274ngc_pre.o
+    0x080146b4   0x00000140   Code   RO         1055    i.read_r            rs274ngc_pre.o
+    0x080147f4   0x00000314   Code   RO         1056    i.read_real_expression  rs274ngc_pre.o
+    0x08014b08   0x0000019c   Code   RO         1057    i.read_real_number  rs274ngc_pre.o
+    0x08014ca4   0x00000200   Code   RO         1058    i.read_real_value   rs274ngc_pre.o
+    0x08014ea4   0x000001ac   Code   RO         1059    i.read_s            rs274ngc_pre.o
+    0x08015050   0x00000188   Code   RO         1060    i.read_t            rs274ngc_pre.o
+    0x080151d8   0x000002f0   Code   RO         1061    i.read_text         rs274ngc_pre.o
+    0x080154c8   0x0000007c   Code   RO           20    i.read_tool_file    main.o
+    0x08015544   0x000001ec   Code   RO         1062    i.read_unary        rs274ngc_pre.o
+    0x08015730   0x00000140   Code   RO         1063    i.read_x            rs274ngc_pre.o
+    0x08015870   0x00000140   Code   RO         1064    i.read_y            rs274ngc_pre.o
+    0x080159b0   0x00000140   Code   RO         1065    i.read_z            rs274ngc_pre.o
+    0x08015af0   0x000000b0   Code   RO           21    i.report_error      main.o
+    0x08015ba0   0x00000024   Code   RO         1066    i.rs274ngc_active_g_codes  rs274ngc_pre.o
+    0x08015bc4   0x00000024   Code   RO         1067    i.rs274ngc_active_m_codes  rs274ngc_pre.o
+    0x08015be8   0x0000002c   Code   RO         1068    i.rs274ngc_active_settings  rs274ngc_pre.o
+    0x08015c14   0x0000003c   Code   RO         1070    i.rs274ngc_error_text  rs274ngc_pre.o
+    0x08015c50   0x000000e0   Code   RO         1071    i.rs274ngc_execute  rs274ngc_pre.o
+    0x08015d30   0x00000040   Code   RO         1072    i.rs274ngc_exit     rs274ngc_pre.o
+    0x08015d70   0x0000030c   Code   RO         1074    i.rs274ngc_init     rs274ngc_pre.o
+    0x0801607c   0x0000000c   Code   RO         1075    i.rs274ngc_line_length  rs274ngc_pre.o
+    0x08016088   0x00000038   Code   RO         1076    i.rs274ngc_line_text  rs274ngc_pre.o
+    0x080160c0   0x000001c0   Code   RO         1079    i.rs274ngc_read     rs274ngc_pre.o
+    0x08016280   0x00000018   Code   RO         1080    i.rs274ngc_reset    rs274ngc_pre.o
+    0x08016298   0x00000044   Code   RO         1081    i.rs274ngc_restore_parameters  rs274ngc_pre.o
+    0x080162dc   0x0000031c   Code   RO         1082    i.rs274ngc_save_parameters  rs274ngc_pre.o
+    0x080165f8   0x0000000c   Code   RO         1083    i.rs274ngc_sequence_number  rs274ngc_pre.o
+    0x08016604   0x0000004c   Code   RO         1084    i.rs274ngc_stack_name  rs274ngc_pre.o
+    0x08016650   0x000000cc   Code   RO         1085    i.rs274ngc_synch    rs274ngc_pre.o
+    0x0801671c   0x00000072   Code   RO         1086    i.set_probe_data    rs274ngc_pre.o
+    0x0801678e   0x00000002   PAD
+    0x08016790   0x000000b0   Code   RO         2598    i.sin               m_ws.l(sin.o)
+    0x08016840   0x0000004c   Code   RO         2606    i.sqrt              m_ws.l(sqrt.o)
+    0x0801688c   0x0000006c   Code   RO         2614    i.tan               m_ws.l(tan.o)
+    0x080168f8   0x00000130   Code   RO         1087    i.write_g_codes     rs274ngc_pre.o
+    0x08016a28   0x000000a4   Code   RO         1088    i.write_m_codes     rs274ngc_pre.o
+    0x08016acc   0x00000038   Code   RO         1089    i.write_settings    rs274ngc_pre.o
+    0x08016b04   0x000013b4   Data   RO         1091    .constdata          rs274ngc_pre.o
+    0x08017eb8   0x00000014   Data   RO         2164    .constdata          STM32F10xR.LIB(stm32f10x_rcc.o)
+    0x08017ecc   0x00000004   PAD
+    0x08017ed0   0x00000050   Data   RO         2509    .constdata          m_ws.l(acos.o)
+    0x08017f20   0x00000050   Data   RO         2519    .constdata          m_ws.l(asin.o)
+    0x08017f70   0x00000058   Data   RO         2549    .constdata          m_ws.l(exp.o)
+    0x08017fc8   0x00000038   Data   RO         2579    .constdata          m_ws.l(log.o)
+    0x08018000   0x00000088   Data   RO         2589    .constdata          m_ws.l(pow.o)
+    0x08018088   0x00000081   Data   RO         2682    .constdata          mc_w.l(ctype_o.o)
+    0x08018109   0x00000003   PAD
+    0x0801810c   0x00000004   Data   RO         2683    .constdata          mc_w.l(ctype_o.o)
+    0x08018110   0x00000098   Data   RO         3008    .constdata          m_ws.l(atan.o)
+    0x080181a8   0x00000030   Data   RO         3017    .constdata          m_ws.l(cos_i.o)
+    0x080181d8   0x00000008   Data   RO         3025    .constdata          m_ws.l(qnan.o)
+    0x080181e0   0x000000c8   Data   RO         3028    .constdata          m_ws.l(rred.o)
+    0x080182a8   0x00000028   Data   RO         3032    .constdata          m_ws.l(sin_i.o)
+    0x080182d0   0x00000060   Data   RO         3038    .constdata          m_ws.l(tan_i.o)
+    0x08018330   0x000017f6   Data   RO         1092    .conststring        rs274ngc_pre.o
+    0x08019b26   0x00000002   PAD
+    0x08019b28   0x00000020   Data   RO         3101    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x0000e6e0, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x000005f4])
+    Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x0000e6d0, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x000005f4])
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000125   Data   RW           22    .data               main.o
-    0x20000125   0x00000003   PAD
-    0x20000128   0x00000098   Data   RW          591    .data               canon_pre.o
-    0x200001c0   0x00000918   Data   RW         1093    .data               rs274ngc_pre.o
-    0x20000ad8   0x00000008   Data   RW         2163    .data               STM32F10xR.LIB(stm32f10x_rcc.o)
-    0x20000ae0   0x00000004   Data   RW         2679    .data               mc_w.l(stdout.o)
-    0x20000ae4   0x00000004   Data   RW         2680    .data               mc_w.l(stderr.o)
-    0x20000ae8   0x00000004   Data   RW         3048    .data               mc_w.l(stdin.o)
-    0x20000aec   0x00000004   Data   RW         3062    .data               mc_w.l(errno.o)
-    0x20000af0   0x00000c68   Zero   RW          590    .bss                canon_pre.o
-    0x20001758   0x0000cd88   Zero   RW         1090    .bss                rs274ngc_pre.o
-    0x2000e4e0   0x00000200   Zero   RW            1    STACK               stm32f10x.o
+    0x20000000   0x00000111   Data   RW           22    .data               main.o
+    0x20000111   0x00000007   PAD
+    0x20000118   0x00000098   Data   RW          591    .data               canon_pre.o
+    0x200001b0   0x00000918   Data   RW         1093    .data               rs274ngc_pre.o
+    0x20000ac8   0x00000008   Data   RW         2163    .data               STM32F10xR.LIB(stm32f10x_rcc.o)
+    0x20000ad0   0x00000004   Data   RW         2679    .data               mc_w.l(stdout.o)
+    0x20000ad4   0x00000004   Data   RW         2680    .data               mc_w.l(stderr.o)
+    0x20000ad8   0x00000004   Data   RW         3048    .data               mc_w.l(stdin.o)
+    0x20000adc   0x00000004   Data   RW         3062    .data               mc_w.l(errno.o)
+    0x20000ae0   0x00000c68   Zero   RW          590    .bss                canon_pre.o
+    0x20001748   0x0000cd88   Zero   RW         1090    .bss                rs274ngc_pre.o
+    0x2000e4d0   0x00000200   Zero   RW            1    STACK               stm32f10x.o
 
 
 ==============================================================================
@@ -3575,16 +3577,16 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      5582       2242          0        152       3176      28296   canon_pre.o
-      2182        812          0        293          0      28806   main.o
-     66352       2808      11178       2328      52616     109607   rs274ngc_pre.o
-         8          4        236          0        512        300   stm32f10x.o
-       104          0          0          0          0      18675   stm32f10x_it.o
+      5582       2242          0        152       3176      28052   canon_pre.o
+      2250        816          0        273          0      28810   main.o
+     66352       2808      11178       2328      52616     109071   rs274ngc_pre.o
+         8          4        236          0        512        296   stm32f10x.o
+       104          0          0          0          0      18467   stm32f10x_it.o
 
     ----------------------------------------------------------------------
-     74252       5866      11448       2776      56304     185684   Object Totals
+     74320       5870      11448       2760      56304     184696   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        24          0          2          3          0          0   (incl. Padding)
+        24          0          2          7          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3673,8 +3675,8 @@ Image component sizes
        108          0          0          0          0        168   fepilogue.o
 
     ----------------------------------------------------------------------
-     18376       1086       1140         24          0      59254   Library Totals
-        18          0          3          0          0          0   (incl. Padding)
+     18376       1086       1144         24          0      59254   Library Totals
+        18          0          7          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -3686,7 +3688,7 @@ Image component sizes
       1764          0          0          0          0       1572   mf_w.l
 
     ----------------------------------------------------------------------
-     18376       1086       1140         24          0      59254   Library Totals
+     18376       1086       1144         24          0      59254   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -3695,15 +3697,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     92628       6952      12588       2800      56304     227604   Grand Totals
-     92628       6952      12588       1524      56304     227604   ELF Image Totals (compressed)
-     92628       6952      12588       1524          0          0   ROM Totals
+     92696       6956      12592       2784      56304     226616   Grand Totals
+     92696       6956      12592       1524      56304     226616   ELF Image Totals (compressed)
+     92696       6956      12592       1524          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)               105216 ( 102.75kB)
-    Total RW  Size (RW Data + ZI Data)             59104 (  57.72kB)
-    Total ROM Size (Code + RO Data + RW Data)     106740 ( 104.24kB)
+    Total RO  Size (Code + RO Data)               105288 ( 102.82kB)
+    Total RW  Size (RW Data + ZI Data)             59088 (  57.70kB)
+    Total ROM Size (Code + RO Data + RW Data)     106812 ( 104.31kB)
 
 ==============================================================================
 

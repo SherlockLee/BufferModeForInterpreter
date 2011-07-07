@@ -15,7 +15,7 @@
 ### ADS-LD Output File: '.\obj\USART.axf'
 ### ADS-LD Command File: '.\obj\USART.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '.\obj\USART.lnp', Handle=0x00000568
+### Creating CmdFile '.\obj\USART.lnp', Handle=0x00000708
 ### Writing '.lnp' file
 ### ADS-LD Command file '.\obj\USART.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

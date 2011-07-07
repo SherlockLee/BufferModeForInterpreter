@@ -11691,41 +11691,11 @@ N
 NTo exit, the user must enter "quit" (followed by a carriage return).
 N
 N*/
-N
-N
-N
-N//char _nc_code_buffer[]=
-N//{"XXXXXXXXXXXXXXXXXXX;\\
-N//(this program mills );\\
-N//(this program mills );\\
-N//(this program mills );\\
-N//%"};
-X
-N
-N
-N
-N//char _nc_code_buffer[]=
-N//{
-N//"XXXXXXXXXXXXXXXXXXX;\\
-N//(this program mills );\\
-N//n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);\\
-N//n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);\\
-N//n0030 g0 x0 y0 z2;\\
-N//n0040 g1 z-0.5 (start H);\\
-N//n0050 y10;\\
-N//n0060 g0 z2;\\
-N//n0070 y5;\\
-N//n0080 g1 z-0.5;\\
-N//n0090 x 7;\\
-N//n0620 m2;\\
-N//%"};
-X
-N
-N
-N
 Nchar _nc_code_buffer[]=
 N{
-N"XXXXXXXXXXXXXXXXXXX;(this program mills );n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
+N"(this program mills );"
+N"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
+N"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
 N"n0030 g0 x0 y0 z2;"
 N"n0040 g1 z-0.5 (start H);"
 N"n0050 y10;"
@@ -11747,83 +11717,41 @@ N{
 N    char line[RS274NGC_TEXT_SIZE];
 X    char line[256];
 N    int status;
-N	u16 i=0;
-N	char Buffer[Line_Length];
-X	char Buffer[256];
+N	char temp;
 N	u16 count=0;
 N
 N    for(; ;)
 N    {
-N//        printf("READ => ");
-N//		//这部分处理串口数据据的接收,以%号做为接收数据终止字符
-N//		while(1)
-N//		{	
-N//			if(USART_GetFlagStatus(USART1,USART_IT_RXNE)==SET)
-N//			{	      
-N//				i = USART_ReceiveData(USART1);
-N//				if(count<Line_Length)
-N//				{
-N//					if(i=='%')
-N//					{
-N//						printf("%s\r\n",Buffer);	
-N//						strcpy(line,Buffer);
-N//						for(count=0;count<Line_Length;count++)			
-N//						{
-N//							Buffer[count]='\0';
-N//						}
-N//						count=0;
-N//						break;
-N//					}
-N//					else
-N//					{
-N//						Buffer[count++]=i;
-N//					}
-N//				}
-N//			}
-N//		}
-N
-N
-N		//
-N		//
-N//        printf("READ => ");
 N		while(1)
 N		{	
-N			//if(USART_GetFlagStatus(USART1,USART_IT_RXNE)==SET)
-N			{	      
-N				//i = USART_ReceiveData(USART1);
-N				i =  _nc_code_buffer[gNowChar];
-N
-N				gNowChar = gNowChar + 1;
-N
-N				//if(count<Line_Length)
-N				if(i=='%')
+N			temp =  _nc_code_buffer[gNowChar];
+N			gNowChar = gNowChar + 1;
+N			if(gNowChar<strlen(_nc_code_buffer))
+N			{
+N				if(temp=='%')
 N				{
 N					//整段结束
 N					break;
 N				}
 N				else
 N				{
-N					if(i==';')
+N					if(temp==';')
 N					{
-N						strcpy(line,Buffer);
-N						for(count=0;count<Line_Length;count++)			
-X						for(count=0;count<256;count++)			
+N						for(;count<RS274NGC_TEXT_SIZE;count++)			
+X						for(;count<256;count++)			
 N						{
-N							Buffer[count]='\0';
+N							line[count]='\0';
 N						}
 N						count=0;
 N						break;
 N					}
 N					else
 N					{
-N						Buffer[count++]=i;
+N						line[count++]=temp;
 N					}
 N				}
 N			}
 N		}
-N
-N
-N
 N        if (strcmp (line, "quit") IS 0)
 X        if (strcmp (line, "quit") == 0)
 N            return 0;
@@ -12021,7 +11949,7 @@ Nchar * file_name)                                 /* name of tool file */
 N{
 N//    FILE * tool_file_port;
 N//    char buffer[1000];
-N//    int slot;
+N		int slot;
 N//    int tool_id;
 N//    double offset;
 N//    double diameter;
@@ -12073,6 +12001,17 @@ N//        }
 N//        _tools[slot].id SET_TO tool_id;
 N//        _tools[slot].length SET_TO offset;
 N//        _tools[slot].diameter SET_TO diameter;
+N	    for (slot SET_TO 0; slot <= _tool_max; slot++)/* initialize */
+X	    for (slot = 0; slot <= _tool_max; slot++) 
+N	    {
+N	        _tools[slot].id SET_TO -1;
+X	        _tools[slot].id = -1;
+N	        _tools[slot].length SET_TO 0;
+X	        _tools[slot].length = 0;
+N	        _tools[slot].diameter SET_TO 0;
+X	        _tools[slot].diameter = 0;
+N	    }
+N
 N        _tools[5].id SET_TO 5;
 X        _tools[5].id = 5;
 N        _tools[5].length SET_TO 1.5;
@@ -12339,8 +12278,8 @@ N	int status;
 N	int choice;
 N	int do_next;                                  /* 0=continue, 1=mdi, 2=stop */
 N	int block_delete;
-N	char buffer[80];
 N	int tool_flag;
+N	char buffer[80];
 N	int gees[RS274NGC_ACTIVE_G_CODES];
 X	int gees[12];
 N	int ems[RS274NGC_ACTIVE_M_CODES];
@@ -12350,7 +12289,7 @@ X	double sets[3];
 N	char default_name[] SET_TO "rs274ngc.var";
 X	char default_name[] = "rs274ngc.var";
 N	int print_stack;
-N	u16 i;
+N	u16 i=0;
 N/******************************RS274NGC之变量声明部分结束******************************/	
 N	
 N	
@@ -12523,8 +12462,8 @@ N			printf("  %c",i&0xFF);
 N					
 N		}
 N	}*/
-W "main.c" 716 7 variable "buffer" was set but never used
-W "main.c" 723 6 variable "i" was set but never used
+W "main.c" 655 7 variable "buffer" was set but never used
+W "main.c" 661 6 variable "i" was set but never used
 N}
 N
 N#ifdef  DEBUG

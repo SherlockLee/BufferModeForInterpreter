@@ -256,10 +256,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>2</ColumnNumber>
+      <ColumnNumber>1</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>189</TopLine>
-      <CurrentLine>189</CurrentLine>
+      <TopLine>763</TopLine>
+      <CurrentLine>763</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -289,10 +289,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>0</ColumnNumber>
+      <ColumnNumber>118</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
       <TopLine>44</TopLine>
-      <CurrentLine>56</CurrentLine>
+      <CurrentLine>58</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\stm32f10x_it.c</PathWithFileName>
       <FilenameWithoutPath>stm32f10x_it.c</FilenameWithoutPath>
@@ -434,8 +434,8 @@
       <Focus>0</Focus>
       <ColumnNumber>8</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>140</TopLine>
-      <CurrentLine>140</CurrentLine>
+      <TopLine>62</TopLine>
+      <CurrentLine>62</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\rs274ngc.h</PathWithFileName>
       <FilenameWithoutPath>rs274ngc.h</FilenameWithoutPath>
@@ -491,9 +491,9 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>2</ColumnNumber>
-          <TopLine>189</TopLine>
-          <CurrentLine>189</CurrentLine>
+          <ColumnNumber>1</ColumnNumber>
+          <TopLine>763</TopLine>
+          <CurrentLine>763</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\STM32F10x.s</Name>
@@ -504,8 +504,8 @@
         <Doc>
           <Name>rs274ngc.h</Name>
           <ColumnNumber>8</ColumnNumber>
-          <TopLine>140</TopLine>
-          <CurrentLine>140</CurrentLine>
+          <TopLine>62</TopLine>
+          <CurrentLine>62</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\rs274ngc_pre.c</Name>
@@ -533,9 +533,9 @@
         </Doc>
         <Doc>
           <Name>.\stm32f10x_it.c</Name>
-          <ColumnNumber>0</ColumnNumber>
+          <ColumnNumber>118</ColumnNumber>
           <TopLine>44</TopLine>
-          <CurrentLine>56</CurrentLine>
+          <CurrentLine>58</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

@@ -3,7 +3,7 @@
 <pre>
 <h1>礦ision Build Log</h1>
 <h2>Project:</h2>
-D:\The Valuable Program\MDI方式\USART_test\USART.uvproj
+D:\BufferModeForInterpreter\USART_test\USART.uvproj
 Project File Date:  07/07/2011
 
 <h2>Output:</h2>
@@ -68,8 +68,8 @@ rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give
 rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
 rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
 rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
-main.c(717): warning:  #550-D: variable "buffer" was set but never used
-main.c(724): warning:  #550-D: variable "i" was set but never used
+main.c(649): warning:  #550-D: variable "buffer" was set but never used
+main.c(656): warning:  #550-D: variable "i" was set but never used
 creating preprocessor file for stm32f10x_it.c...
 compiling stm32f10x_it.c...
 creating preprocessor file for canon_pre.c...
@@ -197,252 +197,11 @@ rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never 
 rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
 rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
 linking...
-Program Size: Code=92676 RO-data=12588 RW-data=2800 ZI-data=56304  
+Program Size: Code=92632 RO-data=12592 RW-data=2784 ZI-data=56304  
 FromELF: creating hex file...
 ".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
-Load "D:\\The Valuable Program\\MDI方式\\USART_test\\obj\\USART.AXF" 
-Set JLink Project File to "D:\The Valuable Program\MDI方式\USART_test\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.24b, compiled Feb 22 2011 20:47:17
-Firmware: J-Link ARM V8 compiled Jan 31 2011 18:34:52
-Hardware: V8.00
-S/N : 805306163 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
- 
-Target info:
-------------
-Device: STM32F103ZE
-VTarget = 3.313V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 2048
-Watchpoints:          4
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-Application running ...
-Build target 'USART'
-assembling STM32F10x.s...
-creating preprocessor file for main.c...
-compiling main.c...
-canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
-canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
-canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
-canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
-canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
-canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
-canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
-canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
-canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
-canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
-canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
-canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
-canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
-canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
-canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
-canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
-canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
-canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
-canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
-canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
-canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
-canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
-canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
-canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
-canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
-canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
-canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
-canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
-canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
-canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
-canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
-canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
-canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
-canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
-canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
-canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
-canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
-canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
-canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
-canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
-canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
-canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
-canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
-canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
-canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
-canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
-canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
-canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
-rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
-rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
-rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
-rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
-rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
-rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
-rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
-rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
-rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
-main.c(717): warning:  #550-D: variable "buffer" was set but never used
-main.c(724): warning:  #550-D: variable "i" was set but never used
-creating preprocessor file for stm32f10x_it.c...
-compiling stm32f10x_it.c...
-creating preprocessor file for canon_pre.c...
-compiling canon_pre.c...
-canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
-canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
-canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
-canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
-canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
-canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
-canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
-canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
-canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
-canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
-canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
-canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
-canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
-canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
-canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
-canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
-canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
-canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
-canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
-canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
-canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
-canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
-canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
-canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
-canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
-canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
-canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
-canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
-canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
-canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
-canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
-canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
-canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
-canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
-canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
-canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
-canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
-canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
-canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
-canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
-canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
-canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
-canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
-canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
-canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
-canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
-canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
-canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
-creating preprocessor file for rs274ngc_pre.c...
-rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
-compiling rs274ngc_pre.c...
-canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
-canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
-canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
-canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
-canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
-canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
-canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
-canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
-canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
-canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
-canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
-canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
-canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
-canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
-canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
-canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
-canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
-canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
-canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
-canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
-canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
-canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
-canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
-canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
-canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
-canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
-canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
-canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
-canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
-canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
-canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
-canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
-canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
-canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
-canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
-canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
-canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
-canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
-canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
-canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
-canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
-canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
-canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
-canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
-canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
-canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
-canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
-canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
-rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
-rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
-rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
-rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
-rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
-rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
-rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
-rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
-rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
-rs274ngc_pre.c(3474): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(3515): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(3569): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(3683): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(3938): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(5674): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(6993): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(7136): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(7245): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(8486): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(9649): warning:  #186-D: pointless comparison of unsigned integer with zero
-rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never referenced
-rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
-rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
-linking...
-Program Size: Code=92628 RO-data=12588 RW-data=2800 ZI-data=56304  
-FromELF: creating hex file...
-".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
-Load "D:\\The Valuable Program\\MDI方式\\USART_test\\obj\\USART.AXF" 
-Set JLink Project File to "D:\The Valuable Program\MDI方式\USART_test\JLinkSettings.ini"
+Load "D:\\BufferModeForInterpreter\\USART_test\\obj\\USART.AXF" 
+Set JLink Project File to "D:\BufferModeForInterpreter\USART_test\JLinkSettings.ini"
  
 JLink info:
 ------------
@@ -550,8 +309,8 @@ rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give
 rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
 rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
 rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
-main.c(716): warning:  #550-D: variable "buffer" was set but never used
-main.c(723): warning:  #550-D: variable "i" was set but never used
+main.c(647): warning:  #550-D: variable "buffer" was set but never used
+main.c(654): warning:  #550-D: variable "i" was set but never used
 creating preprocessor file for stm32f10x_it.c...
 compiling stm32f10x_it.c...
 creating preprocessor file for canon_pre.c...
@@ -679,11 +438,827 @@ rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never 
 rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
 rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
 linking...
-Program Size: Code=92628 RO-data=12588 RW-data=2800 ZI-data=56304  
+Program Size: Code=92612 RO-data=12588 RW-data=2784 ZI-data=56304  
 FromELF: creating hex file...
 ".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
-Load "D:\\The Valuable Program\\MDI方式\\USART_test\\obj\\USART.AXF" 
-Set JLink Project File to "D:\The Valuable Program\MDI方式\USART_test\JLinkSettings.ini"
+Load "D:\\BufferModeForInterpreter\\USART_test\\obj\\USART.AXF" 
+Set JLink Project File to "D:\BufferModeForInterpreter\USART_test\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.24b, compiled Feb 22 2011 20:47:17
+Firmware: J-Link ARM V8 compiled Jan 31 2011 18:34:52
+Hardware: V8.00
+S/N : 805306163 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+Application running ...
+Build target 'USART'
+assembling STM32F10x.s...
+creating preprocessor file for main.c...
+compiling main.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+main.c(647): warning:  #550-D: variable "buffer" was set but never used
+main.c(654): warning:  #550-D: variable "i" was set but never used
+creating preprocessor file for stm32f10x_it.c...
+compiling stm32f10x_it.c...
+creating preprocessor file for canon_pre.c...
+compiling canon_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+creating preprocessor file for rs274ngc_pre.c...
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+compiling rs274ngc_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+rs274ngc_pre.c(3474): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3515): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3569): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3683): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3938): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(5674): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(6993): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7136): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7245): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(8486): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(9649): warning:  #186-D: pointless comparison of unsigned integer with zero
+rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+linking...
+Program Size: Code=92620 RO-data=12588 RW-data=2784 ZI-data=56304  
+FromELF: creating hex file...
+".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
+Build target 'USART'
+assembling STM32F10x.s...
+creating preprocessor file for main.c...
+compiling main.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+main.c(411): error:  #20: identifier "slot" is undefined
+main.c(697): error:  #20: identifier "buffer" is undefined
+main.c(698): error:  #20: identifier "i" is undefined
+creating preprocessor file for stm32f10x_it.c...
+compiling stm32f10x_it.c...
+creating preprocessor file for canon_pre.c...
+compiling canon_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+creating preprocessor file for rs274ngc_pre.c...
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+compiling rs274ngc_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+rs274ngc_pre.c(3474): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3515): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3569): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3683): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3938): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(5674): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(6993): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7136): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7245): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(8486): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(9649): warning:  #186-D: pointless comparison of unsigned integer with zero
+rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+Target not created
+Build target 'USART'
+assembling STM32F10x.s...
+creating preprocessor file for main.c...
+compiling main.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+main.c(697): error:  #20: identifier "buffer" is undefined
+main.c(698): error:  #20: identifier "i" is undefined
+creating preprocessor file for stm32f10x_it.c...
+compiling stm32f10x_it.c...
+creating preprocessor file for canon_pre.c...
+compiling canon_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+creating preprocessor file for rs274ngc_pre.c...
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+compiling rs274ngc_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+rs274ngc_pre.c(3474): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3515): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3569): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3683): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3938): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(5674): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(6993): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7136): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7245): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(8486): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(9649): warning:  #186-D: pointless comparison of unsigned integer with zero
+rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+Project build/rebuild aborted.
+Target not created
+Build target 'USART'
+assembling STM32F10x.s...
+creating preprocessor file for main.c...
+compiling main.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+main.c(655): warning:  #550-D: variable "buffer" was set but never used
+main.c(661): warning:  #550-D: variable "i" was set but never used
+creating preprocessor file for stm32f10x_it.c...
+compiling stm32f10x_it.c...
+creating preprocessor file for canon_pre.c...
+compiling canon_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+creating preprocessor file for rs274ngc_pre.c...
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+compiling rs274ngc_pre.c...
+canon.h(169): warning:  #1295-D: Deprecated declaration INIT_CANON - give arg types
+canon.h(370): warning:  #1295-D: Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
+canon.h(375): warning:  #1295-D: Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
+canon.h(376): warning:  #1295-D: Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
+canon.h(520): warning:  #1295-D: Deprecated declaration STOP - give arg types
+canon.h(530): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
+canon.h(534): warning:  #1295-D: Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
+canon.h(539): warning:  #1295-D: Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
+canon.h(551): warning:  #1295-D: Deprecated declaration STOP_SPINDLE_TURNING - give arg types
+canon.h(556): warning:  #1295-D: Deprecated declaration SPINDLE_RETRACT - give arg types
+canon.h(558): warning:  #1295-D: Deprecated declaration LOCK_SPINDLE_Z - give arg types
+canon.h(559): warning:  #1295-D: Deprecated declaration USE_SPINDLE_FORCE - give arg types
+canon.h(560): warning:  #1295-D: Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
+canon.h(618): warning:  #1295-D: Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
+canon.h(619): warning:  #1295-D: Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
+canon.h(620): warning:  #1295-D: Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
+canon.h(621): warning:  #1295-D: Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
+canon.h(622): warning:  #1295-D: Deprecated declaration FLOOD_OFF - give arg types
+canon.h(624): warning:  #1295-D: Deprecated declaration FLOOD_ON - give arg types
+canon.h(629): warning:  #1295-D: Deprecated declaration MIST_OFF - give arg types
+canon.h(632): warning:  #1295-D: Deprecated declaration MIST_ON - give arg types
+canon.h(635): warning:  #1295-D: Deprecated declaration PALLET_SHUTTLE - give arg types
+canon.h(645): warning:  #1295-D: Deprecated declaration TURN_PROBE_OFF - give arg types
+canon.h(646): warning:  #1295-D: Deprecated declaration TURN_PROBE_ON - give arg types
+canon.h(655): warning:  #1295-D: Deprecated declaration NURB_KNOT_VECTOR - give arg types
+canon.h(660): warning:  #1295-D: Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
+canon.h(670): warning:  #1295-D: Deprecated declaration PROGRAM_END - give arg types
+canon.h(674): warning:  #1295-D: Deprecated declaration PROGRAM_STOP - give arg types
+canon.h(698): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
+canon.h(701): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
+canon.h(709): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
+canon.h(712): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MIST - give arg types
+canon.h(715): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
+canon.h(751): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PLANE - give arg types
+canon.h(769): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
+canon.h(772): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
+canon.h(775): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
+canon.h(793): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
+canon.h(796): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
+canon.h(799): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
+canon.h(802): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
+canon.h(806): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
+canon.h(809): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPEED - give arg types
+canon.h(812): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
+canon.h(815): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
+canon.h(818): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
+canon.h(823): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
+canon.h(830): warning:  #1295-D: Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
+rs274ngc.h(376): warning:  #1295-D: Deprecated declaration rs274ngc_close - give arg types
+rs274ngc.h(379): warning:  #1295-D: Deprecated declaration rs274ngc_execute - give arg types
+rs274ngc.h(382): warning:  #1295-D: Deprecated declaration rs274ngc_exit - give arg types
+rs274ngc.h(385): warning:  #1295-D: Deprecated declaration rs274ngc_init - give arg types
+rs274ngc.h(388): warning:  #1295-D: Deprecated declaration rs274ngc_load_tool_table - give arg types
+rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give arg types
+rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
+rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
+rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
+rs274ngc_pre.c(3474): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3515): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3569): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3683): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(3938): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(5674): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(6993): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7136): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(7245): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(8486): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(9649): warning:  #186-D: pointless comparison of unsigned integer with zero
+rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never referenced
+rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
+rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
+linking...
+Program Size: Code=92696 RO-data=12592 RW-data=2784 ZI-data=56304  
+FromELF: creating hex file...
+".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
+Load "D:\\BufferModeForInterpreter\\USART_test\\obj\\USART.AXF" 
+Set JLink Project File to "D:\BufferModeForInterpreter\USART_test\JLinkSettings.ini"
  
 JLink info:
 ------------
@@ -791,8 +1366,8 @@ rs274ngc.h(397): warning:  #1295-D: Deprecated declaration rs274ngc_reset - give
 rs274ngc.h(407): warning:  #1295-D: Deprecated declaration rs274ngc_synch - give arg types
 rs274ngc.h(439): warning:  #1295-D: Deprecated declaration rs274ngc_line_length - give arg types
 rs274ngc.h(446): warning:  #1295-D: Deprecated declaration rs274ngc_sequence_number - give arg types
-main.c(716): warning:  #550-D: variable "buffer" was set but never used
-main.c(723): warning:  #550-D: variable "i" was set but never used
+main.c(655): warning:  #550-D: variable "buffer" was set but never used
+main.c(661): warning:  #550-D: variable "i" was set but never used
 creating preprocessor file for stm32f10x_it.c...
 compiling stm32f10x_it.c...
 creating preprocessor file for canon_pre.c...
@@ -920,54 +1495,6 @@ rs274ngc_pre.c(11242): warning:  #177-D: variable "name" was declared but never 
 rs274ngc_pre.c(12128): warning:  #181-D: argument is incompatible with corresponding format string conversion
 rs274ngc_pre.c(12218): warning:  #9-D: nested comment is not allowed
 linking...
-Program Size: Code=92628 RO-data=12588 RW-data=2800 ZI-data=56304  
+Program Size: Code=92696 RO-data=12592 RW-data=2784 ZI-data=56304  
 FromELF: creating hex file...
 ".\obj\USART.axf" - 0 Error(s), 178 Warning(s).
-Load "D:\\The Valuable Program\\MDI方式\\USART_test\\obj\\USART.AXF" 
-Set JLink Project File to "D:\The Valuable Program\MDI方式\USART_test\JLinkSettings.ini"
- 
-JLink info:
-------------
-DLL: V4.24b, compiled Feb 22 2011 20:47:17
-Firmware: J-Link ARM V8 compiled Jan 31 2011 18:34:52
-Hardware: V8.00
-S/N : 805306163 
-Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
- 
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-ROMTableAddr = 0xE00FF003
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
- 
-Target info:
-------------
-Device: STM32F103ZE
-VTarget = 3.313V
-State of Pins: 
-TCK: 0, TDI: 0, TDO: 0, TMS: 0, TRES: 1, TRST: 1
-Hardware-Breakpoints: 6
-Software-Breakpoints: 2048
-Watchpoints:          0
-JTAG speed: 2000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-* JLink Info: Found SWD-DP with ID 0x1BA01477
-* JLink Info: TPIU fitted.
-* JLink Info: ETM fitted.
-* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
-* JLink Info: Found Cortex-M3 r1p1, Little endian.
-Application running ...

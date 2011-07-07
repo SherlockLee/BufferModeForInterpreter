@@ -1,6 +1,6 @@
 Dependencies for Project 'USART', Target 'USART': (DO NOT MODIFY !)
 F (.\STM32F10x.s)(0x48E9C1BE)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\ST\STM32F10x" --list ".\listing\STM32F10x.lst" --xref -o ".\obj\STM32F10x.o" --depend ".\obj\STM32F10x.d")
-F (.\main.c)(0x4E151D80)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\listing\\" -I..\..\library\inc -I..\..\library\src -I..\uvsion -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o ".\obj\main.o" --list_dir ".\\listing\\" --list --omf_browse ".\obj\main.crf" --depend ".\obj\main.d")
+F (.\main.c)(0x4E154793)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --asm --interleave --asm_dir ".\\listing\\" -I..\..\library\inc -I..\..\library\src -I..\uvsion -I "C:\Keil\ARM\CMSIS\Include" -I "C:\Keil\ARM\INC\ST\STM32F10x" -o ".\obj\main.o" --list_dir ".\\listing\\" --list --omf_browse ".\obj\main.crf" --depend ".\obj\main.d")
 I (C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h)(0x4C80BDE4)
 I (C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h)(0x4C80BDE4)
 I (C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h)(0x4C80BDE4)
