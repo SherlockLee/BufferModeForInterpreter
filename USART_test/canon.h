@@ -166,7 +166,7 @@ typedef struct canon_tool_table
    /* Initialization */
 
    /* reads world model data into the canonical interface */
-extern void INIT_CANON();
+extern void INIT_CANON(void);
 
    /* Representation */
 
@@ -367,13 +367,13 @@ extern void START_CUTTER_RADIUS_COMPENSATION(int direction);
    /* Conceptually, the direction must be left (meaning the cutter
    stays to the left of the programmed path) or right. */
 
-extern void STOP_CUTTER_RADIUS_COMPENSATION();
+extern void STOP_CUTTER_RADIUS_COMPENSATION(void);
 
    /* Do not apply cutter radius compensation when executing spindle
    translation commands. */
 
-extern void START_SPEED_FEED_SYNCH();
-extern void STOP_SPEED_FEED_SYNCH();
+extern void START_SPEED_FEED_SYNCH(void);
+extern void STOP_SPEED_FEED_SYNCH(void);
 
    /* Machining Functions */
 
@@ -517,7 +517,7 @@ double x, double y, double z
    When the operation is finished, all axes should be back where they
    started. */
 
-extern void STOP();
+extern void STOP(void);
 
    /* stop motion after current feed */
 
@@ -527,16 +527,16 @@ extern void DWELL(double seconds);
 
    /* Spindle Functions */
 
-extern void SPINDLE_RETRACT_TRAVERSE();
+extern void SPINDLE_RETRACT_TRAVERSE(void);
 
    /* Retract the spindle at traverse rate to the fully retracted position. */
 
-extern void START_SPINDLE_CLOCKWISE();
+extern void START_SPINDLE_CLOCKWISE(void);
 
    /* Turn the spindle clockwise at the currently set speed rate. If the
    spindle is already turning that way, this command has no effect. */
 
-extern void START_SPINDLE_COUNTERCLOCKWISE();
+extern void START_SPINDLE_COUNTERCLOCKWISE(void);
 
    /* Turn the spindle counterclockwise at the currently set speed rate. If
    the spindle is already turning that way, this command has no effect. */
@@ -548,16 +548,16 @@ extern void SET_SPINDLE_SPEED(double r);
    rotation. If the spindle is already turning and is at a different
    speed, change to the speed given with this command. */
 
-extern void STOP_SPINDLE_TURNING();
+extern void STOP_SPINDLE_TURNING(void);
 
    /* Stop the spindle from turning. If the spindle is already stopped, this
    command may be given, but it will have no effect. */
 
-extern void SPINDLE_RETRACT();
+extern void SPINDLE_RETRACT(void);
 extern void ORIENT_SPINDLE(double orientation, CANON_DIRECTION direction);
-extern void LOCK_SPINDLE_Z();
-extern void USE_SPINDLE_FORCE();
-extern void USE_NO_SPINDLE_FORCE();
+extern void LOCK_SPINDLE_Z(void);
+extern void USE_SPINDLE_FORCE(void);
+extern void USE_NO_SPINDLE_FORCE(void);
 
    /* Tool Functions */
 extern void USE_TOOL_LENGTH_OFFSET(double length);
@@ -615,24 +615,24 @@ extern void COMMENT(char *s);
    which is the value of comment_text. This serves to allow formal
    comments at specific locations in programs or command files. */
 
-extern void DISABLE_FEED_OVERRIDE();
-extern void ENABLE_FEED_OVERRIDE();
-extern void DISABLE_SPEED_OVERRIDE();
-extern void ENABLE_SPEED_OVERRIDE();
-extern void FLOOD_OFF();
+extern void DISABLE_FEED_OVERRIDE(void);
+extern void ENABLE_FEED_OVERRIDE(void);
+extern void DISABLE_SPEED_OVERRIDE(void);
+extern void ENABLE_SPEED_OVERRIDE(void);
+extern void FLOOD_OFF(void);
    /* Turn flood coolant off. */
-extern void FLOOD_ON();
+extern void FLOOD_ON(void);
    /* Turn flood coolant on. */
 
 extern void MESSAGE(char *s);
 
-extern void MIST_OFF();
+extern void MIST_OFF(void);
    /* Turn mist coolant off. */
 
-extern void MIST_ON();
+extern void MIST_ON(void);
    /* Turn mist coolant on. */
 
-extern void PALLET_SHUTTLE();
+extern void PALLET_SHUTTLE(void);
 
    /* If the machining center has a pallet shuttle mechanism (a mechanism
    which switches the position of two pallets), this command should cause
@@ -642,8 +642,8 @@ extern void PALLET_SHUTTLE();
    If the machining center does not have a pallet shuttle, this command
    should result in an error condition in the controller. */
 
-extern void TURN_PROBE_OFF();
-extern void TURN_PROBE_ON();
+extern void TURN_PROBE_OFF(void);
+extern void TURN_PROBE_ON(void);
 
 extern void UNCLAMP_AXIS(CANON_AXIS axis);
 
@@ -652,12 +652,12 @@ extern void UNCLAMP_AXIS(CANON_AXIS axis);
    controller. */
 
    /* NURB Functions */
-extern void NURB_KNOT_VECTOR();                   /* double knot values, -1.0 signals done */
+extern void NURB_KNOT_VECTOR(void);                   /* double knot values, -1.0 signals done */
 extern void NURB_CONTROL_POINT(int i, double x, double y, double z, double w );
 extern void NURB_FEED(double sStart, double sEnd);
 
    /* Program Functions */
-extern void OPTIONAL_PROGRAM_STOP();
+extern void OPTIONAL_PROGRAM_STOP(void);
 
    /* If the machining center has an optional stop switch, and it is on
    when this command is read from a program, stop executing the program
@@ -667,11 +667,11 @@ extern void OPTIONAL_PROGRAM_STOP();
    already (such as when the interpreter is being used with keyboard
    input), this command has no effect. */
 
-extern void PROGRAM_END();
+extern void PROGRAM_END(void);
    /* If a program is being read, stop executing the program and be prepared
    to accept a new program or to be shut down. */
 
-extern void PROGRAM_STOP();
+extern void PROGRAM_STOP(void);
    /* If this command is read from a program, stop executing the program at
    this point, but be prepared to resume with the next line of the
    program. If commands are being executed with a stop after each one
@@ -695,10 +695,10 @@ extern void PROGRAM_STOP();
    */
 
    // Returns the system feed rate
-extern double GET_EXTERNAL_FEED_RATE();
+extern double GET_EXTERNAL_FEED_RATE(void);
 
    // Returns the system value for flood coolant, zero = off, non-zero = on
-extern int GET_EXTERNAL_FLOOD();
+extern int GET_EXTERNAL_FLOOD(void);
 
    /* The interpreter is not using this function
    // Returns the system length unit factor, in units / mm
@@ -706,13 +706,13 @@ extern int GET_EXTERNAL_FLOOD();
    */
 
    // Returns the system length unit type
-CANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE();
+CANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE(void);
 
    // Returns the system value for mist coolant, zero = off, non-zero = on
-extern int GET_EXTERNAL_MIST();
+extern int GET_EXTERNAL_MIST(void);
 
    // Returns the current motion control mode
-extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE();
+extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE(void);
 
    /* The interpreter is not using these six GET_EXTERNAL_ORIGIN functions
 
@@ -748,84 +748,84 @@ extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE();
 extern void GET_EXTERNAL_PARAMETER_FILE_NAME(char * filename, unsigned int max_size);
 
    // returns the currently active plane
-extern CANON_PLANE GET_EXTERNAL_PLANE();
+extern CANON_PLANE GET_EXTERNAL_PLANE(void);
 
 #ifdef AA
    // returns the current a-axis position
-extern double GET_EXTERNAL_POSITION_A();
+extern double GET_EXTERNAL_POSITION_A(void);
 #endif
 
 #ifdef BB
    // returns the current b-axis position
-extern double GET_EXTERNAL_POSITION_B();
+extern double GET_EXTERNAL_POSITION_B(void);
 #endif
 
 #ifdef CC
    // returns the current c-axis position
-extern double GET_EXTERNAL_POSITION_C();
+extern double GET_EXTERNAL_POSITION_C(void);
 #endif
 
    // returns the current x-axis position
-extern double GET_EXTERNAL_POSITION_X();
+extern double GET_EXTERNAL_POSITION_X(void);
 
    // returns the current y-axis position
-extern double GET_EXTERNAL_POSITION_Y();
+extern double GET_EXTERNAL_POSITION_Y(void);
 
    // returns the current z-axis position
-extern double GET_EXTERNAL_POSITION_Z();
+extern double GET_EXTERNAL_POSITION_Z(void);
 
 #ifdef AA
    // Returns the machine A-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_A();
+extern double GET_EXTERNAL_PROBE_POSITION_A(void);
 #endif
 
 #ifdef BB
    // Returns the machine B-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_B();
+extern double GET_EXTERNAL_PROBE_POSITION_B(void);
 #endif
 
 #ifdef CC
    // Returns the machine C-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_C();
+extern double GET_EXTERNAL_PROBE_POSITION_C(void);
 #endif
 
    // Returns the machine X-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_X();
+extern double GET_EXTERNAL_PROBE_POSITION_X(void);
 
    // Returns the machine Y-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_Y();
+extern double GET_EXTERNAL_PROBE_POSITION_Y(void);
 
    // Returns the machine Z-axis position at the last probe trip.
-extern double GET_EXTERNAL_PROBE_POSITION_Z();
+extern double GET_EXTERNAL_PROBE_POSITION_Z(void);
 
    // Returns the value for any analog non-contact probing.
-extern double GET_EXTERNAL_PROBE_VALUE();
+extern double GET_EXTERNAL_PROBE_VALUE(void);
 
    // Returns zero if queue is not empty, non-zero if the queue is empty
    // This always returns a valid value
-extern int GET_EXTERNAL_QUEUE_EMPTY();
+extern int GET_EXTERNAL_QUEUE_EMPTY(void);
 
    // Returns the system value for spindle speed in rpm
-extern double GET_EXTERNAL_SPEED();
+extern double GET_EXTERNAL_SPEED(void);
 
    // Returns the system value for direction of spindle turning
-extern CANON_DIRECTION GET_EXTERNAL_SPINDLE();
+extern CANON_DIRECTION GET_EXTERNAL_SPINDLE(void);
 
    // returns current tool length offset
-extern double GET_EXTERNAL_TOOL_LENGTH_OFFSET();
+extern double GET_EXTERNAL_TOOL_LENGTH_OFFSET(void);
 
    // Returns number of slots in carousel
-extern int GET_EXTERNAL_TOOL_MAX();
+extern int GET_EXTERNAL_TOOL_MAX(void);
 
    // Returns the system value for the carousel slot in which the tool
    // currently in the spindle belongs. Return value zero means there is no
    // tool in the spindle.
-extern int GET_EXTERNAL_TOOL_SLOT();
+extern int GET_EXTERNAL_TOOL_SLOT(void);
 
    // Returns the CANON_TOOL_TABLE structure associated with the tool
    // in the given pocket
 extern CANON_TOOL_TABLE GET_EXTERNAL_TOOL_TABLE(int pocket);
 
    // Returns the system traverse rate
-extern double GET_EXTERNAL_TRAVERSE_RATE();
+extern double GET_EXTERNAL_TRAVERSE_RATE(void);
 #endif                                            /* ifndef CANON_HH */

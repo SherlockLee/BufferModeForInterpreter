@@ -52,7 +52,7 @@ N#define __STM32F10x_IT_H
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_lib.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_lib.h
 N* Author             : MCD Application Team
@@ -75,7 +75,7 @@ N#define __STM32F10x_LIB_H
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_map.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_map.h
 N* Author             : MCD Application Team
@@ -102,7 +102,7 @@ N#endif /* EXT */
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_conf.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_conf.h
 N* Author             : MCD Application Team
@@ -124,7 +124,7 @@ N#define __STM32F10x_CONF_H
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_type.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_type.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_type.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_type.h
 N* Author             : MCD Application Team
@@ -205,7 +205,7 @@ N
 N#endif /* __STM32F10x_TYPE_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 22 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 2
+L 22 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 2
 N
 N/* Exported types ------------------------------------------------------------*/
 N/* Exported constants --------------------------------------------------------*/
@@ -355,10 +355,10 @@ N
 N#endif /* __STM32F10x_CONF_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 27 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
+L 27 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
 N#include "stm32f10x_type.h"
 N#include "cortexm3_macro.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\cortexm3_macro.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\cortexm3_macro.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : cortexm3_macro.h
 N* Author             : MCD Application Team
@@ -412,7 +412,7 @@ N
 N#endif /* __CORTEXM3_MACRO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 29 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
+L 29 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
 N
 N/* Exported types ------------------------------------------------------------*/
 N/******************************************************************************/
@@ -1572,11 +1572,11 @@ N
 N#endif /* __STM32F10x_MAP_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 23 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 23 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N
 N#ifdef _ADC
 N  #include "stm32f10x_adc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_adc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_adc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_adc.h
 N* Author             : MCD Application Team
@@ -1889,12 +1889,12 @@ N
 N#endif /*__STM32F10x_ADC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 26 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 26 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_ADC */
 N
 N#ifdef _BKP
 N  #include "stm32f10x_bkp.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_bkp.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_bkp.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_bkp.h
 N* Author             : MCD Application Team
@@ -2020,12 +2020,12 @@ N
 N#endif /* __STM32F10x_BKP_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 30 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 30 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_BKP */
 N
 N#ifdef _CAN
 N  #include "stm32f10x_can.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_can.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_can.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_can.h
 N* Author             : MCD Application Team
@@ -2297,12 +2297,12 @@ N
 N#endif /* __STM32F10x_CAN_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 34 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 34 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_CAN */
 N
 N#ifdef _CRC
 N  #include "stm32f10x_crc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_crc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_crc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_crc.h
 N* Author             : MCD Application Team
@@ -2340,12 +2340,12 @@ N
 N#endif /* __STM32F10x_CRC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 38 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 38 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_CRC */
 N
 N#ifdef _DAC
 N  #include "stm32f10x_dac.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dac.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dac.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dac.h
 N* Author             : MCD Application Team
@@ -2520,12 +2520,12 @@ N
 N#endif /*__STM32F10x_DAC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 42 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 42 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DAC */
 N
 N#ifdef _DBGMCU
 N  #include "stm32f10x_dbgmcu.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dbgmcu.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dbgmcu.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dbgmcu.h
 N* Author             : MCD Application Team
@@ -2581,12 +2581,12 @@ N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
 N
 N
-L 46 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 46 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DBGMCU */
 N
 N#ifdef _DMA
 N  #include "stm32f10x_dma.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dma.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dma.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dma.h
 N* Author             : MCD Application Team
@@ -2893,12 +2893,12 @@ N
 N#endif /*__STM32F10x_DMA_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 50 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 50 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DMA */
 N
 N#ifdef _EXTI
 N  #include "stm32f10x_exti.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_exti.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_exti.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_exti.h
 N* Author             : MCD Application Team
@@ -3008,12 +3008,12 @@ N
 N#endif /* __STM32F10x_EXTI_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 54 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 54 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_EXTI */
 N
 N#ifdef _FLASH
 N  #include "stm32f10x_flash.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_flash.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_flash.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_flash.h
 N* Author             : MCD Application Team
@@ -3226,12 +3226,12 @@ N
 N#endif /* __STM32F10x_FLASH_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 58 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 58 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_FLASH */
 N
 N#ifdef _FSMC
 N  #include "stm32f10x_fsmc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_fsmc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_fsmc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_fsmc.h
 N* Author             : MCD Application Team
@@ -3611,12 +3611,12 @@ N
 N#endif /*__STM32F10x_FSMC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 62 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 62 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_FSMC */
 N
 N#ifdef _GPIO
 N  #include "stm32f10x_gpio.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_gpio.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_gpio.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_gpio.h
 N* Author             : MCD Application Team
@@ -3862,12 +3862,12 @@ N
 N#endif /* __STM32F10x_GPIO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 66 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 66 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_GPIO */
 N
 N#ifdef _I2C
 N  #include "stm32f10x_i2c.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_i2c.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_i2c.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_i2c.h
 N* Author             : MCD Application Team
@@ -4171,12 +4171,12 @@ N
 N#endif /*__STM32F10x_I2C_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 70 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 70 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_I2C */
 N
 N#ifdef _IWDG
 N  #include "stm32f10x_iwdg.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_iwdg.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_iwdg.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_iwdg.h
 N* Author             : MCD Application Team
@@ -4248,12 +4248,12 @@ N
 N#endif /* __STM32F10x_IWDG_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 74 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 74 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_IWDG */
 N
 N#ifdef _NVIC
 N  #include "stm32f10x_nvic.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_nvic.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_nvic.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_nvic.h
 N* Author             : MCD Application Team
@@ -4553,12 +4553,12 @@ N
 N#endif /* __STM32F10x_NVIC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 78 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 78 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_NVIC */
 N
 N#ifdef _PWR
 N  #include "stm32f10x_pwr.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_pwr.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_pwr.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_pwr.h
 N* Author             : MCD Application Team
@@ -4639,12 +4639,12 @@ N
 N#endif /* __STM32F10x_PWR_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 82 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 82 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_PWR */
 N
 N#ifdef _RCC
 N  #include "stm32f10x_rcc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rcc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rcc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_rcc.h
 N* Author             : MCD Application Team
@@ -4946,12 +4946,12 @@ N
 N#endif /* __STM32F10x_RCC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 86 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 86 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_RCC */
 N
 N#ifdef _RTC
 N  #include "stm32f10x_rtc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rtc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rtc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_rtc.h
 N* Author             : MCD Application Team
@@ -5024,12 +5024,12 @@ N
 N#endif /* __STM32F10x_RTC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 90 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 90 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_RTC */
 N
 N#ifdef _SDIO
 N  #include "stm32f10x_sdio.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_sdio.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_sdio.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_sdio.h
 N* Author             : MCD Application Team
@@ -5381,12 +5381,12 @@ N
 N#endif /* __STM32F10x_SDIO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 94 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 94 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SDIO */
 N
 N#ifdef _SPI
 N  #include "stm32f10x_spi.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_spi.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_spi.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_spi.h
 N* Author             : MCD Application Team
@@ -5702,12 +5702,12 @@ N
 N#endif /*__STM32F10x_SPI_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 98 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 98 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SPI */
 N
 N#ifdef _SysTick
 N  #include "stm32f10x_systick.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_systick.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_systick.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_systick.h
 N* Author             : MCD Application Team
@@ -5775,12 +5775,12 @@ N
 N#endif /* __STM32F10x_SYSTICK_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 102 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 102 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SysTick */
 N
 N#ifdef _TIM
 N  #include "stm32f10x_tim.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_tim.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_tim.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_tim.h
 N* Author             : MCD Application Team
@@ -6612,12 +6612,12 @@ N
 N
 N
 N
-L 106 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 106 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_TIM */
 N
 N#ifdef _USART
 N  #include "stm32f10x_usart.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_usart.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_usart.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_usart.h
 N* Author             : MCD Application Team
@@ -6893,12 +6893,12 @@ N
 N#endif /* __STM32F10x_USART_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 110 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 110 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_USART */
 N
 N#ifdef _WWDG
 N  #include "stm32f10x_wwdg.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_wwdg.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_wwdg.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_wwdg.h
 N* Author             : MCD Application Team
@@ -6954,7 +6954,7 @@ N
 N#endif /* __STM32F10x_WWDG_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 114 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 114 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_WWDG */
 N
 N/* Exported types ------------------------------------------------------------*/

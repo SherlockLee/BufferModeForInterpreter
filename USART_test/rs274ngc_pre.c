@@ -787,7 +787,7 @@ static int write_settings(setup_pointer settings);
 
 static const int _gees[] SET_TO
 {
-    /*   0 */   1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+    	/*   0 */   1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
         /*  20 */   1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
         /*  40 */   0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
         /*  60 */  -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
@@ -856,13 +856,13 @@ static const int _gees[] SET_TO
 
     static const int _ems[] SET_TO
     {
-        4,  4,  4,  7,  7,  7,  6,  8,  8,  8,
+        	 4,  4,  4,  7,  7,  7,  6,  8,  8,  8,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
-            4, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+             4, -1, -1, -1, -1, -1, -1, -1, -1, -1,
             -1, -1, -1, -1, -1, -1, -1, -1,  9,  9,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
-            4, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+             4, -1, -1, -1, -1, -1, -1, -1, -1, -1,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
             -1, -1, -1, -1, -1, -1, -1, -1, -1, -1
@@ -3471,7 +3471,7 @@ static const int _gees[] SET_TO
     double clear_z,                               /* z-value of clearance plane       */
     double bottom_z)                              /* value of z at bottom of cycle    */
     {
-        static char name[] SET_TO "convert_cycle_g81";
+//        static char name[] SET_TO "convert_cycle_g81";
 
         cycle_feed(plane, x, y, bottom_z);
         cycle_traverse(plane, x, y, clear_z);
@@ -3512,7 +3512,7 @@ static const int _gees[] SET_TO
     double bottom_z,                              /* value of z at bottom of cycle    */
     double dwell)                                 /* dwell time                       */
     {
-        static char name[] SET_TO "convert_cycle_g82";
+//        static char name[] SET_TO "convert_cycle_g82";
 
         cycle_feed(plane, x, y, bottom_z);
         DWELL(dwell);
@@ -3566,7 +3566,7 @@ static const int _gees[] SET_TO
     double bottom_z,                              /* value of z at bottom of cycle    */
     double delta)                                 /* size of z-axis feed increment    */
     {
-        static char name[] SET_TO "convert_cycle_g83";
+//        static char name[] SET_TO "convert_cycle_g83";
         double current_depth;
         double rapid_delta;
 
@@ -3680,7 +3680,7 @@ static const int _gees[] SET_TO
     double clear_z,                               /* z-value of clearance plane       */
     double bottom_z)                              /* value of z at bottom of cycle    */
     {
-        static char name[] SET_TO "convert_cycle_g85";
+//        static char name[] SET_TO "convert_cycle_g85";
 
         cycle_feed(plane, x, y, bottom_z);
         cycle_feed(plane, x, y, clear_z);
@@ -3935,7 +3935,7 @@ static const int _gees[] SET_TO
     double bottom_z,                              /* value of z at bottom of cycle    */
     double dwell)                                 /* dwell time                       */
     {
-        static char name[] SET_TO "convert_cycle_g89";
+//        static char name[] SET_TO "convert_cycle_g89";
 
         cycle_feed(plane, x, y, bottom_z);
         DWELL(dwell);
@@ -5671,7 +5671,7 @@ repeat--) \
     block_pointer block,                          /* pointer to a block of RS274/NGC instructions */
     setup_pointer settings)                       /* pointer to machine settings                  */
     {
-        static char name[] SET_TO "convert_setup";
+//        static char name[] SET_TO "convert_setup";
         double x;
         double y;
         double z;
@@ -6990,7 +6990,7 @@ repeat--) \
     static int convert_tool_change(               /* ARGUMENTS                   */
     setup_pointer settings)                       /* pointer to machine settings */
     {
-        static char name[] SET_TO "convert_tool_change";
+//        static char name[] SET_TO "convert_tool_change";
 
         CHANGE_TOOL(settings->selected_tool_slot);
         settings->current_slot SET_TO settings->selected_tool_slot;
@@ -7133,7 +7133,7 @@ repeat--) \
     double end2,                                  /* second coordinate value    */
     double end3)                                  /* third coordinate value     */
     {
-        static char name[] SET_TO "cycle_feed";
+//        static char name[] SET_TO "cycle_feed";
 
         if (plane IS CANON_PLANE_XY)
             STRAIGHT_FEED(end1, end2, end3
@@ -7242,7 +7242,7 @@ repeat--) \
     double end2,                                  /* second coordinate value   */
     double end3)                                  /* third coordinate value    */
     {
-        static char name[] SET_TO "cycle_traverse";
+//        static char name[] SET_TO "cycle_traverse";
         if (plane IS CANON_PLANE_XY)
             STRAIGHT_TRAVERSE(end1, end2, end3
         #ifdef AA
@@ -8483,7 +8483,7 @@ repeat--) \
     block_pointer block,                          /* pointer to a block of RS274 instructions   */
     setup_pointer settings)                       /* pointer to machine settings                */
     {
-        static char name[] SET_TO "inverse_time_rate_straight";
+//        static char name[] SET_TO "inverse_time_rate_straight";
         double length;
         double rate;
 
@@ -11239,7 +11239,7 @@ repeat--) \
     static int set_probe_data(                    /* ARGUMENTS                   */
     setup_pointer settings)                       /* pointer to machine settings */
     {
-        static char name[] SET_TO "set_probe_data";
+//        static char name[] SET_TO "set_probe_data";
 
         settings->current_x SET_TO GET_EXTERNAL_POSITION_X();
         settings->current_y SET_TO GET_EXTERNAL_POSITION_Y();
@@ -12188,18 +12188,18 @@ repeat--) \
     int rs274ngc_synch()                          /* NO ARGUMENTS */
     {
         _setup.control_mode SET_TO GET_EXTERNAL_MOTION_CONTROL_MODE();
-#ifdef AA
-   /*AA*/
-        _setup.AA_current SET_TO GET_EXTERNAL_POSITION_A();
-#endif
-#ifdef BB
-   /*BB*/
-        _setup.BB_current SET_TO GET_EXTERNAL_POSITION_B();
-#endif
-#ifdef CC
-   /*CC*/
-        _setup.CC_current SET_TO GET_EXTERNAL_POSITION_C();
-#endif
+		#ifdef AA
+		   /*AA*/
+		        _setup.AA_current SET_TO GET_EXTERNAL_POSITION_A();
+		#endif
+		#ifdef BB
+		   /*BB*/
+		        _setup.BB_current SET_TO GET_EXTERNAL_POSITION_B();
+		#endif
+		#ifdef CC
+		   /*CC*/
+		        _setup.CC_current SET_TO GET_EXTERNAL_POSITION_C();
+		#endif
         _setup.current_slot SET_TO GET_EXTERNAL_TOOL_SLOT();
         _setup.current_x SET_TO GET_EXTERNAL_POSITION_X();
         _setup.current_y SET_TO GET_EXTERNAL_POSITION_Y();
@@ -12215,7 +12215,7 @@ repeat--) \
         _setup.tool_max SET_TO GET_EXTERNAL_TOOL_MAX();
         _setup.traverse_rate SET_TO GET_EXTERNAL_TRAVERSE_RATE();
 
-/*        rs274ngc_load_tool_table();               /*  must set  _setup.tool_max first */
+		//rs274ngc_load_tool_table();               /*  must set  _setup.tool_max first */
 
         return RS274NGC_OK;
     }

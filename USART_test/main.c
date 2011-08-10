@@ -136,21 +136,29 @@ the line, an error message is printed on the monitor (stderr).
 To exit, the user must enter "quit" (followed by a carriage return).
 
 */
+/*测试代码一*/
+//char _nc_code_buffer[]=
+//{
+//"(this program mills );"
+//"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
+//"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
+//"n0030 g0 x0 y0 z2;"
+//"n0040 g1 z-0.5 (start H);"
+//"n0050 y10;"
+//"n0060 g0 z2;"
+//"n0070 y5;"
+//"n0080 g1 z-0.5;"
+//"n0090 x 7;"
+//"n0620 m2;"
+//"%"};
+
+/*测试代码二*/
 char _nc_code_buffer[]=
 {
-"(this program mills );"
-"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
-"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
-"n0030 g0 x0 y0 z2;"
-"n0040 g1 z-0.5 (start H);"
-"n0050 y10;"
-"n0060 g0 z2;"
-"n0070 y5;"
-"n0080 g1 z-0.5;"
-"n0090 x 7;"
-"n0620 m2;"
+//"(this program mills );"
+"n0010 g00 x0 y0 z50;"
+"n0010 g01 x0 y0 z50 f50;"
 "%"};
-
 
 volatile int gAllChar;
 volatile int gNowChar=0;
@@ -652,13 +660,11 @@ int main(int argc, char ** argv)
 	int do_next;                                  /* 0=continue, 1=mdi, 2=stop */
 	int block_delete;
 	int tool_flag;
-	char buffer[80];
 	int gees[RS274NGC_ACTIVE_G_CODES];
 	int ems[RS274NGC_ACTIVE_M_CODES];
 	double sets[RS274NGC_ACTIVE_SETTINGS];
 	char default_name[] SET_TO "rs274ngc.var";
 	int print_stack;
-	u16 i=0;
 /******************************RS274NGC之变量声明部分结束******************************/	
 	
 	
@@ -696,8 +702,6 @@ int main(int argc, char ** argv)
 		return 1;
 	}
 	*/
-	buffer[0]='1';
-	i=0;
 	choice=1;
 
 	do_next SET_TO 2;                             /* 2=stop */

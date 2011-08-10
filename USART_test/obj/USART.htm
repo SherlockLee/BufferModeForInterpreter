@@ -3,9 +3,9 @@
 <title>Static Call Graph - [.\obj\USART.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\obj\USART.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 644]: Last Updated: Thu Jul 07 13:44:03 2011
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 644]: Last Updated: Wed Aug 10 08:42:20 2011
 <BR><P>
-<H3>Maximum Stack Usage =       1480 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =       1400 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 main &rArr; interpret_from_keyboard &rArr; rs274ngc_execute &rArr; execute_block &rArr; convert_g &rArr; convert_motion &rArr; convert_arc &rArr; convert_arc_comp2 &rArr; inverse_time_rate_arc2 &rArr; find_arc_length &rArr; find_turn &rArr; atan2 &rArr; atan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 <P>
@@ -2051,8 +2051,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;execute_unary
 </UL>
 
-<P><STRONG><a name="[3a]"></a>main</STRONG> (Thumb, 380 bytes, Stack size 240 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 1480<LI>Call Chain = main &rArr; interpret_from_keyboard &rArr; rs274ngc_execute &rArr; execute_block &rArr; convert_g &rArr; convert_motion &rArr; convert_arc &rArr; convert_arc_comp2 &rArr; inverse_time_rate_arc2 &rArr; find_arc_length &rArr; find_turn &rArr; atan2 &rArr; atan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
+<P><STRONG><a name="[3a]"></a>main</STRONG> (Thumb, 360 bytes, Stack size 160 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 1400<LI>Call Chain = main &rArr; interpret_from_keyboard &rArr; rs274ngc_execute &rArr; execute_block &rArr; convert_g &rArr; convert_motion &rArr; convert_arc &rArr; convert_arc_comp2 &rArr; inverse_time_rate_arc2 &rArr; find_arc_length &rArr; find_turn &rArr; atan2 &rArr; atan &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; _double_round
 </UL>
 <BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs274ngc_sequence_number
 <LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rs274ngc_line_length

@@ -280,7 +280,7 @@ ARM Macro Assembler    Page 5
   206 00000004                 END
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\obj\ST
-M32F10x.d -o.\obj\STM32F10x.o -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\INC\ST\
+M32F10x.d -o.\obj\STM32F10x.o -If:\Keil\ARM\CMSIS\Include -If:\Keil\ARM\INC\ST\
 STM32F10x --predefine="__MICROLIB SETA 1" --list=.\listing\STM32F10x.lst STM32F
 10x.s
 

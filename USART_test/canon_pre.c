@@ -766,7 +766,7 @@ void FLOOD_ON()
 }
 
 
-void INIT_CANON()
+void INIT_CANON(void)
 {
 }
 

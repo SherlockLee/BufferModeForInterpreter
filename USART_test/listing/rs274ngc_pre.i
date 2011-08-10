@@ -120,7 +120,7 @@
 
     
 
-#line 1 "C:\\Keil\\ARM\\RV31\\INC\\stdio.h"
+#line 1 "f:\\Keil\\ARM\\RV31\\INC\\stdio.h"
  
  
  
@@ -146,7 +146,7 @@
 
 
 
-#line 34 "C:\\Keil\\ARM\\RV31\\INC\\stdio.h"
+#line 34 "f:\\Keil\\ARM\\RV31\\INC\\stdio.h"
 
 
   
@@ -213,7 +213,7 @@ typedef struct __FILE FILE;
 extern FILE __stdin, __stdout, __stderr;
 extern FILE *__aeabi_stdin, *__aeabi_stdout, *__aeabi_stderr;
 
-#line 125 "C:\\Keil\\ARM\\RV31\\INC\\stdio.h"
+#line 125 "f:\\Keil\\ARM\\RV31\\INC\\stdio.h"
     
 
     
@@ -962,13 +962,13 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
 
 
-#line 944 "C:\\Keil\\ARM\\RV31\\INC\\stdio.h"
+#line 944 "f:\\Keil\\ARM\\RV31\\INC\\stdio.h"
 
 
 
  
 #line 123 "rs274ngc_pre.c"
-#line 1 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 1 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
  
  
  
@@ -1006,7 +1006,7 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
 
 
-#line 45 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 45 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 
   
@@ -1026,7 +1026,7 @@ extern __declspec(__nothrow) void __use_no_semihosting(void);
 
 
     typedef unsigned short wchar_t;  
-#line 74 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 74 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 typedef struct div_t { int quot, rem; } div_t;
     
@@ -1037,7 +1037,7 @@ typedef struct lldiv_t { __int64 quot, rem; } lldiv_t;
     
 
 
-#line 95 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 95 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
    
 
 
@@ -1050,7 +1050,7 @@ typedef struct lldiv_t { __int64 quot, rem; } lldiv_t;
 
 
  
-#line 114 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 114 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
    
 
 
@@ -1341,7 +1341,7 @@ extern __declspec(__nothrow) int atexit(void (*  )(void)) __attribute__((__nonnu
 
 
  
-#line 414 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 414 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 
 extern __declspec(__nothrow) __declspec(__noreturn) void exit(int  );
@@ -1414,7 +1414,7 @@ extern  void *bsearch(const void *  , const void *  ,
 
 
  
-#line 502 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 502 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 
 extern  void qsort(void *  , size_t  , size_t  ,
@@ -1431,7 +1431,7 @@ extern  void qsort(void *  , size_t  , size_t  ,
 
  
 
-#line 531 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 531 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 extern __declspec(__nothrow) __pure int abs(int  );
    
@@ -1507,7 +1507,7 @@ extern __declspec(__nothrow) __pure lldiv_t lldiv(__int64  , __int64  );
 
 
  
-#line 612 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 612 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 
 
@@ -1685,12 +1685,12 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-#line 866 "C:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
+#line 866 "f:\\Keil\\ARM\\RV31\\INC\\stdlib.h"
 
 
  
 #line 124 "rs274ngc_pre.c"
-#line 1 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 1 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
@@ -1729,9 +1729,9 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
 
-#line 47 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 47 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
-#line 61 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 61 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
    
 
@@ -1755,7 +1755,7 @@ extern __declspec(__nothrow) int __C_library_version_number(void);
 
 
  
-#line 92 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 92 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
@@ -1867,7 +1867,7 @@ __inline __declspec(__nothrow) __softfp int __ARM_signbit(double __x)
 
 
 
-#line 210 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 210 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
@@ -2094,7 +2094,7 @@ extern __declspec(__nothrow) double expm1(double  );
 
 
 
-#line 444 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 444 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 extern __declspec(__nothrow) double hypot(double  , double  );
@@ -2400,13 +2400,13 @@ __declspec(__nothrow) long double rintl(long double );
 
 
 
-#line 824 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 824 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
 
 
-#line 979 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 979 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
@@ -2418,13 +2418,13 @@ __declspec(__nothrow) long double rintl(long double );
 
 
 
-#line 1181 "C:\\Keil\\ARM\\RV31\\INC\\math.h"
+#line 1181 "f:\\Keil\\ARM\\RV31\\INC\\math.h"
 
 
 
  
 #line 125 "rs274ngc_pre.c"
-#line 1 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 1 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
  
  
  
@@ -2454,7 +2454,7 @@ __declspec(__nothrow) long double rintl(long double );
 
 
 
-#line 37 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 37 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 
 
   
@@ -2596,7 +2596,7 @@ extern __declspec(__nothrow) size_t strxfrm(char * __restrict  , const char * __
  
 
 
-#line 184 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 184 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __attribute__((__nonnull__(1)));
 
    
@@ -2607,7 +2607,7 @@ extern __declspec(__nothrow) void *memchr(const void *  , int  , size_t  ) __att
 
  
 
-#line 200 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 200 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 extern __declspec(__nothrow) char *strchr(const char *  , int  ) __attribute__((__nonnull__(1)));
 
    
@@ -2625,7 +2625,7 @@ extern __declspec(__nothrow) size_t strcspn(const char *  , const char *  ) __at
 
  
 
-#line 223 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 223 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
 
    
@@ -2635,7 +2635,7 @@ extern __declspec(__nothrow) char *strpbrk(const char *  , const char *  ) __att
 
  
 
-#line 238 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 238 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 extern __declspec(__nothrow) char *strrchr(const char *  , int  ) __attribute__((__nonnull__(1)));
 
    
@@ -2653,7 +2653,7 @@ extern __declspec(__nothrow) size_t strspn(const char *  , const char *  ) __att
 
  
 
-#line 261 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 261 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 extern __declspec(__nothrow) char *strstr(const char *  , const char *  ) __attribute__((__nonnull__(1,2)));
 
    
@@ -2839,13 +2839,13 @@ extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  ,
 
 
 
-#line 493 "C:\\Keil\\ARM\\RV31\\INC\\string.h"
+#line 493 "f:\\Keil\\ARM\\RV31\\INC\\string.h"
 
 
 
  
 #line 126 "rs274ngc_pre.c"
-#line 1 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 1 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
  
  
  
@@ -2870,19 +2870,19 @@ extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  ,
 
 
 
-#line 32 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 32 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
 
 
 
 
 
 
-#line 46 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
-
- 
-#line 56 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 46 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
 
  
+#line 56 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+
+ 
  
 
 
@@ -2894,13 +2894,13 @@ extern __declspec(__nothrow) void _membitmovewb(void *  , const void *  , int  ,
 
 
  
-#line 78 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 78 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
 
 
 
 
 
-#line 130 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 130 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
 
 extern __declspec(__nothrow) __pure unsigned char **__rt_ctype_table(void);
 
@@ -3022,7 +3022,7 @@ extern int toupper(int  );
 
 
 
-#line 269 "C:\\Keil\\ARM\\RV31\\INC\\ctype.h"
+#line 269 "f:\\Keil\\ARM\\RV31\\INC\\ctype.h"
 
 
 
@@ -3232,7 +3232,7 @@ typedef struct canon_tool_table
     
 
     
-extern void INIT_CANON();
+extern void INIT_CANON(void);
 
     
 
@@ -3393,13 +3393,13 @@ extern void START_CUTTER_RADIUS_COMPENSATION(int direction);
    
  
 
-extern void STOP_CUTTER_RADIUS_COMPENSATION();
+extern void STOP_CUTTER_RADIUS_COMPENSATION(void);
 
    
  
 
-extern void START_SPEED_FEED_SYNCH();
-extern void STOP_SPEED_FEED_SYNCH();
+extern void START_SPEED_FEED_SYNCH(void);
+extern void STOP_SPEED_FEED_SYNCH(void);
 
     
 
@@ -3483,7 +3483,7 @@ double x, double y, double z
 
  
 
-extern void STOP();
+extern void STOP(void);
 
     
 
@@ -3493,16 +3493,16 @@ extern void DWELL(double seconds);
 
     
 
-extern void SPINDLE_RETRACT_TRAVERSE();
+extern void SPINDLE_RETRACT_TRAVERSE(void);
 
     
 
-extern void START_SPINDLE_CLOCKWISE();
+extern void START_SPINDLE_CLOCKWISE(void);
 
    
  
 
-extern void START_SPINDLE_COUNTERCLOCKWISE();
+extern void START_SPINDLE_COUNTERCLOCKWISE(void);
 
    
  
@@ -3514,16 +3514,16 @@ extern void SET_SPINDLE_SPEED(double r);
 
  
 
-extern void STOP_SPINDLE_TURNING();
+extern void STOP_SPINDLE_TURNING(void);
 
    
  
 
-extern void SPINDLE_RETRACT();
+extern void SPINDLE_RETRACT(void);
 extern void ORIENT_SPINDLE(double orientation, CANON_DIRECTION direction);
-extern void LOCK_SPINDLE_Z();
-extern void USE_SPINDLE_FORCE();
-extern void USE_NO_SPINDLE_FORCE();
+extern void LOCK_SPINDLE_Z(void);
+extern void USE_SPINDLE_FORCE(void);
+extern void USE_NO_SPINDLE_FORCE(void);
 
     
 extern void USE_TOOL_LENGTH_OFFSET(double length);
@@ -3581,24 +3581,24 @@ extern void COMMENT(char *s);
 
  
 
-extern void DISABLE_FEED_OVERRIDE();
-extern void ENABLE_FEED_OVERRIDE();
-extern void DISABLE_SPEED_OVERRIDE();
-extern void ENABLE_SPEED_OVERRIDE();
-extern void FLOOD_OFF();
+extern void DISABLE_FEED_OVERRIDE(void);
+extern void ENABLE_FEED_OVERRIDE(void);
+extern void DISABLE_SPEED_OVERRIDE(void);
+extern void ENABLE_SPEED_OVERRIDE(void);
+extern void FLOOD_OFF(void);
     
-extern void FLOOD_ON();
+extern void FLOOD_ON(void);
     
 
 extern void MESSAGE(char *s);
 
-extern void MIST_OFF();
+extern void MIST_OFF(void);
     
 
-extern void MIST_ON();
+extern void MIST_ON(void);
     
 
-extern void PALLET_SHUTTLE();
+extern void PALLET_SHUTTLE(void);
 
    
 
@@ -3608,8 +3608,8 @@ extern void PALLET_SHUTTLE();
 
  
 
-extern void TURN_PROBE_OFF();
-extern void TURN_PROBE_ON();
+extern void TURN_PROBE_OFF(void);
+extern void TURN_PROBE_ON(void);
 
 extern void UNCLAMP_AXIS(CANON_AXIS axis);
 
@@ -3618,12 +3618,12 @@ extern void UNCLAMP_AXIS(CANON_AXIS axis);
  
 
     
-extern void NURB_KNOT_VECTOR();                    
+extern void NURB_KNOT_VECTOR(void);                    
 extern void NURB_CONTROL_POINT(int i, double x, double y, double z, double w );
 extern void NURB_FEED(double sStart, double sEnd);
 
     
-extern void OPTIONAL_PROGRAM_STOP();
+extern void OPTIONAL_PROGRAM_STOP(void);
 
    
 
@@ -3633,11 +3633,11 @@ extern void OPTIONAL_PROGRAM_STOP();
 
  
 
-extern void PROGRAM_END();
+extern void PROGRAM_END(void);
    
  
 
-extern void PROGRAM_STOP();
+extern void PROGRAM_STOP(void);
    
 
 
@@ -3661,10 +3661,10 @@ extern void PROGRAM_STOP();
  
 
    
-extern double GET_EXTERNAL_FEED_RATE();
+extern double GET_EXTERNAL_FEED_RATE(void);
 
    
-extern int GET_EXTERNAL_FLOOD();
+extern int GET_EXTERNAL_FLOOD(void);
 
    
 
@@ -3672,13 +3672,13 @@ extern int GET_EXTERNAL_FLOOD();
  
 
    
-CANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE();
+CANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE(void);
 
    
-extern int GET_EXTERNAL_MIST();
+extern int GET_EXTERNAL_MIST(void);
 
    
-extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE();
+extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE(void);
 
    
 
@@ -3714,7 +3714,7 @@ extern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE();
 extern void GET_EXTERNAL_PARAMETER_FILE_NAME(char * filename, unsigned int max_size);
 
    
-extern CANON_PLANE GET_EXTERNAL_PLANE();
+extern CANON_PLANE GET_EXTERNAL_PLANE(void);
 
 
 
@@ -3732,13 +3732,13 @@ extern CANON_PLANE GET_EXTERNAL_PLANE();
 
 
    
-extern double GET_EXTERNAL_POSITION_X();
+extern double GET_EXTERNAL_POSITION_X(void);
 
    
-extern double GET_EXTERNAL_POSITION_Y();
+extern double GET_EXTERNAL_POSITION_Y(void);
 
    
-extern double GET_EXTERNAL_POSITION_Z();
+extern double GET_EXTERNAL_POSITION_Z(void);
 
 
 
@@ -3756,44 +3756,44 @@ extern double GET_EXTERNAL_POSITION_Z();
 
 
    
-extern double GET_EXTERNAL_PROBE_POSITION_X();
+extern double GET_EXTERNAL_PROBE_POSITION_X(void);
 
    
-extern double GET_EXTERNAL_PROBE_POSITION_Y();
+extern double GET_EXTERNAL_PROBE_POSITION_Y(void);
 
    
-extern double GET_EXTERNAL_PROBE_POSITION_Z();
+extern double GET_EXTERNAL_PROBE_POSITION_Z(void);
 
    
-extern double GET_EXTERNAL_PROBE_VALUE();
-
-   
-   
-extern int GET_EXTERNAL_QUEUE_EMPTY();
-
-   
-extern double GET_EXTERNAL_SPEED();
-
-   
-extern CANON_DIRECTION GET_EXTERNAL_SPINDLE();
-
-   
-extern double GET_EXTERNAL_TOOL_LENGTH_OFFSET();
-
-   
-extern int GET_EXTERNAL_TOOL_MAX();
+extern double GET_EXTERNAL_PROBE_VALUE(void);
 
    
    
+extern int GET_EXTERNAL_QUEUE_EMPTY(void);
+
    
-extern int GET_EXTERNAL_TOOL_SLOT();
+extern double GET_EXTERNAL_SPEED(void);
+
+   
+extern CANON_DIRECTION GET_EXTERNAL_SPINDLE(void);
+
+   
+extern double GET_EXTERNAL_TOOL_LENGTH_OFFSET(void);
+
+   
+extern int GET_EXTERNAL_TOOL_MAX(void);
+
+   
+   
+   
+extern int GET_EXTERNAL_TOOL_SLOT(void);
 
    
    
 extern CANON_TOOL_TABLE GET_EXTERNAL_TOOL_TABLE(int pocket);
 
    
-extern double GET_EXTERNAL_TRAVERSE_RATE();
+extern double GET_EXTERNAL_TRAVERSE_RATE(void);
 #line 41 "rs274ngc.h"
 
     
@@ -4026,19 +4026,19 @@ typedef int (*read_function_pointer) (char *, int *, block_pointer, double *);
  
 
    
-extern int rs274ngc_close();
+extern int rs274ngc_close(void);
 
    
-extern int rs274ngc_execute();
+extern int rs274ngc_execute(void);
 
    
-extern int rs274ngc_exit();
+extern int rs274ngc_exit(void);
 
    
-extern int rs274ngc_init();
+extern int rs274ngc_init(void);
 
    
-extern int rs274ngc_load_tool_table();
+extern int rs274ngc_load_tool_table(void);
 
    
 extern int rs274ngc_open(const char *filename);
@@ -4047,7 +4047,7 @@ extern int rs274ngc_open(const char *filename);
 extern int rs274ngc_read(const char * mdi);
 
    
-extern int rs274ngc_reset();
+extern int rs274ngc_reset(void);
 
    
 extern int rs274ngc_restore_parameters(const char * filename);
@@ -4057,7 +4057,7 @@ extern int rs274ngc_save_parameters(const char * filename,
 const double parameters[]);
 
    
-extern int rs274ngc_synch();
+extern int rs274ngc_synch(void);
 
     
    
@@ -4089,14 +4089,14 @@ int max_size);
 extern void rs274ngc_file_name(char * file_name,unsigned int max_size);
 
    
-extern int rs274ngc_line_length();
+extern int rs274ngc_line_length(void);
 
    
    
 extern void rs274ngc_line_text(char * line_text, int max_size);
 
    
-extern int rs274ngc_sequence_number();
+extern int rs274ngc_sequence_number(void);
 
    
    
@@ -4776,7 +4776,7 @@ static int write_settings(setup_pointer settings);
 
 static const int _gees[] =
 {
-        1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
+    	    1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
             1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
             0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
            -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
@@ -6930,7 +6930,7 @@ static const int _gees[] =
     double clear_z,                                
     double bottom_z)                               
     {
-        static char name[] = "convert_cycle_g81";
+
 
         cycle_feed(plane, x, y, bottom_z);
         cycle_traverse(plane, x, y, clear_z);
@@ -6971,7 +6971,7 @@ static const int _gees[] =
     double bottom_z,                               
     double dwell)                                  
     {
-        static char name[] = "convert_cycle_g82";
+
 
         cycle_feed(plane, x, y, bottom_z);
         DWELL(dwell);
@@ -7025,7 +7025,7 @@ static const int _gees[] =
     double bottom_z,                               
     double delta)                                  
     {
-        static char name[] = "convert_cycle_g83";
+
         double current_depth;
         double rapid_delta;
 
@@ -7139,7 +7139,7 @@ static const int _gees[] =
     double clear_z,                                
     double bottom_z)                               
     {
-        static char name[] = "convert_cycle_g85";
+
 
         cycle_feed(plane, x, y, bottom_z);
         cycle_feed(plane, x, y, clear_z);
@@ -7394,7 +7394,7 @@ static const int _gees[] =
     double bottom_z,                               
     double dwell)                                  
     {
-        static char name[] = "convert_cycle_g89";
+
 
         cycle_feed(plane, x, y, bottom_z);
         DWELL(dwell);
@@ -8942,7 +8942,7 @@ static const int _gees[] =
     block_pointer block,                           
     setup_pointer settings)                        
     {
-        static char name[] = "convert_setup";
+
         double x;
         double y;
         double z;
@@ -9856,7 +9856,7 @@ static const int _gees[] =
     static int convert_tool_change(                
     setup_pointer settings)                        
     {
-        static char name[] = "convert_tool_change";
+
 
         CHANGE_TOOL(settings->selected_tool_slot);
         settings->current_slot = settings->selected_tool_slot;
@@ -9999,7 +9999,7 @@ static const int _gees[] =
     double end2,                                   
     double end3)                                   
     {
-        static char name[] = "cycle_feed";
+
 
         if (plane == 1)
             STRAIGHT_FEED(end1, end2, end3
@@ -10048,7 +10048,7 @@ static const int _gees[] =
     double end2,                                   
     double end3)                                   
     {
-        static char name[] = "cycle_traverse";
+
         if (plane == 1)
             STRAIGHT_TRAVERSE(end1, end2, end3
 #line 7269 "rs274ngc_pre.c"
@@ -11048,7 +11048,7 @@ static const int _gees[] =
     block_pointer block,                           
     setup_pointer settings)                        
     {
-        static char name[] = "inverse_time_rate_straight";
+
         double length;
         double rate;
 
@@ -13704,7 +13704,7 @@ static const int _gees[] =
     static int set_probe_data(                     
     setup_pointer settings)                        
     {
-        static char name[] = "set_probe_data";
+
 
         settings->current_x = GET_EXTERNAL_POSITION_X();
         settings->current_y = GET_EXTERNAL_POSITION_Y();
@@ -14627,7 +14627,7 @@ static const int _gees[] =
         _setup.tool_max = GET_EXTERNAL_TOOL_MAX();
         _setup.traverse_rate = GET_EXTERNAL_TRAVERSE_RATE();
 
- 
+		
 
         return 0;
     }

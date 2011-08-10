@@ -373,19 +373,19 @@ typedef int (*read_function_pointer) (char *, int *, block_pointer, double *);
    */
 
    // close the currently open NC code file
-extern int rs274ngc_close();
+extern int rs274ngc_close(void);
 
    // execute a line of NC code
-extern int rs274ngc_execute();
+extern int rs274ngc_execute(void);
 
    // stop running
-extern int rs274ngc_exit();
+extern int rs274ngc_exit(void);
 
    // get ready to run
-extern int rs274ngc_init();
+extern int rs274ngc_init(void);
 
    // load a tool table
-extern int rs274ngc_load_tool_table();
+extern int rs274ngc_load_tool_table(void);
 
    // open a file of NC code
 extern int rs274ngc_open(const char *filename);
@@ -394,7 +394,7 @@ extern int rs274ngc_open(const char *filename);
 extern int rs274ngc_read(const char * mdi);
 
    // reset yourself
-extern int rs274ngc_reset();
+extern int rs274ngc_reset(void);
 
    // restore interpreter variables from a file
 extern int rs274ngc_restore_parameters(const char * filename);
@@ -404,7 +404,7 @@ extern int rs274ngc_save_parameters(const char * filename,
 const double parameters[]);
 
    // synchronize your internal model with the external world
-extern int rs274ngc_synch();
+extern int rs274ngc_synch(void);
 
    /*************************************************************************/
    /* 
@@ -436,14 +436,14 @@ int max_size);
 extern void rs274ngc_file_name(char * file_name,unsigned int max_size);
 
    // return the length of the most recently read line
-extern int rs274ngc_line_length();
+extern int rs274ngc_line_length(void);
 
    // copy the text of the most recently read line into the line_text array,
    // but stop at max_size if the text is longer
 extern void rs274ngc_line_text(char * line_text, int max_size);
 
    // return the current sequence number (how many lines read)
-extern int rs274ngc_sequence_number();
+extern int rs274ngc_sequence_number(void);
 
    // copy the function name from the stack_index'th position of the
    // function call stack at the time of the most recent error into

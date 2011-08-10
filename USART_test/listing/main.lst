@@ -8,7 +8,7 @@ N*******************************************************************************
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_lib.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_lib.h
 N* Author             : MCD Application Team
@@ -31,7 +31,7 @@ N#define __STM32F10x_LIB_H
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_map.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_map.h
 N* Author             : MCD Application Team
@@ -58,7 +58,7 @@ N#endif /* EXT */
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_conf.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_conf.h
 N* Author             : MCD Application Team
@@ -80,7 +80,7 @@ N#define __STM32F10x_CONF_H
 N
 N/* Includes ------------------------------------------------------------------*/
 N#include "stm32f10x_type.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_type.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_type.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_type.h
 N* Author             : MCD Application Team
@@ -161,7 +161,7 @@ N
 N#endif /* __STM32F10x_TYPE_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 22 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 2
+L 22 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_conf.h" 2
 N
 N/* Exported types ------------------------------------------------------------*/
 N/* Exported constants --------------------------------------------------------*/
@@ -311,10 +311,10 @@ N
 N#endif /* __STM32F10x_CONF_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 27 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
+L 27 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
 N#include "stm32f10x_type.h"
 N#include "cortexm3_macro.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\cortexm3_macro.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\cortexm3_macro.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : cortexm3_macro.h
 N* Author             : MCD Application Team
@@ -368,7 +368,7 @@ N
 N#endif /* __CORTEXM3_MACRO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 29 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
+L 29 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_map.h" 2
 N
 N/* Exported types ------------------------------------------------------------*/
 N/******************************************************************************/
@@ -1528,11 +1528,11 @@ N
 N#endif /* __STM32F10x_MAP_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 23 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 23 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N
 N#ifdef _ADC
 N  #include "stm32f10x_adc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_adc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_adc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_adc.h
 N* Author             : MCD Application Team
@@ -1845,12 +1845,12 @@ N
 N#endif /*__STM32F10x_ADC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 26 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 26 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_ADC */
 N
 N#ifdef _BKP
 N  #include "stm32f10x_bkp.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_bkp.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_bkp.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_bkp.h
 N* Author             : MCD Application Team
@@ -1976,12 +1976,12 @@ N
 N#endif /* __STM32F10x_BKP_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 30 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 30 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_BKP */
 N
 N#ifdef _CAN
 N  #include "stm32f10x_can.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_can.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_can.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_can.h
 N* Author             : MCD Application Team
@@ -2253,12 +2253,12 @@ N
 N#endif /* __STM32F10x_CAN_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 34 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 34 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_CAN */
 N
 N#ifdef _CRC
 N  #include "stm32f10x_crc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_crc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_crc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_crc.h
 N* Author             : MCD Application Team
@@ -2296,12 +2296,12 @@ N
 N#endif /* __STM32F10x_CRC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 38 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 38 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_CRC */
 N
 N#ifdef _DAC
 N  #include "stm32f10x_dac.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dac.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dac.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dac.h
 N* Author             : MCD Application Team
@@ -2476,12 +2476,12 @@ N
 N#endif /*__STM32F10x_DAC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 42 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 42 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DAC */
 N
 N#ifdef _DBGMCU
 N  #include "stm32f10x_dbgmcu.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dbgmcu.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dbgmcu.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dbgmcu.h
 N* Author             : MCD Application Team
@@ -2537,12 +2537,12 @@ N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
 N
 N
-L 46 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 46 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DBGMCU */
 N
 N#ifdef _DMA
 N  #include "stm32f10x_dma.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dma.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_dma.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_dma.h
 N* Author             : MCD Application Team
@@ -2849,12 +2849,12 @@ N
 N#endif /*__STM32F10x_DMA_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 50 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 50 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_DMA */
 N
 N#ifdef _EXTI
 N  #include "stm32f10x_exti.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_exti.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_exti.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_exti.h
 N* Author             : MCD Application Team
@@ -2964,12 +2964,12 @@ N
 N#endif /* __STM32F10x_EXTI_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 54 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 54 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_EXTI */
 N
 N#ifdef _FLASH
 N  #include "stm32f10x_flash.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_flash.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_flash.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_flash.h
 N* Author             : MCD Application Team
@@ -3182,12 +3182,12 @@ N
 N#endif /* __STM32F10x_FLASH_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 58 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 58 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_FLASH */
 N
 N#ifdef _FSMC
 N  #include "stm32f10x_fsmc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_fsmc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_fsmc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_fsmc.h
 N* Author             : MCD Application Team
@@ -3567,12 +3567,12 @@ N
 N#endif /*__STM32F10x_FSMC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 62 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 62 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_FSMC */
 N
 N#ifdef _GPIO
 N  #include "stm32f10x_gpio.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_gpio.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_gpio.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_gpio.h
 N* Author             : MCD Application Team
@@ -3818,12 +3818,12 @@ N
 N#endif /* __STM32F10x_GPIO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 66 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 66 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_GPIO */
 N
 N#ifdef _I2C
 N  #include "stm32f10x_i2c.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_i2c.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_i2c.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_i2c.h
 N* Author             : MCD Application Team
@@ -4127,12 +4127,12 @@ N
 N#endif /*__STM32F10x_I2C_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 70 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 70 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_I2C */
 N
 N#ifdef _IWDG
 N  #include "stm32f10x_iwdg.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_iwdg.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_iwdg.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_iwdg.h
 N* Author             : MCD Application Team
@@ -4204,12 +4204,12 @@ N
 N#endif /* __STM32F10x_IWDG_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 74 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 74 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_IWDG */
 N
 N#ifdef _NVIC
 N  #include "stm32f10x_nvic.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_nvic.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_nvic.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_nvic.h
 N* Author             : MCD Application Team
@@ -4509,12 +4509,12 @@ N
 N#endif /* __STM32F10x_NVIC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 78 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 78 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_NVIC */
 N
 N#ifdef _PWR
 N  #include "stm32f10x_pwr.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_pwr.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_pwr.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_pwr.h
 N* Author             : MCD Application Team
@@ -4595,12 +4595,12 @@ N
 N#endif /* __STM32F10x_PWR_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 82 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 82 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_PWR */
 N
 N#ifdef _RCC
 N  #include "stm32f10x_rcc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rcc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rcc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_rcc.h
 N* Author             : MCD Application Team
@@ -4902,12 +4902,12 @@ N
 N#endif /* __STM32F10x_RCC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 86 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 86 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_RCC */
 N
 N#ifdef _RTC
 N  #include "stm32f10x_rtc.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rtc.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_rtc.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_rtc.h
 N* Author             : MCD Application Team
@@ -4980,12 +4980,12 @@ N
 N#endif /* __STM32F10x_RTC_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 90 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 90 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_RTC */
 N
 N#ifdef _SDIO
 N  #include "stm32f10x_sdio.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_sdio.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_sdio.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_sdio.h
 N* Author             : MCD Application Team
@@ -5337,12 +5337,12 @@ N
 N#endif /* __STM32F10x_SDIO_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 94 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 94 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SDIO */
 N
 N#ifdef _SPI
 N  #include "stm32f10x_spi.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_spi.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_spi.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_spi.h
 N* Author             : MCD Application Team
@@ -5658,12 +5658,12 @@ N
 N#endif /*__STM32F10x_SPI_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 98 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 98 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SPI */
 N
 N#ifdef _SysTick
 N  #include "stm32f10x_systick.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_systick.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_systick.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_systick.h
 N* Author             : MCD Application Team
@@ -5731,12 +5731,12 @@ N
 N#endif /* __STM32F10x_SYSTICK_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 102 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 102 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_SysTick */
 N
 N#ifdef _TIM
 N  #include "stm32f10x_tim.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_tim.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_tim.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_tim.h
 N* Author             : MCD Application Team
@@ -6568,12 +6568,12 @@ N
 N
 N
 N
-L 106 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 106 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_TIM */
 N
 N#ifdef _USART
 N  #include "stm32f10x_usart.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_usart.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_usart.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_usart.h
 N* Author             : MCD Application Team
@@ -6849,12 +6849,12 @@ N
 N#endif /* __STM32F10x_USART_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 110 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 110 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_USART */
 N
 N#ifdef _WWDG
 N  #include "stm32f10x_wwdg.h"
-L 1 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_wwdg.h" 1
+L 1 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_wwdg.h" 1
 N/******************** (C) COPYRIGHT 2008 STMicroelectronics ********************
 N* File Name          : stm32f10x_wwdg.h
 N* Author             : MCD Application Team
@@ -6910,7 +6910,7 @@ N
 N#endif /* __STM32F10x_WWDG_H */
 N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
-L 114 "C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
+L 114 "f:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_lib.h" 2
 N#endif /*_WWDG */
 N
 N/* Exported types ------------------------------------------------------------*/
@@ -6924,7 +6924,7 @@ N
 N/******************* (C) COPYRIGHT 2008 STMicroelectronics *****END OF FILE****/
 L 10 "main.c" 2
 N#include <stdio.h>
-L 1 "C:\Keil\ARM\RV31\INC\stdio.h" 1
+L 1 "f:\Keil\ARM\RV31\INC\stdio.h" 1
 N/* stdio.h: ANSI 'C' (X3J11 Oct 88) library header, section 4.9 */
 N/* Copyright (C) Codemist Ltd., 1988-1993                       */
 N/* Copyright 1991-1998 ARM Limited. All rights reserved.        */
@@ -7949,7 +7949,7 @@ N
 N/* end of stdio.h */
 L 11 "main.c" 2
 N#include <rtl.h>
-L 1 "C:\Keil\ARM\RV31\INC\rtl.h" 1
+L 1 "f:\Keil\ARM\RV31\INC\rtl.h" 1
 N/*----------------------------------------------------------------------------
 N *      RL-ARM - A P I 
 N *----------------------------------------------------------------------------
@@ -8729,8 +8729,7 @@ N
 N   /* Initialization */
 N
 N   /* reads world model data into the canonical interface */
-W "canon.h" 169 13 Deprecated declaration INIT_CANON - give arg types
-Nextern void INIT_CANON();
+Nextern void INIT_CANON(void);
 N
 N   /* Representation */
 N
@@ -8931,16 +8930,13 @@ N
 N   /* Conceptually, the direction must be left (meaning the cutter
 N   stays to the left of the programmed path) or right. */
 N
-W "canon.h" 370 13 Deprecated declaration STOP_CUTTER_RADIUS_COMPENSATION - give arg types
-Nextern void STOP_CUTTER_RADIUS_COMPENSATION();
+Nextern void STOP_CUTTER_RADIUS_COMPENSATION(void);
 N
 N   /* Do not apply cutter radius compensation when executing spindle
 N   translation commands. */
 N
-W "canon.h" 375 13 Deprecated declaration START_SPEED_FEED_SYNCH - give arg types
-Nextern void START_SPEED_FEED_SYNCH();
-W "canon.h" 376 13 Deprecated declaration STOP_SPEED_FEED_SYNCH - give arg types
-Nextern void STOP_SPEED_FEED_SYNCH();
+Nextern void START_SPEED_FEED_SYNCH(void);
+Nextern void STOP_SPEED_FEED_SYNCH(void);
 N
 N   /* Machining Functions */
 N
@@ -9084,8 +9080,7 @@ N   canonical machining functions and its semantics are not defined.
 N   When the operation is finished, all axes should be back where they
 N   started. */
 N
-W "canon.h" 520 13 Deprecated declaration STOP - give arg types
-Nextern void STOP();
+Nextern void STOP(void);
 N
 N   /* stop motion after current feed */
 N
@@ -9095,19 +9090,16 @@ N   /* freeze x,y,z for a time */
 N
 N   /* Spindle Functions */
 N
-W "canon.h" 530 13 Deprecated declaration SPINDLE_RETRACT_TRAVERSE - give arg types
-Nextern void SPINDLE_RETRACT_TRAVERSE();
+Nextern void SPINDLE_RETRACT_TRAVERSE(void);
 N
 N   /* Retract the spindle at traverse rate to the fully retracted position. */
 N
-W "canon.h" 534 13 Deprecated declaration START_SPINDLE_CLOCKWISE - give arg types
-Nextern void START_SPINDLE_CLOCKWISE();
+Nextern void START_SPINDLE_CLOCKWISE(void);
 N
 N   /* Turn the spindle clockwise at the currently set speed rate. If the
 N   spindle is already turning that way, this command has no effect. */
 N
-W "canon.h" 539 13 Deprecated declaration START_SPINDLE_COUNTERCLOCKWISE - give arg types
-Nextern void START_SPINDLE_COUNTERCLOCKWISE();
+Nextern void START_SPINDLE_COUNTERCLOCKWISE(void);
 N
 N   /* Turn the spindle counterclockwise at the currently set speed rate. If
 N   the spindle is already turning that way, this command has no effect. */
@@ -9119,21 +9111,16 @@ N   This is usually given in rpm and refers to the rate of spindle
 N   rotation. If the spindle is already turning and is at a different
 N   speed, change to the speed given with this command. */
 N
-W "canon.h" 551 13 Deprecated declaration STOP_SPINDLE_TURNING - give arg types
-Nextern void STOP_SPINDLE_TURNING();
+Nextern void STOP_SPINDLE_TURNING(void);
 N
 N   /* Stop the spindle from turning. If the spindle is already stopped, this
 N   command may be given, but it will have no effect. */
 N
-W "canon.h" 556 13 Deprecated declaration SPINDLE_RETRACT - give arg types
-Nextern void SPINDLE_RETRACT();
+Nextern void SPINDLE_RETRACT(void);
 Nextern void ORIENT_SPINDLE(double orientation, CANON_DIRECTION direction);
-W "canon.h" 558 13 Deprecated declaration LOCK_SPINDLE_Z - give arg types
-Nextern void LOCK_SPINDLE_Z();
-W "canon.h" 559 13 Deprecated declaration USE_SPINDLE_FORCE - give arg types
-Nextern void USE_SPINDLE_FORCE();
-W "canon.h" 560 13 Deprecated declaration USE_NO_SPINDLE_FORCE - give arg types
-Nextern void USE_NO_SPINDLE_FORCE();
+Nextern void LOCK_SPINDLE_Z(void);
+Nextern void USE_SPINDLE_FORCE(void);
+Nextern void USE_NO_SPINDLE_FORCE(void);
 N
 N   /* Tool Functions */
 Nextern void USE_TOOL_LENGTH_OFFSET(double length);
@@ -9191,33 +9178,24 @@ N   logged, the comment command is printed or logged, including the string
 N   which is the value of comment_text. This serves to allow formal
 N   comments at specific locations in programs or command files. */
 N
-W "canon.h" 618 13 Deprecated declaration DISABLE_FEED_OVERRIDE - give arg types
-Nextern void DISABLE_FEED_OVERRIDE();
-W "canon.h" 619 13 Deprecated declaration ENABLE_FEED_OVERRIDE - give arg types
-Nextern void ENABLE_FEED_OVERRIDE();
-W "canon.h" 620 13 Deprecated declaration DISABLE_SPEED_OVERRIDE - give arg types
-Nextern void DISABLE_SPEED_OVERRIDE();
-W "canon.h" 621 13 Deprecated declaration ENABLE_SPEED_OVERRIDE - give arg types
-Nextern void ENABLE_SPEED_OVERRIDE();
-W "canon.h" 622 13 Deprecated declaration FLOOD_OFF - give arg types
-Nextern void FLOOD_OFF();
+Nextern void DISABLE_FEED_OVERRIDE(void);
+Nextern void ENABLE_FEED_OVERRIDE(void);
+Nextern void DISABLE_SPEED_OVERRIDE(void);
+Nextern void ENABLE_SPEED_OVERRIDE(void);
+Nextern void FLOOD_OFF(void);
 N   /* Turn flood coolant off. */
-W "canon.h" 624 13 Deprecated declaration FLOOD_ON - give arg types
-Nextern void FLOOD_ON();
+Nextern void FLOOD_ON(void);
 N   /* Turn flood coolant on. */
 N
 Nextern void MESSAGE(char *s);
 N
-W "canon.h" 629 13 Deprecated declaration MIST_OFF - give arg types
-Nextern void MIST_OFF();
+Nextern void MIST_OFF(void);
 N   /* Turn mist coolant off. */
 N
-W "canon.h" 632 13 Deprecated declaration MIST_ON - give arg types
-Nextern void MIST_ON();
+Nextern void MIST_ON(void);
 N   /* Turn mist coolant on. */
 N
-W "canon.h" 635 13 Deprecated declaration PALLET_SHUTTLE - give arg types
-Nextern void PALLET_SHUTTLE();
+Nextern void PALLET_SHUTTLE(void);
 N
 N   /* If the machining center has a pallet shuttle mechanism (a mechanism
 N   which switches the position of two pallets), this command should cause
@@ -9227,10 +9205,8 @@ N
 N   If the machining center does not have a pallet shuttle, this command
 N   should result in an error condition in the controller. */
 N
-W "canon.h" 645 13 Deprecated declaration TURN_PROBE_OFF - give arg types
-Nextern void TURN_PROBE_OFF();
-W "canon.h" 646 13 Deprecated declaration TURN_PROBE_ON - give arg types
-Nextern void TURN_PROBE_ON();
+Nextern void TURN_PROBE_OFF(void);
+Nextern void TURN_PROBE_ON(void);
 N
 Nextern void UNCLAMP_AXIS(CANON_AXIS axis);
 N
@@ -9239,14 +9215,12 @@ N   for that axis, this command should result in an error condition in the
 N   controller. */
 N
 N   /* NURB Functions */
-W "canon.h" 655 13 Deprecated declaration NURB_KNOT_VECTOR - give arg types
-Nextern void NURB_KNOT_VECTOR();                   /* double knot values, -1.0 signals done */
+Nextern void NURB_KNOT_VECTOR(void);                   /* double knot values, -1.0 signals done */
 Nextern void NURB_CONTROL_POINT(int i, double x, double y, double z, double w );
 Nextern void NURB_FEED(double sStart, double sEnd);
 N
 N   /* Program Functions */
-W "canon.h" 660 13 Deprecated declaration OPTIONAL_PROGRAM_STOP - give arg types
-Nextern void OPTIONAL_PROGRAM_STOP();
+Nextern void OPTIONAL_PROGRAM_STOP(void);
 N
 N   /* If the machining center has an optional stop switch, and it is on
 N   when this command is read from a program, stop executing the program
@@ -9256,13 +9230,11 @@ N   switch, or commands are being executed with a stop after each one
 N   already (such as when the interpreter is being used with keyboard
 N   input), this command has no effect. */
 N
-W "canon.h" 670 13 Deprecated declaration PROGRAM_END - give arg types
-Nextern void PROGRAM_END();
+Nextern void PROGRAM_END(void);
 N   /* If a program is being read, stop executing the program and be prepared
 N   to accept a new program or to be shut down. */
 N
-W "canon.h" 674 13 Deprecated declaration PROGRAM_STOP - give arg types
-Nextern void PROGRAM_STOP();
+Nextern void PROGRAM_STOP(void);
 N   /* If this command is read from a program, stop executing the program at
 N   this point, but be prepared to resume with the next line of the
 N   program. If commands are being executed with a stop after each one
@@ -9286,12 +9258,10 @@ N   extern double GET_EXTERNAL_ANGLE_UNIT_FACTOR();
 N   */
 N
 N   // Returns the system feed rate
-W "canon.h" 698 15 Deprecated declaration GET_EXTERNAL_FEED_RATE - give arg types
-Nextern double GET_EXTERNAL_FEED_RATE();
+Nextern double GET_EXTERNAL_FEED_RATE(void);
 N
 N   // Returns the system value for flood coolant, zero = off, non-zero = on
-W "canon.h" 701 12 Deprecated declaration GET_EXTERNAL_FLOOD - give arg types
-Nextern int GET_EXTERNAL_FLOOD();
+Nextern int GET_EXTERNAL_FLOOD(void);
 N
 N   /* The interpreter is not using this function
 N   // Returns the system length unit factor, in units / mm
@@ -9299,16 +9269,13 @@ N   extern double GET_EXTERNAL_LENGTH_UNIT_FACTOR();
 N   */
 N
 N   // Returns the system length unit type
-W "canon.h" 709 13 Deprecated declaration GET_EXTERNAL_LENGTH_UNIT_TYPE - give arg types
-NCANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE();
+NCANON_UNITS GET_EXTERNAL_LENGTH_UNIT_TYPE(void);
 N
 N   // Returns the system value for mist coolant, zero = off, non-zero = on
-W "canon.h" 712 12 Deprecated declaration GET_EXTERNAL_MIST - give arg types
-Nextern int GET_EXTERNAL_MIST();
+Nextern int GET_EXTERNAL_MIST(void);
 N
 N   // Returns the current motion control mode
-W "canon.h" 715 26 Deprecated declaration GET_EXTERNAL_MOTION_CONTROL_MODE - give arg types
-Nextern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE();
+Nextern CANON_MOTION_MODE GET_EXTERNAL_MOTION_CONTROL_MODE(void);
 N
 N   /* The interpreter is not using these six GET_EXTERNAL_ORIGIN functions
 N
@@ -9344,101 +9311,86 @@ N   // An empty string may be placed in filename.
 Nextern void GET_EXTERNAL_PARAMETER_FILE_NAME(char * filename, unsigned int max_size);
 N
 N   // returns the currently active plane
-W "canon.h" 751 20 Deprecated declaration GET_EXTERNAL_PLANE - give arg types
-Nextern CANON_PLANE GET_EXTERNAL_PLANE();
+Nextern CANON_PLANE GET_EXTERNAL_PLANE(void);
 N
 N#ifdef AA
 S   // returns the current a-axis position
-Sextern double GET_EXTERNAL_POSITION_A();
+Sextern double GET_EXTERNAL_POSITION_A(void);
 N#endif
 N
 N#ifdef BB
 S   // returns the current b-axis position
-Sextern double GET_EXTERNAL_POSITION_B();
+Sextern double GET_EXTERNAL_POSITION_B(void);
 N#endif
 N
 N#ifdef CC
 S   // returns the current c-axis position
-Sextern double GET_EXTERNAL_POSITION_C();
+Sextern double GET_EXTERNAL_POSITION_C(void);
 N#endif
 N
 N   // returns the current x-axis position
-W "canon.h" 769 15 Deprecated declaration GET_EXTERNAL_POSITION_X - give arg types
-Nextern double GET_EXTERNAL_POSITION_X();
+Nextern double GET_EXTERNAL_POSITION_X(void);
 N
 N   // returns the current y-axis position
-W "canon.h" 772 15 Deprecated declaration GET_EXTERNAL_POSITION_Y - give arg types
-Nextern double GET_EXTERNAL_POSITION_Y();
+Nextern double GET_EXTERNAL_POSITION_Y(void);
 N
 N   // returns the current z-axis position
-W "canon.h" 775 15 Deprecated declaration GET_EXTERNAL_POSITION_Z - give arg types
-Nextern double GET_EXTERNAL_POSITION_Z();
+Nextern double GET_EXTERNAL_POSITION_Z(void);
 N
 N#ifdef AA
 S   // Returns the machine A-axis position at the last probe trip.
-Sextern double GET_EXTERNAL_PROBE_POSITION_A();
+Sextern double GET_EXTERNAL_PROBE_POSITION_A(void);
 N#endif
 N
 N#ifdef BB
 S   // Returns the machine B-axis position at the last probe trip.
-Sextern double GET_EXTERNAL_PROBE_POSITION_B();
+Sextern double GET_EXTERNAL_PROBE_POSITION_B(void);
 N#endif
 N
 N#ifdef CC
 S   // Returns the machine C-axis position at the last probe trip.
-Sextern double GET_EXTERNAL_PROBE_POSITION_C();
+Sextern double GET_EXTERNAL_PROBE_POSITION_C(void);
 N#endif
 N
 N   // Returns the machine X-axis position at the last probe trip.
-W "canon.h" 793 15 Deprecated declaration GET_EXTERNAL_PROBE_POSITION_X - give arg types
-Nextern double GET_EXTERNAL_PROBE_POSITION_X();
+Nextern double GET_EXTERNAL_PROBE_POSITION_X(void);
 N
 N   // Returns the machine Y-axis position at the last probe trip.
-W "canon.h" 796 15 Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Y - give arg types
-Nextern double GET_EXTERNAL_PROBE_POSITION_Y();
+Nextern double GET_EXTERNAL_PROBE_POSITION_Y(void);
 N
 N   // Returns the machine Z-axis position at the last probe trip.
-W "canon.h" 799 15 Deprecated declaration GET_EXTERNAL_PROBE_POSITION_Z - give arg types
-Nextern double GET_EXTERNAL_PROBE_POSITION_Z();
+Nextern double GET_EXTERNAL_PROBE_POSITION_Z(void);
 N
 N   // Returns the value for any analog non-contact probing.
-W "canon.h" 802 15 Deprecated declaration GET_EXTERNAL_PROBE_VALUE - give arg types
-Nextern double GET_EXTERNAL_PROBE_VALUE();
+Nextern double GET_EXTERNAL_PROBE_VALUE(void);
 N
 N   // Returns zero if queue is not empty, non-zero if the queue is empty
 N   // This always returns a valid value
-W "canon.h" 806 12 Deprecated declaration GET_EXTERNAL_QUEUE_EMPTY - give arg types
-Nextern int GET_EXTERNAL_QUEUE_EMPTY();
+Nextern int GET_EXTERNAL_QUEUE_EMPTY(void);
 N
 N   // Returns the system value for spindle speed in rpm
-W "canon.h" 809 15 Deprecated declaration GET_EXTERNAL_SPEED - give arg types
-Nextern double GET_EXTERNAL_SPEED();
+Nextern double GET_EXTERNAL_SPEED(void);
 N
 N   // Returns the system value for direction of spindle turning
-W "canon.h" 812 24 Deprecated declaration GET_EXTERNAL_SPINDLE - give arg types
-Nextern CANON_DIRECTION GET_EXTERNAL_SPINDLE();
+Nextern CANON_DIRECTION GET_EXTERNAL_SPINDLE(void);
 N
 N   // returns current tool length offset
-W "canon.h" 815 15 Deprecated declaration GET_EXTERNAL_TOOL_LENGTH_OFFSET - give arg types
-Nextern double GET_EXTERNAL_TOOL_LENGTH_OFFSET();
+Nextern double GET_EXTERNAL_TOOL_LENGTH_OFFSET(void);
 N
 N   // Returns number of slots in carousel
-W "canon.h" 818 12 Deprecated declaration GET_EXTERNAL_TOOL_MAX - give arg types
-Nextern int GET_EXTERNAL_TOOL_MAX();
+Nextern int GET_EXTERNAL_TOOL_MAX(void);
 N
 N   // Returns the system value for the carousel slot in which the tool
 N   // currently in the spindle belongs. Return value zero means there is no
 N   // tool in the spindle.
-W "canon.h" 823 12 Deprecated declaration GET_EXTERNAL_TOOL_SLOT - give arg types
-Nextern int GET_EXTERNAL_TOOL_SLOT();
+Nextern int GET_EXTERNAL_TOOL_SLOT(void);
 N
 N   // Returns the CANON_TOOL_TABLE structure associated with the tool
 N   // in the given pocket
 Nextern CANON_TOOL_TABLE GET_EXTERNAL_TOOL_TABLE(int pocket);
 N
 N   // Returns the system traverse rate
-W "canon.h" 830 15 Deprecated declaration GET_EXTERNAL_TRAVERSE_RATE - give arg types
-Nextern double GET_EXTERNAL_TRAVERSE_RATE();
+Nextern double GET_EXTERNAL_TRAVERSE_RATE(void);
 N#endif                                            /* ifndef CANON_HH */
 L 41 "rs274ngc.h" 2
 N
@@ -9784,24 +9736,19 @@ N
 N   */
 N
 N   // close the currently open NC code file
-W "rs274ngc.h" 376 12 Deprecated declaration rs274ngc_close - give arg types
-Nextern int rs274ngc_close();
+Nextern int rs274ngc_close(void);
 N
 N   // execute a line of NC code
-W "rs274ngc.h" 379 12 Deprecated declaration rs274ngc_execute - give arg types
-Nextern int rs274ngc_execute();
+Nextern int rs274ngc_execute(void);
 N
 N   // stop running
-W "rs274ngc.h" 382 12 Deprecated declaration rs274ngc_exit - give arg types
-Nextern int rs274ngc_exit();
+Nextern int rs274ngc_exit(void);
 N
 N   // get ready to run
-W "rs274ngc.h" 385 12 Deprecated declaration rs274ngc_init - give arg types
-Nextern int rs274ngc_init();
+Nextern int rs274ngc_init(void);
 N
 N   // load a tool table
-W "rs274ngc.h" 388 12 Deprecated declaration rs274ngc_load_tool_table - give arg types
-Nextern int rs274ngc_load_tool_table();
+Nextern int rs274ngc_load_tool_table(void);
 N
 N   // open a file of NC code
 Nextern int rs274ngc_open(const char *filename);
@@ -9810,8 +9757,7 @@ N   // read the mdi or the next line of the open NC code file
 Nextern int rs274ngc_read(const char * mdi);
 N
 N   // reset yourself
-W "rs274ngc.h" 397 12 Deprecated declaration rs274ngc_reset - give arg types
-Nextern int rs274ngc_reset();
+Nextern int rs274ngc_reset(void);
 N
 N   // restore interpreter variables from a file
 Nextern int rs274ngc_restore_parameters(const char * filename);
@@ -9821,8 +9767,7 @@ Nextern int rs274ngc_save_parameters(const char * filename,
 Nconst double parameters[]);
 N
 N   // synchronize your internal model with the external world
-W "rs274ngc.h" 407 12 Deprecated declaration rs274ngc_synch - give arg types
-Nextern int rs274ngc_synch();
+Nextern int rs274ngc_synch(void);
 N
 N   /*************************************************************************/
 N   /* 
@@ -9854,16 +9799,14 @@ N   // but stop at max_size if the name is longer
 Nextern void rs274ngc_file_name(char * file_name,unsigned int max_size);
 N
 N   // return the length of the most recently read line
-W "rs274ngc.h" 439 12 Deprecated declaration rs274ngc_line_length - give arg types
-Nextern int rs274ngc_line_length();
+Nextern int rs274ngc_line_length(void);
 N
 N   // copy the text of the most recently read line into the line_text array,
 N   // but stop at max_size if the text is longer
 Nextern void rs274ngc_line_text(char * line_text, int max_size);
 N
 N   // return the current sequence number (how many lines read)
-W "rs274ngc.h" 446 12 Deprecated declaration rs274ngc_sequence_number - give arg types
-Nextern int rs274ngc_sequence_number();
+Nextern int rs274ngc_sequence_number(void);
 N
 N   // copy the function name from the stack_index'th position of the
 N   // function call stack at the time of the most recent error into
@@ -10106,7 +10049,7 @@ N#endif                                            /* RS274NGC_RETURN_H */
 L 41 "main.c" 2
 N#include <stdio.h>                                /* gets, etc. */
 N#include <stdlib.h>                               /* exit       */
-L 1 "C:\Keil\ARM\RV31\INC\stdlib.h" 1
+L 1 "f:\Keil\ARM\RV31\INC\stdlib.h" 1
 N/* stdlib.h: ANSI draft (X3J11 May 88) library header, section 4.10 */
 N/* Copyright (C) Codemist Ltd., 1988-1993.                          */
 N/* Copyright 1991-1998 ARM Limited. All rights reserved.            */
@@ -11046,7 +10989,7 @@ N#endif
 N/* end of stdlib.h */
 L 43 "main.c" 2
 N#include <string.h>                               /* strcpy     */
-L 1 "C:\Keil\ARM\RV31\INC\string.h" 1
+L 1 "f:\Keil\ARM\RV31\INC\string.h" 1
 N/* string.h: ANSI 'C' (X3J11 Oct 88) library header, section 4.11 */
 N/* Copyright (C) Codemist Ltd., 1988-1993.                        */
 N/* Copyright 1991-1993 ARM Limited. All rights reserved.          */
@@ -11691,21 +11634,29 @@ N
 NTo exit, the user must enter "quit" (followed by a carriage return).
 N
 N*/
+N/*测试代码一*/
+N//char _nc_code_buffer[]=
+N//{
+N//"(this program mills );"
+N//"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
+N//"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
+N//"n0030 g0 x0 y0 z2;"
+N//"n0040 g1 z-0.5 (start H);"
+N//"n0050 y10;"
+N//"n0060 g0 z2;"
+N//"n0070 y5;"
+N//"n0080 g1 z-0.5;"
+N//"n0090 x 7;"
+N//"n0620 m2;"
+N//"%"};
+N
+N/*测试代码二*/
 Nchar _nc_code_buffer[]=
 N{
-N"(this program mills );"
-N"n0010 g21 g0 x0 y0 z50(top of part should be on XY plane);"
-N"n0020 t1 m6 m3 f20 s4000(use an engraver or small ball-nose endmill);"
-N"n0030 g0 x0 y0 z2;"
-N"n0040 g1 z-0.5 (start H);"
-N"n0050 y10;"
-N"n0060 g0 z2;"
-N"n0070 y5;"
-N"n0080 g1 z-0.5;"
-N"n0090 x 7;"
-N"n0620 m2;"
+N//"(this program mills );"
+N"n0010 g00 x0 y0 z50;"
+N"n0010 g01 x0 y0 z50 f50;"
 N"%"};
-N
 N
 Nvolatile int gAllChar;
 Nvolatile int gNowChar=0;
@@ -12279,7 +12230,6 @@ N	int choice;
 N	int do_next;                                  /* 0=continue, 1=mdi, 2=stop */
 N	int block_delete;
 N	int tool_flag;
-N	char buffer[80];
 N	int gees[RS274NGC_ACTIVE_G_CODES];
 X	int gees[12];
 N	int ems[RS274NGC_ACTIVE_M_CODES];
@@ -12289,7 +12239,6 @@ X	double sets[3];
 N	char default_name[] SET_TO "rs274ngc.var";
 X	char default_name[] = "rs274ngc.var";
 N	int print_stack;
-N	u16 i=0;
 N/******************************RS274NGC之变量声明部分结束******************************/	
 N	
 N	
@@ -12327,8 +12276,6 @@ N	    //exit(1);
 N		return 1;
 N	}
 N	*/
-N	buffer[0]='1';
-N	i=0;
 N	choice=1;
 N
 N	do_next SET_TO 2;                             /* 2=stop */
@@ -12462,8 +12409,6 @@ N			printf("  %c",i&0xFF);
 N					
 N		}
 N	}*/
-W "main.c" 655 7 variable "buffer" was set but never used
-W "main.c" 661 6 variable "i" was set but never used
 N}
 N
 N#ifdef  DEBUG
